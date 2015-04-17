@@ -92,7 +92,7 @@ def playTest(url, title, thumbnail):
 	pageUrl = "http://media.mtvnservices.com/player/prime/mediaplayerprime.2.7.11.swf?uri=mgid:arc:episode:southpark.de:"+url
 	pageUrl += "&type=network&ref=southpark.cc.com&geo="+ geolocation +"&group=entertainment&network=None&device=Other&"
 	pageUrl += "CONFIG_URL=http://media.mtvnservices.com/pmt/e1/players/mgid:arc:episode:southpark.de:/context3/config.xml?"
-	pageUrl += "uri=mgid:arc:episode:southpark.de:"+url+"&type=network&ref=southpark.cc.com&geo="+ geolocation +"&group=entertainment&network=None&device=Other"
+	pageUrl += "uri=mgid:arc:episode:southpark.de:"+url+"&type=network&ref=southpark.de&geo="+ geolocation +"&group=entertainment&network=None&device=Other"
 	i = 0
 	pl=xbmc.PlayList(xbmc.PLAYLIST_VIDEO)
 	pl.clear()
