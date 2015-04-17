@@ -34,7 +34,11 @@ print "GEO %s AUDIO %s" % (geolocation, audio)
 
 def index():
     xbmcplugin.addSortMethod(pluginhandle, xbmcplugin.SORT_METHOD_LABEL)
-    content = getUrl("http://southpark.cc.com")
+    content = ""
+    if geolocation == "DE":
+        content = getUrl("http://southpark.de")
+    else:
+        content = getUrl("http://southpark.cc.com")
     if not "/messages/geoblock/" in content and not "/geoblock/messages/" in content:
         addDir(translation(30005), "Featured", 'listVideos', icon)
         addLink(translation(30006), "Random", 'listVideos', icon)
@@ -80,10 +84,10 @@ def playTest(url, title, thumbnail):
 	app = "viacommtvstrm"
 	conn = "B:0"
 	rtmp = "rtmpe://viacommtvstrmfs.fplive.net:1935/viacommtvstrm"
-	pageUrl = "http://media.mtvnservices.com/player/prime/mediaplayerprime.2.7.11.swf?uri=mgid:arc:episode:southparkstudios.com:"+url
+	pageUrl = "http://media.mtvnservices.com/player/prime/mediaplayerprime.2.7.11.swf?uri=mgid:arc:episode:southpark.de:"+url
 	pageUrl += "&type=network&ref=southpark.cc.com&geo="+ geolocation +"&group=entertainment&network=None&device=Other&"
-	pageUrl += "CONFIG_URL=http://media.mtvnservices.com/pmt/e1/players/mgid:arc:episode:southparkstudios.com:/context3/config.xml?"
-	pageUrl += "uri=mgid:arc:episode:southparkstudios.com:"+url+"&type=network&ref=southpark.cc.com&geo="+ geolocation +"&group=entertainment&network=None&device=Other"
+	pageUrl += "CONFIG_URL=http://media.mtvnservices.com/pmt/e1/players/mgid:arc:episode:southpark.de:/context3/config.xml?"
+	pageUrl += "uri=mgid:arc:episode:southpark.de:"+url+"&type=network&ref=southpark.cc.com&geo="+ geolocation +"&group=entertainment&network=None&device=Other"
 	i = 0
 	pl=xbmc.PlayList(xbmc.PLAYLIST_VIDEO)
 	pl.clear()
@@ -177,7 +181,7 @@ def getCarousel():
 	return "http://southpark.cc.com" + carousel
 
 def getMediagen(id):
-	feed = getUrl("http://southpark.cc.com/feeds/video-player/mrss/mgid:arc:episode:southparkstudios.com:"+id+"?lang="+audio)
+	feed = getUrl("http://southpark.cc.com/feeds/video-player/mrss/mgid:arc:episode:southpark.de:"+id+"?lang="+audio)
 	root = ET.fromstring(feed)
 	mediagen = []
 	for item in root.iter('guid'):
