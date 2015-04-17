@@ -21,19 +21,28 @@ pluginhandle = int(sys.argv[1])
 icon = xbmc.translatePath('special://home/addons/'+addonID+'/icon.png')
 defaultFanart = xbmc.translatePath('special://home/addons/'+addonID+'/fanart.png')
 forceViewMode = True
+audio_pos = int(addon.getSetting('audio_lang'))
+audio = ["EN","ES","DE"]
+audio = audio[audio_pos].lower()
+audio_links = ["/full-episodes/","/episodios-en-espanol/"]
+geolocation_pos = int(addon.getSetting('geolocation'))
+geolocation = ["US","UK","ES","DE","IT"]
+geolocation = geolocation[geolocation_pos]
 viewMode = str("504")
+
+print "GEO %s AUDIO %s" % (geolocation, audio)
 
 def index():
     xbmcplugin.addSortMethod(pluginhandle, xbmcplugin.SORT_METHOD_LABEL)
     content = getUrl("http://southpark.cc.com")
     if not "/messages/geoblock/" in content and not "/geoblock/messages/" in content:
-        addDir("Featured", "Featured", 'listVideos', icon)
-        addLink("Random Episode", "Random", 'listVideos', icon)
+        addDir(translation(30005), "Featured", 'listVideos', icon)
+        addLink(translation(30006), "Random", 'listVideos', icon)
         for i in range(1, 19):
-            addDir("Season "+str(i), 'season-'+str(i), 'listVideos', icon)
+            addDir(translation(30007)+" "+str(i), 'season-'+str(i), 'listVideos', icon)
         xbmcplugin.endOfDirectory(pluginhandle)
     else:
-        notifyText("You seem to be geoblocked. Try to use a proxy", 6000)
+        notifyText(translation(30002), 6000)
 
 
 def listVideos(url):
@@ -44,7 +53,7 @@ def listVideos(url):
         for episode in promojson['results']:
             addLink(episode['title'], episode['itemId'], 'playVideo', episode['images'], episode['description'], episode['episodeNumber'][0]+episode['episodeNumber'][1], episode['episodeNumber'][2]+episode['episodeNumber'][3],episode['originalAirDate'])
     elif url == "Random":
-		notifyText("Loading Random Episode", 2000)
+		notifyText(translation(30003), 2000)
 		rand = getUrl("http://southpark.cc.com/full-episodes/random").split("<link rel=\"canonical\" href=\"")[1].split("\" />")[0]
 		rand = rand.split("http://southpark.cc.com/full-episodes/s")[1].split("-")[0]
 		rand = rand.split("e")
@@ -64,7 +73,7 @@ def listVideos(url):
     xbmc.executebuiltin('Container.SetViewMode('+viewMode+')')
 
 def playTest(url, title, thumbnail):
-	notifyText("Loading " + title, 3000)
+	notifyText(translation(30009)+" " + title, 3000)
 	mediagen = getMediagen(url)
 	swfVfy = "http://media.mtvnservices.com/player/prime/mediaplayerprime.2.7.11.swf" 
 	flashVer = "WIN 12,0,0,70"
@@ -72,9 +81,9 @@ def playTest(url, title, thumbnail):
 	conn = "B:0"
 	rtmp = "rtmpe://viacommtvstrmfs.fplive.net:1935/viacommtvstrm"
 	pageUrl = "http://media.mtvnservices.com/player/prime/mediaplayerprime.2.7.11.swf?uri=mgid:arc:episode:southparkstudios.com:"+url
-	pageUrl += "&type=network&ref=southpark.cc.com&geo=IT&group=entertainment&network=None&device=Other&"
+	pageUrl += "&type=network&ref=southpark.cc.com&geo="+ geolocation +"&group=entertainment&network=None&device=Other&"
 	pageUrl += "CONFIG_URL=http://media.mtvnservices.com/pmt/e1/players/mgid:arc:episode:southparkstudios.com:/context3/config.xml?"
-	pageUrl += "uri=mgid:arc:episode:southparkstudios.com:"+url+"&type=network&ref=southpark.cc.com&geo=IT&group=entertainment&network=None&device=Other"
+	pageUrl += "uri=mgid:arc:episode:southparkstudios.com:"+url+"&type=network&ref=southpark.cc.com&geo="+ geolocation +"&group=entertainment&network=None&device=Other"
 	i = 0
 	pl=xbmc.PlayList(xbmc.PLAYLIST_VIDEO)
 	pl.clear()
@@ -83,8 +92,8 @@ def playTest(url, title, thumbnail):
 		rtmpe = getRTMPE(media)
 		best = len(rtmpe)-1
 		playpath = "mp4:"+rtmpe[best]
-		li = xbmcgui.ListItem(title, iconImage=thumbnail, thumbnailImage=thumbnail)
 		videoname = title + " (" + str(i+1) + " of " + parts +")"
+		li = xbmcgui.ListItem(videoname, iconImage=thumbnail, thumbnailImage=thumbnail)
 		li.setInfo('video', {'Title': videoname})
 		li.setProperty('PlayPath', playpath)
 		li.setProperty('conn', conn)
@@ -103,7 +112,7 @@ def playTest(url, title, thumbnail):
 			break
 		time.sleep(1)
 	if not player.isPlaying():
-		notifyText("Cannot open the stream. Bad internet connection?", 4000)
+		notifyText(translation(30004), 4000)
 		player.stop()
 		pl.clear()
 	while player.isPlaying():
@@ -112,7 +121,9 @@ def playTest(url, title, thumbnail):
 	pl.clear()
 	return
 
-
+def translation(id):
+    return addon.getLocalizedString(id).encode('utf-8')
+	
 def notifyText(text, time=5000):
 	__addon__       = xbmcaddon.Addon(id=addonID)
 	__addonname__   = __addon__.getAddonInfo('name')
@@ -127,26 +138,10 @@ def getUrl(url):
 		response = urllib2.urlopen(req)
 		link = response.read()
 		response.close()
-	except Exception:
-		notifyText("Check your internet connection!", 3000)
+	except urllib2.URLError:
+		notifyText(translation(30010), 3000)
 		raise
 	return link
-
-
-def translation(id):
-    return addon.getLocalizedString(id).encode('utf-8')
-
-
-def parameters_string_to_dict(parameters):
-    paramDict = {}
-    if parameters:
-        paramPairs = parameters[1:].split("&")
-        for paramsPair in paramPairs:
-            paramSplits = paramsPair.split('=')
-            if (len(paramSplits)) == 2:
-                paramDict[paramSplits[0]] = paramSplits[1]
-    return paramDict
-
 
 def addLink(name, url, mode, iconimage, desc="", season="", episode="", date=""):
     u = sys.argv[0]+"?url="+urllib.quote_plus(url)+"&mode="+str(mode)+"&title="+str(name)+"&thumbnail="+str(iconimage)
@@ -182,7 +177,7 @@ def getCarousel():
 	return "http://southpark.cc.com" + carousel
 
 def getMediagen(id):
-	feed = getUrl("http://southpark.cc.com/feeds/video-player/mrss/mgid:arc:episode:southparkstudios.com:"+id+"?lang=en")
+	feed = getUrl("http://southpark.cc.com/feeds/video-player/mrss/mgid:arc:episode:southparkstudios.com:"+id+"?lang="+audio)
 	root = ET.fromstring(feed)
 	mediagen = []
 	for item in root.iter('guid'):
@@ -191,7 +186,7 @@ def getMediagen(id):
 	return mediagen
 
 def getRTMPE(mediagen):
-	xml = getUrl("http://southpark.cc.com/feeds/player/mediagen?uri="+mediagen+"&device=Other&aspectRatio=16:9&lang=en&acceptMethods=fms,hdn1,hds")
+	xml = getUrl("http://southpark.cc.com/feeds/player/mediagen?uri="+mediagen+"&device=Other&aspectRatio=16:9&lang="+audio+"&acceptMethods=fms,hdn1,hds")
 	parser = ET.XMLParser(encoding="utf-8")
 	root = ET.fromstring(xml, parser=parser)
 	rtmpe = []
@@ -199,7 +194,16 @@ def getRTMPE(mediagen):
 		if item.text != None:
 			rtmpe.append(item.text.split('viacomccstrm/')[1])
 	return rtmpe
-
+	
+def parameters_string_to_dict(parameters):
+    paramDict = {}
+    if parameters:
+        paramPairs = parameters[1:].split("&")
+        for paramsPair in paramPairs:
+            paramSplits = paramsPair.split('=')
+            if (len(paramSplits)) == 2:
+                paramDict[paramSplits[0]] = paramSplits[1]
+    return paramDict
 	
 params = parameters_string_to_dict(sys.argv[2])
 mode = urllib.unquote_plus(params.get('mode', ''))
