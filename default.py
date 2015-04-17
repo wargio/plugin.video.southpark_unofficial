@@ -58,7 +58,12 @@ def listVideos(url):
             addLink(episode['title'], episode['itemId'], 'playVideo', episode['images'], episode['description'], episode['episodeNumber'][0]+episode['episodeNumber'][1], episode['episodeNumber'][2]+episode['episodeNumber'][3],episode['originalAirDate'])
     elif url == "Random":
 		notifyText(translation(30003), 2000)
-		rand = getUrl("http://southpark.cc.com/full-episodes/random").split("<link rel=\"canonical\" href=\"")[1].split("\" />")[0]
+		rand = ""
+		if geolocation == "DE":
+			rand = getUrl("http://www.southpark.de/alle-episoden/random")
+		else
+			rand = getUrl("http://southpark.cc.com/full-episodes/random")
+		rand = rand.split("<link rel=\"canonical\" href=\"")[1].split("\" />")[0]
 		rand = rand.split("http://southpark.cc.com/full-episodes/s")[1].split("-")[0]
 		rand = rand.split("e")
 		jsonrsp = getUrl("http://southpark.cc.com/feeds/carousel/video/57baee9c-b611-4260-958b-05315479a7fc/30/1/json/!airdate/season-"+str(int(rand[0])))
