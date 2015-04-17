@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="plugin.video.southpark_unofficial" name="SouthPark" version="0.1.0" provider-name="Deroad">
+<addon id="plugin.video.southpark_unofficial" name="South Park" version="0.1.0" provider-name="Deroad">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
     </requires>
@@ -14,7 +14,7 @@
         <disclaimer lang="en">Some parts of this addon may not be legal in your country of residence - please check with your local laws before installing.</disclaimer>
         <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
         <source>https://github.com/wargio/plugin.video.southpark_unofficial</source>
-        <forum></forum>
+        <forum>http://forum.kodi.tv/showthread.php?tid=224662</forum>
         <email>wargio at libero dot it</email>
         <website>http://www.southpark.cc.com</website>
     </extension>
