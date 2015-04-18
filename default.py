@@ -212,7 +212,7 @@ def getMediagen(id):
 def getRTMPE(mediagen):
 	xml = ""
 	if audio == "de":
-		xml = getUrl("http://www.southpark.de/feeds/video-player/mrss/mgid:arc:episode:southpark.de:"+id+"?lang="+audio)
+		xml = getUrl("http://www.southpark.de/feeds/player/mediagen?uri="+mediagen+"&device=Other&aspectRatio=16:9&lang="+audio+"&acceptMethods=fms,hdn1,hds")
 	else:
 		xml = getUrl("http://southpark.cc.com/feeds/player/mediagen?uri="+mediagen+"&device=Other&aspectRatio=16:9&lang="+audio+"&acceptMethods=fms,hdn1,hds")
 	parser = ET.XMLParser(encoding="utf-8")
