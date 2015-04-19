@@ -24,29 +24,28 @@ forceViewMode = True
 audio_pos = int(addon.getSetting('audio_lang'))
 audio = ["en","es","de"]
 audio = audio[audio_pos]
-audio_links = ["/full-episodes/","/episodios-en-espanol/","/alle-episoden/"]
+mainweb_geo = ["southpark.cc.com","southpark.cc.com","www.southpark.de"]
+fullep_geo = ["/full-episodes/","/episodios-en-espanol/","/alle-episoden/"]
+pageurl_geo = ["southpark.cc.com","southpark.cc.com","southpark.de"]
+rtmp_geo = ["rtmpe://viacommtvstrmfs.fplive.net:1935/viacommtvstrm","rtmpe://viacommtvstrmfs.fplive.net:1935/viacommtvstrm","rtmpe://cp75298.edgefcs.net/ondemand"]
+mediagenopts_geo = ["&suppressRegisterBeacon=true&lang=","&suppressRegisterBeacon=true&lang=","&device=Other&aspectRatio=16:9&lang="]
 geolocation_pos = int(addon.getSetting('geolocation'))
 geolocation = ["US","UK","ES","DE","IT"]
 geolocation = geolocation[geolocation_pos]
 viewMode = str("504")
 
-print "GEO %s AUDIO %s" % (geolocation, audio)
-
 def index():
     xbmcplugin.addSortMethod(pluginhandle, xbmcplugin.SORT_METHOD_LABEL)
     content = ""
-    if audio == "de":
-        content = getUrl("http://southpark.de")
-    else:
-        content = getUrl("http://southpark.cc.com")
-    if not "/messages/geoblock/" in content and not "/geoblock/messages/" in content:
-        addDir(translation(30005), "Featured", 'listVideos', icon)
-        addLink(translation(30006), "Random", 'listVideos', icon)
-        for i in range(1, 19):
-            addDir(translation(30007)+" "+str(i), 'season-'+str(i), 'listVideos', icon)
-        xbmcplugin.endOfDirectory(pluginhandle)
-    else:
-        notifyText(translation(30002), 6000)
+    content = getUrl("http://"+mainweb_geo[audio_pos])
+    if "/messages/geoblock/" in content or "/geoblock/messages/" in content:
+        notifyText(translation(30002), 7000)
+	
+    addDir(translation(30005), "Featured", 'listVideos', icon)
+    addLink(translation(30006), "Random", 'listVideos', icon)
+    for i in range(1, 19):
+        addDir(translation(30007)+" "+str(i), 'season-'+str(i), 'listVideos', icon)
+    xbmcplugin.endOfDirectory(pluginhandle)
 
 
 def listVideos(url):
@@ -58,18 +57,15 @@ def listVideos(url):
             addLink(episode['title'], episode['itemId'], 'playVideo', episode['images'], episode['description'], episode['episodeNumber'][0]+episode['episodeNumber'][1], episode['episodeNumber'][2]+episode['episodeNumber'][3],episode['originalAirDate'])
     elif url == "Random":
 		notifyText(translation(30003), 2000)
-		rand = ""
-		if audio == "de":
-			rand = getUrl("http://www.southpark.de/alle-episoden/random")
-		else:
-			rand = getUrl("http://southpark.cc.com/full-episodes/random")
+		rand = getUrl("http://"+mainweb_geo[audio_pos]+fullep_geo[audio_pos]+"random")
 		rand = rand.split("<link rel=\"canonical\" href=\"")[1].split("\" />")[0]
-		rand = rand.split("http://southpark.cc.com/full-episodes/s")[1].split("-")[0]
+		where = "http://"+mainweb_geo[audio_pos]+fullep_geo[audio_pos]+"s"
+		rand = rand.split(where)[1].split("-")[0]
 		rand = rand.split("e")
+		# cc.com is the ony one with jsons so descriptions will be in english
 		jsonrsp = getUrl("http://southpark.cc.com/feeds/carousel/video/57baee9c-b611-4260-958b-05315479a7fc/30/1/json/!airdate/season-"+str(int(rand[0])))
 		seasonjson = json.loads(jsonrsp)
 		ep = int(rand[1])-1
-		print ep
 		episode = seasonjson['results'][ep]
 		addLink(episode['title'], episode['itemId'], 'playVideo', episode['images'], episode['description'], episode['episodeNumber'][0]+episode['episodeNumber'][1], episode['episodeNumber'][2]+episode['episodeNumber'][3],episode['originalAirDate'])
     else:
@@ -86,24 +82,13 @@ def playTest(url, title, thumbnail):
 	mediagen = getMediagen(url)
 	swfVfy = "http://media.mtvnservices.com/player/prime/mediaplayerprime.2.7.11.swf" 
 	flashVer = "WIN 12,0,0,70"
-	app = "viacommtvstrm"
 	conn = "B:0"
 	rtmp = ""
-	pageUrl = ""
-	if audio == "de":
-		rtmp = "rtmpe://cp75298.edgefcs.net/ondemand/mtvnorigin"
-		pageUrl = "http://media.mtvnservices.com/player/prime/mediaplayerprime.2.7.11.swf?uri=mgid:arc:episode:southpark.de:"+url
-	else:
-		rtmp = "rtmpe://viacommtvstrmfs.fplive.net:1935/viacommtvstrm"
-		pageUrl = "http://media.mtvnservices.com/player/prime/mediaplayerprime.2.7.11.swf?uri=mgid:arc:episode:southpark.cc.com:"+url
-	pageUrl += "&type=network&ref=southpark.cc.com&geo="+ geolocation +"&group=entertainment&network=None&device=Other&"
-	if audio == "de":
-		pageUrl += "CONFIG_URL=http://media.mtvnservices.com/pmt/e1/players/mgid:arc:episode:southpark.de:/context3/config.xml?"
-		pageUrl += "uri=mgid:arc:episode:southpark.de:"+url+"&type=network&ref=southpark.de&geo="+ geolocation +"&group=entertainment&network=None&device=Other"
-	else:
-		pageUrl += "CONFIG_URL=http://media.mtvnservices.com/pmt/e1/players/mgid:arc:episode:southpark.cc.com:/context3/config.xml?"
-		pageUrl += "uri=mgid:arc:episode:southpark.cc.com:"+url+"&type=network&ref=southpark.de&geo="+ geolocation +"&group=entertainment&network=None&device=Other"
-	print pageUrl
+	pageUrl = "http://media.mtvnservices.com/player/prime/mediaplayerprime.2.7.11.swf?uri=mgid:arc:episode:"+pageurl_geo[audio_pos]+":"+url
+	if audio != "de":
+		pageUrl += "&type=network&ref=southpark.cc.com&geo="+ geolocation +"&group=entertainment&network=None&device=Other&"
+	pageUrl += "&CONFIG_URL=http://media.mtvnservices.com/pmt/e1/players/mgid:arc:episode:"+pageurl_geo[audio_pos]+":/context3/config.xml?"
+	pageUrl += "uri=mgid:arc:episode:"+pageurl_geo[audio_pos]+":"+url+"&type=network&ref="+pageurl_geo[audio_pos]+"&geo="+ geolocation +"&group=entertainment&network=None&device=Other"
 	i = 0
 	pl=xbmc.PlayList(xbmc.PLAYLIST_VIDEO)
 	pl.clear()
@@ -111,7 +96,11 @@ def playTest(url, title, thumbnail):
 	for media in mediagen:
 		rtmpe = getRTMPE(media)
 		best = len(rtmpe)-1
-		playpath = "mp4:"+rtmpe[best]
+		rtmp = rtmp_geo[audio_pos]
+		if audio == "de" and "ondemand" in rtmpe[best]:
+			playpath = "mp4:"+rtmpe[best].split('ondemand/')[1]
+		else:
+			playpath = "mp4:"+rtmpe[best].split('viacomccstrm/')[1]
 		videoname = title + " (" + str(i+1) + " of " + parts +")"
 		li = xbmcgui.ListItem(videoname, iconImage=thumbnail, thumbnailImage=thumbnail)
 		li.setInfo('video', {'Title': videoname})
@@ -120,7 +109,6 @@ def playTest(url, title, thumbnail):
 		# li.setProperty('rtmp', rtmp)
 		li.setProperty('flashVer', flashVer)
 		li.setProperty('pageUrl', pageUrl)
-		li.setProperty('app', app)
 		li.setProperty('SWFPlayer', swfVfy)
 		li.setProperty("SWFVerify", "true")
 		pl.add(url=rtmp, listitem=li, index=i)
@@ -198,34 +186,28 @@ def getCarousel():
 
 def getMediagen(id):
 	feed = ""
-	if audio == "de":
-		feed = getUrl("http://www.southpark.de/feeds/video-player/mrss/mgid:arc:episode:southpark.de:"+id+"?lang="+audio)
-	else:
-		feed = getUrl("http://southpark.cc.com/feeds/video-player/mrss/mgid:arc:episode:southpark.cc.com:"+id+"?lang="+audio)
+	feed = getUrl("http://"+mainweb_geo[audio_pos]+"/feeds/video-player/mrss/mgid:arc:episode:"+pageurl_geo[audio_pos]+":"+id+"?lang="+audio)
 	root = ET.fromstring(feed)
 	mediagen = []
 	for item in root.iter('guid'):
-		if item.text != None:
+		if item.text != None and item.text != "bumper":
 			mediagen.append(item.text)
 	return mediagen
 
 def getRTMPE(mediagen):
 	xml = ""
-	if audio == "de":
-		xml = getUrl("http://www.southpark.de/feeds/video-player/mediagen?uri=mgid:arc:episode:southpark.de:"+mediagen+"&suppressRegisterBeacon=true&lang="+audio+"&acceptMethods=fms,hdn1,hds")
-	else:
-		xml = getUrl("http://southpark.cc.com/feeds/player/mediagen?uri="+mediagen+"&device=Other&aspectRatio=16:9&lang="+audio+"&acceptMethods=fms,hdn1,hds")
+	xml = getUrl("http://"+mainweb_geo[audio_pos]+"/feeds/video-player/mediagen?uri="+mediagen+mediagenopts_geo[audio_pos]+audio+"&acceptMethods=fms,hdn1,hds")
 	parser = ET.XMLParser(encoding="utf-8")
 	root = ET.fromstring(xml, parser=parser)
 	rtmpe = []
 	if audio == "de":
 		for item in root.iter('src'):
 			if item.text != None:
-				rtmpe.append(item.text.split('mtvnorigin/')[1])
+				rtmpe.append(item.text)
 	else:
 		for item in root.iter('src'):
 			if item.text != None:
-				rtmpe.append(item.text.split('viacomccstrm/')[1])
+				rtmpe.append(item.text)
 	return rtmpe
 	
 def parameters_string_to_dict(parameters):

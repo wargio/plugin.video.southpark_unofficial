@@ -1,7 +1,7 @@
 <strings>
     <string id="30000">Lingua Audio</string>
 	<string id="30001">Geolocalizzazione</string>
-	<string id="30002">Il tuo paese e' bloccato. Prova ad usare un proxy</string>
+	<string id="30002">Il tuo paese e' bloccato. Lo ignorero', ma tu sappilo!</string>
 	<string id="30003">Caricamento Episodio Random</string>
 	<string id="30004">Non riesco ad aprire lo stream. No Connessione?</string>
 	<string id="30005">In Vetrina</string>
