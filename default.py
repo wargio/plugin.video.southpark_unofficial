@@ -3,7 +3,10 @@
 import sys
 import re
 import os
-import json
+if sys.version_info >=  (2, 7):
+    import json as _json
+else:
+    import simplejson as _json 
 import time
 import socket
 import urllib
@@ -52,7 +55,7 @@ def listVideos(url):
     xbmcplugin.setContent(pluginhandle, "episodes")
     if url == "Featured":
         jsonrsp = getUrl(getCarousel())
-        promojson = json.loads(jsonrsp)
+        promojson = _json.loads(jsonrsp)
         for episode in promojson['results']:
             addLink(episode['title'], episode['itemId'], 'playVideo', episode['images'], episode['description'], episode['episodeNumber'][0]+episode['episodeNumber'][1], episode['episodeNumber'][2]+episode['episodeNumber'][3],episode['originalAirDate'])
     elif url == "Random":
@@ -64,14 +67,14 @@ def listVideos(url):
 		rand = rand.split("e")
 		# cc.com is the ony one with jsons so descriptions will be in english
 		jsonrsp = getUrl("http://southpark.cc.com/feeds/carousel/video/57baee9c-b611-4260-958b-05315479a7fc/30/1/json/!airdate/season-"+str(int(rand[0])))
-		seasonjson = json.loads(jsonrsp)
+		seasonjson = _json.loads(jsonrsp)
 		ep = int(rand[1])-1
 		episode = seasonjson['results'][ep]
 		addLink(episode['title'], episode['itemId'], 'playVideo', episode['images'], episode['description'], episode['episodeNumber'][0]+episode['episodeNumber'][1], episode['episodeNumber'][2]+episode['episodeNumber'][3],episode['originalAirDate'])
     else:
         xbmcplugin.addSortMethod(pluginhandle, xbmcplugin.SORT_METHOD_EPISODE)
         jsonrsp = getUrl("http://southpark.cc.com/feeds/carousel/video/57baee9c-b611-4260-958b-05315479a7fc/30/1/json/!airdate/"+url)
-        seasonjson = json.loads(jsonrsp)
+        seasonjson = _json.loads(jsonrsp)
         for episode in seasonjson['results']:
             addLink(episode['title'], episode['itemId'], 'playVideo', episode['images'], episode['description'], episode['episodeNumber'][0]+episode['episodeNumber'][1], episode['episodeNumber'][2]+episode['episodeNumber'][3],episode['originalAirDate'])
     xbmcplugin.endOfDirectory(pluginhandle)
@@ -113,7 +116,7 @@ def playTest(url, title, thumbnail):
 		li.setProperty("SWFVerify", "true")
 		pl.add(url=rtmp, listitem=li, index=i)
 		i += 1
-	player = xbmc.Player(xbmc.PLAYER_CORE_DVDPLAYER)
+	player = xbmc.Player()
 	player.play(pl)
 	for s in xrange(1):
 		if player.isPlaying():
