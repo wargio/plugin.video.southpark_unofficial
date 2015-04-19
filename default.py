@@ -99,9 +99,10 @@ def playTest(url, title, thumbnail):
 	for media in mediagen:
 		rtmpe = getRTMPE(media)
 		best = len(rtmpe)-1
-		if audio == "de" and "viacomccstrm" in rtmpe[best]
-			audio_pos = 0
-		rtmp = rtmp_geo[audio_pos]
+		rtmpgeo = audio_pos
+		if audio == "de" and "viacomccstrm" in rtmpe[best]:
+			rtmpgeo = 0
+		rtmp = rtmp_geo[rtmpgeo]
 		if audio == "de" and "ondemand" in rtmpe[best]:
 			playpath = "mp4:"+rtmpe[best].split('ondemand/')[1]
 		else:
