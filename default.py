@@ -156,6 +156,7 @@ def playTest(url, title, thumbnail):
 			ccs.append(cc[2])
 	i = 0
 	for li in lis:
+		videoname = title + " (" + str(i+1) + " of " + parts +")"
 		notifyText(translation(30009)+" " + videoname, 3000)
 		player.play(rtmp, listitem=lis[i])
 		for s in xrange(1):
