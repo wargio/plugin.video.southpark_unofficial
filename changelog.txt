@@ -16,3 +16,5 @@
 - re-added playlist. now works with SUBS! next/back now works and perma cc can be enabled via options.
 0.2.7
 - FireTV fix
+0.3.0
+- adding pre Python 2.7 support.
