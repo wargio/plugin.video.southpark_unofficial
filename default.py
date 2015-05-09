@@ -234,8 +234,7 @@ def getMediagen(id):
 def getVideoData(mediagen):
 	xml = ""
 	xml = getUrl("http://"+mainweb_geo[audio_pos]+"/feeds/"+mediagen_geo[audio_pos]+"/mediagen?uri="+mediagen+mediagenopts_geo[audio_pos]+audio+"&acceptMethods=fms,hdn1,hds")
-	parser = ET.XMLParser()
-	root = ET.fromstring(xml, parser=parser)
+	root = ET.fromstring(xml)
 	rtmpe = []
 	duration = []
 	captions = []
