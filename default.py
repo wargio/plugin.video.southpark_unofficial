@@ -3,10 +3,10 @@
 import sys
 import re
 import os
-if sys.version_info >=  (2, 7):
-    import json as _json
-else:
-    import simplejson as _json 
+#if sys.version_info >=  (2, 7):
+import json as _json
+#else:
+#    import simplejson as _json 
 import time
 import socket
 import urllib
