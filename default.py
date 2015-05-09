@@ -3,10 +3,7 @@
 import sys
 import re
 import os
-#if sys.version_info >=  (2, 7):
 import json as _json
-#else:
-#    import simplejson as _json 
 import time
 import socket
 import urllib
@@ -224,9 +221,14 @@ def getMediagen(id):
 	feed = getUrl("http://"+mainweb_geo[audio_pos]+"/feeds/video-player/mrss/mgid:arc:episode:"+pageurl_geo[audio_pos]+":"+id+"?lang="+audio)
 	root = ET.fromstring(feed)
 	mediagen = []
-	for item in root.iter('guid'):
-		if item.text != None and item.text != "bumper":
-			mediagen.append(item.text)
+	if sys.version_info >=  (2, 7):
+		for item in root.iter('guid'):
+			if item.text != None and item.text != "bumper":
+				mediagen.append(item.text)
+	else:
+		for item in root.getiterator('guid'):
+			if item.text != None and item.text != "bumper":
+				mediagen.append(item.text)
 	return mediagen
 
 def getVideoData(mediagen):
@@ -237,15 +239,27 @@ def getVideoData(mediagen):
 	rtmpe = []
 	duration = []
 	captions = []
-	for item in root.iter('src'):
-		if item.text != None:
-			rtmpe.append(item.text)
-	for item in root.iter('rendition'):
-		if item.attrib['duration'] != None:
-			duration.append(int(item.attrib['duration']))
-	for item in root.iter('typographic'):
-		if item.attrib['src'] != None:
-			captions.append(item.attrib['src'])
+	if sys.version_info >=  (2, 7):
+		for item in root.iter('src'):
+			if item.text != None:
+				rtmpe.append(item.text)
+		for item in root.iter('rendition'):
+			if item.attrib['duration'] != None:
+				duration.append(int(item.attrib['duration']))
+		for item in root.iter('typographic'):
+			if item.attrib['src'] != None:
+				captions.append(item.attrib['src'])
+	else:
+		for item in root.getiterator('src'):
+			if item.text != None:
+				rtmpe.append(item.text)
+		for item in root.getiterator('rendition'):
+			if item.attrib['duration'] != None:
+				duration.append(int(item.attrib['duration']))
+		for item in root.getiterator('typographic'):
+			if item.attrib['src'] != None:
+				captions.append(item.attrib['src'])
+
 	return [rtmpe,duration,captions]
 	
 def parameters_string_to_dict(parameters):
