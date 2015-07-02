@@ -267,7 +267,6 @@ def getMediagen(id):
 def getVideoData(mediagen):
 	xml = ""
 	xml = getUrl(mediagen)
-	print mediagen
 	root = ET.fromstring(xml)
 	rtmpe = []
 	duration = []
