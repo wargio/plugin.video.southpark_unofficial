@@ -32,3 +32,6 @@
 - Added Season 19.
 0.3.7
 - Fixed german support.
+0.3.8
+- Fixed premiere episodes
+- Added [Banned]/[Premiere] tags

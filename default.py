@@ -23,6 +23,7 @@ icon = xbmc.translatePath('special://home/addons/'+addonID+'/icon.png')
 defaultFanart = xbmc.translatePath('special://home/addons/'+addonID+'/fanart.jpg')
 forceViewMode = True
 audio_pos = int(addon.getSetting('audio_lang'))
+playrandom = addon.getSetting('playrandom') == "true"
 audio = ["en","es","de"]
 audio = audio[audio_pos]
 mainweb_geo = ["southpark.cc.com","southpark.cc.com","www.southpark.de"]
@@ -63,7 +64,9 @@ def list(url):
         promojson = _json.loads(jsonrsp)
         for episode in promojson['results']:
             if episode['_availability'] == "banned":
-				addLink(episode['title'], "banned", 'play', episode['images'], episode['description'], episode['episodeNumber'][0]+episode['episodeNumber'][1], episode['episodeNumber'][2]+episode['episodeNumber'][3],episode['originalAirDate'])
+				addLink(episode['title'] + " [Banned]" , "banned", 'play', episode['images'], episode['description'], episode['episodeNumber'][0]+episode['episodeNumber'][1], episode['episodeNumber'][2]+episode['episodeNumber'][3],episode['originalAirDate'])
+            elif episode['_availability'] == "beforepremiere":
+				addLink(episode['title'] + " [Premiere]", "beforepremiere", 'play', episode['images'], episode['description'], episode['episodeNumber'][0]+episode['episodeNumber'][1], episode['episodeNumber'][2]+episode['episodeNumber'][3],episode['originalAirDate'])
             else:
 				addLink(episode['title'].encode('utf-8'), episode['itemId'].encode('utf-8'), 'play', episode['images'].encode('utf-8'), episode['description'].encode('utf-8'), episode['episodeNumber'][0]+episode['episodeNumber'][1], episode['episodeNumber'][2]+episode['episodeNumber'][3],episode['originalAirDate'].encode('utf-8'))
     elif url == "Random":
@@ -78,10 +81,17 @@ def list(url):
 		seasonjson = _json.loads(jsonrsp)
 		ep = int(rand[1])-1
 		episode = seasonjson['results'][ep]
-		if episode['_availability'] == "banned":
-			addLink(episode['title'], "banned", 'play', episode['images'], episode['description'], episode['episodeNumber'][0]+episode['episodeNumber'][1], episode['episodeNumber'][2]+episode['episodeNumber'][3],episode['originalAirDate'])
+		if playrandom:
+			if episode['_availability'] == "banned":
+				episode = seasonjson['results'][0]
+			playEpisode(episode['itemId'].encode('utf-8'), episode['title'], episode['images'])
 		else:
-			addLink(episode['title'].encode('utf-8'), episode['itemId'].encode('utf-8'), 'play', episode['images'].encode('utf-8'), episode['description'].encode('utf-8'), episode['episodeNumber'][0]+episode['episodeNumber'][1], episode['episodeNumber'][2]+episode['episodeNumber'][3],episode['originalAirDate'].encode('utf-8'))
+			if episode['_availability'] == "banned":
+				addLink(episode['title'] + " [Banned]" , "banned", 'play', episode['images'], episode['description'], episode['episodeNumber'][0]+episode['episodeNumber'][1], episode['episodeNumber'][2]+episode['episodeNumber'][3],episode['originalAirDate'])
+			elif episode['_availability'] == "beforepremiere":
+				addLink(episode['title'] + " [Premiere]", "beforepremiere", 'play', episode['images'], episode['description'], episode['episodeNumber'][0]+episode['episodeNumber'][1], episode['episodeNumber'][2]+episode['episodeNumber'][3],episode['originalAirDate'])
+			else:
+				addLink(episode['title'].encode('utf-8'), episode['itemId'].encode('utf-8'), 'play', episode['images'].encode('utf-8'), episode['description'].encode('utf-8'), episode['episodeNumber'][0]+episode['episodeNumber'][1], episode['episodeNumber'][2]+episode['episodeNumber'][3],episode['originalAirDate'].encode('utf-8'))
     elif url == "Search":
 		keyboard = xbmc.Keyboard('')
 		keyboard.doModal()
@@ -92,7 +102,9 @@ def list(url):
 			seasonjson = _json.loads(jsonrsp)
 			for episode in seasonjson['results']:
 				if episode['_availability'] == "banned":
-					addLink(episode['title'], "banned", 'play', episode['images'], episode['description'], episode['episodeNumber'][0]+episode['episodeNumber'][1], episode['episodeNumber'][2]+episode['episodeNumber'][3],episode['originalAirDate'])
+					addLink(episode['title'] + " [Banned]" , "banned", 'play', episode['images'], episode['description'], episode['episodeNumber'][0]+episode['episodeNumber'][1], episode['episodeNumber'][2]+episode['episodeNumber'][3],episode['originalAirDate'])
+				elif episode['_availability'] == "beforepremiere":
+					addLink(episode['title'] + " [Premiere]", "beforepremiere", 'play', episode['images'], episode['description'], episode['episodeNumber'][0]+episode['episodeNumber'][1], episode['episodeNumber'][2]+episode['episodeNumber'][3],episode['originalAirDate'])
 				else:
 					addLink(episode['title'].encode('utf-8'), episode['itemId'].encode('utf-8'), 'play', episode['images'].encode('utf-8'), episode['description'].encode('utf-8'), episode['episodeNumber'][0]+episode['episodeNumber'][1], episode['episodeNumber'][2]+episode['episodeNumber'][3],episode['originalAirDate'].encode('utf-8'))
     else:
@@ -101,7 +113,9 @@ def list(url):
         seasonjson = _json.loads(jsonrsp)
         for episode in seasonjson['results']:
             if episode['_availability'] == "banned":
-				addLink(episode['title'], "banned", 'play', episode['images'], episode['description'], episode['episodeNumber'][0]+episode['episodeNumber'][1], episode['episodeNumber'][2]+episode['episodeNumber'][3],episode['originalAirDate'])
+				addLink(episode['title'] + " [Banned]" , "banned", 'play', episode['images'], episode['description'], episode['episodeNumber'][0]+episode['episodeNumber'][1], episode['episodeNumber'][2]+episode['episodeNumber'][3],episode['originalAirDate'])
+            elif episode['_availability'] == "beforepremiere":
+				addLink(episode['title'] + " [Premiere]", "beforepremiere", 'play', episode['images'], episode['description'], episode['episodeNumber'][0]+episode['episodeNumber'][1], episode['episodeNumber'][2]+episode['episodeNumber'][3],episode['originalAirDate'])
             else:
 				addLink(episode['title'].encode('utf-8'), episode['itemId'].encode('utf-8'), 'play', episode['images'].encode('utf-8'), episode['description'].encode('utf-8'), episode['episodeNumber'][0]+episode['episodeNumber'][1], episode['episodeNumber'][2]+episode['episodeNumber'][3],episode['originalAirDate'].encode('utf-8'))
     xbmcplugin.endOfDirectory(pluginhandle)
@@ -110,6 +124,9 @@ def list(url):
 def playEpisode(url, title, thumbnail):
 	if url == "banned":
 		notifyText(translation(30011), 7000)
+		return
+	elif url == "beforepremiere":
+		notifyText(translation(30014), 7000)
 		return
 	mediagen = getMediagen(url)
 	if len(mediagen) == 0:
