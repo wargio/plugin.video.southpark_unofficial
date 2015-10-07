@@ -144,7 +144,7 @@ def playEpisode(url, title, thumbnail):
 	if len(mediagen) == 0:
 		notifyText(translation(30011), 7000)
 		return
-	notifyText(translation(30009), 3000)
+	notifyText(translation(30009) + " " + encode(title), 3000)
 	rtmp = ""
 	pageUrl = "http://media.mtvnservices.com/player/prime/mediaplayerprime.2.11.3.swf?uri=mgid:arc:episode:"+pageurl_geo[audio_pos]+":"+url
 	pageUrl += "&type=network&ref=southpark.cc.com&geo="+ geolocation +"&group=entertainment&network=None&device=Other&networkConnectionType=None"
@@ -228,11 +228,14 @@ def playEpisode(url, title, thumbnail):
 	return
 
 def translation(id):
-    return addon.getLocalizedString(id).decode('utf-8')
+    return encode(addon.getLocalizedString(id))
 	
 def notifyText(text, time=5000):
-	addonname = addon.getAddonInfo('name')
-	notification = u'Notification(' + unicode(addonname) + u', ' + unicode(text) + u', ' + unicode(time) + u', ' + unicode(icon) + u')'
+	utext = encode(text)
+	uaddonname = encode(addon.getAddonInfo('name'))
+	utime = encode(str(time))
+	uicon = encode(icon);
+	notification = 'Notification(%s, %s, %s, %s)' % (uaddonname, utext, utime, uicon)
 	xbmc.executebuiltin(notification)
 
 def getUrl(url):
@@ -363,6 +366,13 @@ def getTimer(premiere):
 #	secs = int(diff % 60)
 	return "%02dd %02dh %02dm" % (days, hours, mins)
 
+def encode(string):
+	try:
+		return string.encode('UTF-8','replace')
+	except UnicodeError:
+		return string
+   
+	
 def JStoJSON(s):
 	s = re.sub("/\*([\s\S]*?)\*/", "", s)
 	s = s.replace('\n', '')
