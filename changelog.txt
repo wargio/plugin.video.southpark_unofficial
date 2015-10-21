@@ -41,3 +41,5 @@
 0.4.0
 - Fixed again DE support
 - Added DE descriptions/titles on seasons and random episodes.
+0.4.1
+- Fixed DE/EN/ES and carousel

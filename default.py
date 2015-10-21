@@ -84,7 +84,7 @@ def list(url):
 			jsonrsp = toUSJSON(jsonrsp)
 		else:
 			# cc.com is the ony one with jsons so descriptions will be in english
-			jsonrsp = getUrl("http://southpark.cc.com/feeds/carousel/video/57baee9c-b611-4260-958b-05315479a7fc/30/1/json/!airdate/season-"+str(int(rand[0]))+"?lang="+audio)
+			jsonrsp = getUrl("http://southpark.cc.com/feeds/carousel/video/06bb4aa7-9917-4b6a-ae93-5ed7be79556a/30/1/json/!airdate/season-"+str(int(rand[0]))+"?lang="+audio)
 		seasonjson = _json.loads(jsonrsp)
 		ep = int(rand[1])-1
 		episode = seasonjson['results'][ep]
@@ -121,7 +121,7 @@ def list(url):
 			jsonrsp = JStoJSON(jsonrsp)
 			jsonrsp = toUSJSON(jsonrsp)
         else:
-			jsonrsp = getUrl("http://southpark.cc.com/feeds/carousel/video/fba639b0-ae4d-49b0-9d5d-addb27823f4b/30/1/json/!airdate/season-"+url+"?lang="+audio)
+			jsonrsp = getUrl("http://southpark.cc.com/feeds/carousel/video/06bb4aa7-9917-4b6a-ae93-5ed7be79556a/30/1/json/!airdate/season-"+url+"?lang="+audio)
         seasonjson = _json.loads(jsonrsp)
         for episode in seasonjson['results']:
             if episode['_availability'] == "banned":
@@ -177,16 +177,13 @@ def playEpisode(url, title, thumbnail):
 		if "viacomccstrm" in rtmpe[best]:
 			playpath = "mp4:"+rtmpe[best].split('viacomccstrm/')[1]
 			rtmp = rtmp_geo[0]#rtmpe[best].split('viacomccstrm/')[0]+'viacomccstrm/'
-		elif "mtviestor" in rtmpe[best]:
-			playpath = "mp4:mtviestor/"+rtmpe[best].split('mtviestor/')[1]
-			rtmp = rtmpe[best].split('mtviestor/')[0]
 		videoname = title + " (" + str(i+1) + " of " + parts +")"
 		li = xbmcgui.ListItem(videoname, iconImage=thumbnail, thumbnailImage=thumbnail)
 		li.setInfo('video', {'Title': videoname})
 		li.setProperty('conn', "B:0")
 		if playpath != "":
 			li.setProperty('PlayPath', playpath)
-		li.setProperty('flashVer', "WIN 12,0,0,70")
+		li.setProperty('flashVer', "WIN 19,0,0,185")
 		li.setProperty('pageUrl', pageUrl)
 		li.setProperty('SWFPlayer', "http://media.mtvnservices.com/player/prime/mediaplayerprime.2.11.3.swf")
 		li.setProperty("SWFVerify", "true")
@@ -281,15 +278,15 @@ def addDir(name, url, mode, iconimage="DefaultFolder.png"):
     return ok
 
 def getCarousel():
-	html = getUrl("http://southpark.cc.com/")
-	html = html.split("</section><section class=")
-	data_url = html[1].split("data-url=\"")
-	data_url = data_url[1]
-	data_url = data_url.split("\"")[0]
-	carousel = data_url.split("{resultsPerPage}/{currentPage}/json/{sort}")[0]
-	carousel += "14/1/json/airdate"
-	carousel += data_url.split("{resultsPerPage}/{currentPage}/json/{sort}")[1]
-	return "http://southpark.cc.com" + carousel + "?lang="+audio
+##	html = getUrl("http://southpark.cc.com/")
+#	html = html.split("</section><section class=")
+#	data_url = html[1].split("data-url=\"")
+#	data_url = data_url[1]
+#	data_url = data_url.split("\"")[0]
+#	carousel = data_url.split("{resultsPerPage}/{currentPage}/json/{sort}")[0]
+#	carousel += "14/1/json/airdate"
+#	carousel += data_url.split("{resultsPerPage}/{currentPage}/json/{sort}")[1]
+	return "http://southpark.cc.com/feeds/carousel/video/351c1323-0b96-402d-a8b9-40d01b2e9bde/30/1/json/!airdate/promotion-0?lang="+audio
 
 def getMediagen(id):
 	feed = ""
@@ -310,6 +307,7 @@ def getVideoData(mediagen):
 	xml = ""
 	if audio == "de":
 		mediagen += "&acceptMethods=fms,hdn1,hds";
+	print mediagen
 	xml = getUrl(mediagen)
 	root = ET.fromstring(xml)
 	rtmpe = []
