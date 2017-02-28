@@ -59,7 +59,7 @@ def index():
     xbmcplugin.endOfDirectory(pluginhandle)
 
 
-def list(url):
+def list_episodes(url):
     xbmcplugin.setContent(pluginhandle, "episodes")
     if url == "Featured":
         jsonrsp = getUrl(getCarousel())
@@ -438,7 +438,7 @@ eptitle = urllib.unquote_plus(params.get('title', ''))
 epthumbnail = urllib.unquote_plus(params.get('thumbnail', ''))
 
 if mode == 'list':
-    list(url)
+    list_episodes(url)
 elif mode == 'play':
     playEpisode(url, eptitle, epthumbnail)
 else:
