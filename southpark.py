@@ -3,15 +3,14 @@
 import sys, re, os
 import json as _json
 import time
-import HTMLParser
 import urllib
 import urllib2
 import datetime
+import xbmc
 import xbmcplugin
 import xbmcgui
 import xbmcaddon
 import xml.etree.ElementTree as ET
-from random import randint
 
 
 USER_AGENT = 'Mozilla/5.0 (Windows NT 6.1; rv:25.0) Gecko/20100101 Firefox/25.0'
@@ -25,44 +24,6 @@ PLUGIN_MODE_SEARCH     = "sp:search"
 PLUGIN_MODE_PLAY_EP    = "sp:play"
 PLUGIN_MODE_BANNED     = "sp:banned"
 PLUGIN_MODE_PREMIERE   = "sp:beforepremiere"
-
-_xbmc = None
-
-def set_xbmc(xbmc):
-	global _xbmc
-	_xbmc = xbmc
-
-def JStoJSON(s):
-	s = re.sub(r"/\*([\s\S]*?)\*/", "", s)
-	s = s.replace('\n', '')
-	s = s.replace("{","{'")
-	s = s.replace(":", "':")
-	s = s.replace(",", ",'")
-	s = s.replace(",' ", ", ")
-	s = s.replace(", ]", "]")
-	s = s.replace("http':", "http:")
-	s = s.replace("{'", '{"')
-	s = s.replace("'}", '"}')
-	s = s.replace("':'", '":"')
-	s = s.replace("','", '","')
-	s = s.replace("':", '":')
-	s = s.replace('": ', "': ")
-	s = s.replace('":-', "':-")
-	s = s.replace("\\'", "'")
-	return s
-
-def toUSJSON(s):
-	if s[2] == 's' and s[3] == 'e':
-		s = s.replace('{"season":', '')
-		s = s[:-1]
-	s = s.replace('"episode"', '"results"')
-	s = s.replace('"available"', '"_availability"')
-	s = s.replace('"donotair"', '"banned"')
-	s = s.replace('"thumbnail_larger"', '"images"')
-	s = s.replace('"id"', '"itemId"')
-	s = s.replace('"episodenumber"', '"episodeNumber"')
-	s = s.replace('"airdate"', '"originalAirDate"')
-	return s
 
 def _unescape(s):
 	htmlCodes = [["'", '&#39;'],['"', '&quot;'],['', '&gt;'],['', '&lt;'],['&', '&amp;']]
@@ -102,10 +63,10 @@ def _premier_timeout(premiere):
 	return "%02dd %02dh %02dm".format(days, hours, mins)
 
 def log_debug(message):
-	_xbmc.log("[sp.addon] {0}".format(message), _xbmc.LOGDEBUG)
+	xbmc.log("[sp.addon] {0}".format(message), xbmc.LOGDEBUG)
 
 def log_error(message):
-	_xbmc.log("[sp.addon] {0}".format(message), _xbmc.LOGERROR)
+	xbmc.log("[sp.addon] {0}".format(message), xbmc.LOGERROR)
 
 def _http_get(url):
 	log_debug("http get: {0}".format(url))
@@ -132,11 +93,12 @@ def _save_subs(fname, stream):
 	output.truncate()
 	output.write(data)
 	output.close()
+	log_debug("Saved subtitle {0}.".format(fname))
 	return stream
 
 class SP_Paths(object):
 	"""South Park plugin Paths"""
-	def __init__(self, xbmc, addon_id):
+	def __init__(self, addon_id):
 		super(SP_Paths, self).__init__()
 		self.PLUGIN_ICON      = xbmc.translatePath('special://home/addons/{0}/icon.png'.format(addon_id))
 		self.DEFAULT_FANART   = xbmc.translatePath('special://home/addons/{0}/fanart.jpg'.format(addon_id))
@@ -153,8 +115,13 @@ class KodiParams(object):
 		self.PARAM_MODE         = urllib.unquote_plus(params.get('mode', ''))
 		self.PARAM_URL          = urllib.unquote_plus(params.get('url', ''))
 		self.PARAM_EP_TITLE     = urllib.unquote_plus(params.get('title', ''))
-		self.PARAM_EP_THUMBNAIL = urllib.unquote_plus(params.get('thumbnail', ''))		
+		self.PARAM_EP_THUMBNAIL = urllib.unquote_plus(params.get('thumbnail', ''))
 
+	def debug(self):
+		log_debug("PARAM_MODE:         {0}".format(self.PARAM_MODE        ))
+		log_debug("PARAM_URL:          {0}".format(self.PARAM_URL         ))
+		log_debug("PARAM_EP_TITLE:     {0}".format(self.PARAM_EP_TITLE    ))
+		log_debug("PARAM_EP_THUMBNAIL: {0}".format(self.PARAM_EP_THUMBNAIL))
 		
 
 class SP_I18N(object):
@@ -182,8 +149,15 @@ class SP_Options(object):
 	def __init__(self, addon):
 		super(SP_Options, self).__init__()
 		self.addon = addon
-		self.GEO_LOCATIONS = ["US","UK","ES","DE","IT"]
+		self.GEO_LOCATIONS   = ["US","UK","ES","DE","IT"]
 		self.AUDIO_AVAILABLE = ["en","es","de"]
+		self.VIDEO_QUALITY   = ["high","low"]
+
+	def debug(self):
+		log_debug("OPTIONS Geolocation          {0}".format(self.geolocation(True)))
+		log_debug("OPTIONS Audio                {0}".format(self.audio(True)))
+		log_debug("OPTIONS Show Subtitles       {0}".format(self.show_subtitles()))
+		log_debug("OPTIONS Play Random Directly {0}".format(self.playrandom()))
 
 	def geolocation(self, as_string=False):
 		geo = int(self.addon.getSetting('geolocation'))
@@ -234,9 +208,8 @@ class SP_Helper(object):
 			"&device=Other&aspectRatio=16:9&lang=" ## de
 		]
 		self.RTMP_STREAMS = [
-			"rtmpe://viacommtvstrmfs.fplive.net:1935/viacommtvstrm", ## en
-			"rtmpe://viacommtvstrmfs.fplive.net:1935/viacommtvstrm", ## es
-			"rtmpe://cp75298.edgefcs.net/ondemand"                   ## de
+			"rtmpe://viacommtvstrmfs.fplive.net:1935/viacommtvstrm",
+			"rtmpe://cp75298.edgefcs.net/ondemand"
 		]
 
 	def domain_ref(self):
@@ -254,7 +227,7 @@ class SP_Helper(object):
 	def mediagen_opts(self):
 		return self.MEDIAGEN_OPTS[self.options.audio()]
 
-	def rtmp_streams(self, index):
+	def rtmp_streams(self, index=0):
 		return self.RTMP_STREAMS[index]
 
 	def page_url(self, url):
@@ -281,7 +254,7 @@ class SP_Helper(object):
 		return "http://southpark.cc.com/feeds/carousel/video/2b6c5ab4-d717-4e84-9143-918793a3b636/14/2/json/!airdate/?lang={0}".format(self.options.audio(True))
 
 	def random_episode(self, suburl=""):
-		return "http://{0}{1}{2}".format(self.domain_ref(), self.full_episode(), suburl)
+		return "http://{0}{1}{2}".format(self.domain_ref(), self.full_episodes(), suburl)
 
 	def mediagen_url(self, identifier):
 		return "http://{0}/feeds/video-player/mrss/mgid:arc:episode:{1}:{2}?lang={3}".format(self.domain_ref(), self.domain_url(), identifier, self.options.audio(True))
@@ -304,23 +277,23 @@ class Video(object):
 		self.captions = captions
 
 	def play_data(self, helper):
-		best = len(self.streams) - 1
-		rtmp = self.streams[best]
+		## High quality is the last stream  (-1)
+		vqual = -1
+		rtmp  = self.streams[vqual]
 		playpath = ""
 		if not "http" in rtmp:
-			if "viacomccstrm" in self.streams[best]:
-				playpath = "mp4:{0}".format(self.streams[best].split('viacomccstrm/')[1])
-				rtmp = helper.rtmp_streams(0)
-			elif "cp9950.edgefcs.net" in self.streams[best]:
-				playpath = "mp4:{0}".format(self.streams[best].split('mtvnorigin/')[1])
-				rtmp = helper.rtmp_streams(1)
+			if "viacomccstrm" in self.streams[vqual]:
+				playpath = "mp4:{0}".format(self.streams[vqual].split('viacomccstrm/')[1])
+				rtmp =  self.helper.rtmp_streams()
+			elif "cp9950.edgefcs.net" in self.streams[vqual]:
+				playpath = "mp4:{0}".format(self.streams[vqual].split('mtvnorigin/')[1])
+				rtmp =  self.helper.rtmp_streams()
 		return playpath, rtmp
 
 class SouthParkAddon(object):
 	"""South Park Addon"""
-	def __init__(self, addon_id, notify, last_season):
+	def __init__(self, last_season, addon_id='plugin.video.southpark_unofficial'):
 		super(SouthParkAddon, self).__init__()
-		self.notify    = notify # is notifyText
 		self.addon_id  = addon_id
 		self.addon_obj = xbmcaddon.Addon(id=self.addon_id)
 		self.phandle   = int(sys.argv[1])
@@ -330,18 +303,25 @@ class SouthParkAddon(object):
 		self.helper  = SP_Helper (self.options  )
 		self.paths   = SP_Paths  (self.addon_id )
 
+	def notify(self, text, time=WARNING_TIMEOUT_SHORT):
+		utext = _encode(text)
+		uaddonname = _encode(self.addon_obj.getAddonInfo('name'))
+		utime = _encode(str(time))
+		uicon = _encode(self.paths.PLUGIN_ICON);
+		notification = 'Notification(%s, %s, %s, %s)' % (uaddonname, utext, utime, uicon)
+		xbmc.executebuiltin(notification)
+
 	def create_menu(self):
-		xbmcplugin.addSortMethod(self.phandle, xbmcplugin.SORT_METHOD_LABEL)
-		content = ""
+		#xbmcplugin.addSortMethod(self.phandle, xbmcplugin.SORT_METHOD_LABEL)
 		content = _http_get("http://{0}".format(self.helper.domain_ref()))
 		if "/messages/geoblock/" in content or "/geoblock/messages/" in content:
 			self.notify(self.i18n.WARNING_GEOBLOCKED, WARNING_TIMEOUT_LONG)
 		
-		self.add_directory(self.i18n.MENU_FEATURED_EPISODES, PLUGIN_MODE_FEATURED, 'list', self.paths.PLUGIN_ICON)
-		self.add_entry    (self.MENU_RANDOM_EPISODE        , PLUGIN_MODE_RANDOM  , 'list', self.paths.PLUGIN_ICON, is_playable=self.options.playrandom())
-		self.add_entry    (self.MENU_SEARCH_EPISODE        , PLUGIN_MODE_SEARCH  , 'list', self.paths.PLUGIN_ICON)
+		self.add_directory(self.i18n.MENU_FEATURED_EPISODES, '', PLUGIN_MODE_FEATURED, self.paths.PLUGIN_ICON)
+		self.add_entry    (self.i18n.MENU_RANDOM_EPISODE   , '', PLUGIN_MODE_RANDOM  , self.paths.PLUGIN_ICON, is_playable=self.options.playrandom())
+		self.add_entry    (self.i18n.MENU_SEARCH_EPISODE   , '', PLUGIN_MODE_SEARCH  , self.paths.PLUGIN_ICON)
 		for i in range(1, self.seasons):
-			dirname  = "{0} {1}".format(self.MENU_SEASON_EPISODE, i)
+			dirname  = "{0} {1}".format(self.i18n.MENU_SEASON_EPISODE, i)
 			iconpath = "{0}{1}.jpg".format(self.paths.DEFAULT_IMGDIR, i)
 			self.add_directory(dirname, str(i), PLUGIN_MODE_SEASON, iconpath)
 		xbmcplugin.endOfDirectory(self.phandle)
@@ -355,28 +335,33 @@ class SouthParkAddon(object):
 	def create_random(self):
 		if not self.options.playrandom():
 			self.notify(self.i18n.WARNING_LOADING_RANDOM_EPISODE, WARNING_TIMEOUT_SHORT)
-		body = _http_get(self.helper.random_episode("random"))
-		rand = body.split("<link rel=\"canonical\" href=\"")[1].split("\" />")[0]
-		rand = rand.split(self.helper.random_episode("s"))[1].split("-")[0].split("e")
-		season  = int(rand[0])
-		epsode = int(rand[1]) - 1
+		retries = 0
+		while retries < 10:
+			retries += 1
+			body = _http_get(self.helper.random_episode("random"))
+			rand = body.split("<link rel=\"canonical\" href=\"")[1].split("\" />")[0]
+			rand = rand.split(self.helper.random_episode("s"))[1].split("-")[0].split("e")
+			season  = int(rand[0])
+			episode = int(rand[1]) - 1
 
-		jsonrsp = _http_get(self.helper.season_data(season))
-		if self.options.audio(True) == "de":
-			# sp.de returns a JS instead of a JSON so i need to convert it
-			jsonrsp = jsonrsp.decode('utf-8')
+			jsonrsp = _http_get(self.helper.season_data(season))
+			if self.options.audio(True) == "de":
+				# sp.de returns a JS instead of a JSON so i need to convert it
+				jsonrsp = jsonrsp.decode('utf-8')
 
-		seasonjson = _json.loads(jsonrsp)
-		episode_data = seasonjson['results'][epsode]
-		if self.options.playrandom():
+			seasonjson = _json.loads(jsonrsp)
+			episode_data = seasonjson['results'][episode]
 			if episode_data['_availability'] == "banned":
-				episode_data = seasonjson['results'][0]
-			self.play_episode(episode_data['itemId'], episode_data['title'], episode_data['images'])
-		else:
-			self.add_episode(episode_data)
+				log_error("Found banned episode s{0}e{1}. trying again!".format(season, episode))
+				continue
+			if self.options.playrandom():
+				self.play_episode(episode_data['itemId'], episode_data['title'], episode_data['images'])
+			else:
+				self.add_episode(episode_data)
+			break
 
 	def create_search(self):
-		keyboard = _xbmc.Keyboard('')
+		keyboard = xbmc.Keyboard('')
 		keyboard.doModal()
 		if (keyboard.isConfirmed()):
 			text = keyboard.getText().lower()
@@ -401,24 +386,20 @@ class SouthParkAddon(object):
 		log_debug(title)
 		log_debug(thumbnail)
 		mediagen = self.get_mediagen(url)
-		if len(mediagen) < 1:
+		if len(mediagen) < 1 or (self.options.audio(True) == "de" and len(mediagen) <= 1):
 			self.notify(self.i18n.WARNING_BANNED_EPISODE, WARNING_TIMEOUT_LONG)
 			return
+
 		self.notify("{0} {1}".format(self.i18n.WARNING_LOADING, _encode(title)), WARNING_TIMEOUT_SHORT)
 		parts = len(mediagen)
-		if self.options.audio(True) == "de" and len(mediagen) <= 1:
-			self.notify(self.i18n.WARNING_BANNED_EPISODE, WARNING_TIMEOUT_LONG)
-			return
-		player = _xbmc.Player()
+		player = xbmc.Player()
 		ccs = []
-		playlist = _xbmc.PlayList(_xbmc.PLAYLIST_VIDEO)
+		playlist = xbmc.PlayList(xbmc.PLAYLIST_VIDEO)
 		playlist.clear()
 		start_listitem = None
 		i = 0
 		for media in mediagen:
 			video = self.get_video_data(media)
-
-
 			if len(video.streams) == 0:
 				parts = len(mediagen) - 1
 				continue
@@ -426,7 +407,7 @@ class SouthParkAddon(object):
 			playpath, rtmp = video.play_data(self.helper)
 			log_debug(rtmp)
 
-			videoname = "{title} ({i} of {n}".format(title=title, i=(i + 1), n=parts)
+			videoname = "{title} ({i} of {n})".format(title=title, i=(i + 1), n=parts)
 			li = xbmcgui.ListItem(videoname, iconImage=thumbnail, thumbnailImage=thumbnail)
 			li.setInfo('video', {'Title': videoname})
 			li.setProperty('conn', "B:0")
@@ -447,36 +428,41 @@ class SouthParkAddon(object):
 			if i == 0:
 				start_listitem = li
 			i += 1
-		if pluginhandle == -1:
+
+		if self.phandle == -1:
+			## this could be removed..
 			player.play(playlist)
 		else:
-			xbmcplugin.setResolvedUrl(handle=pluginhandle, succeeded=True, listitem=start_listitem)
-		for s in xrange(1):
+			xbmcplugin.setResolvedUrl(handle=self.phandle, succeeded=True, listitem=start_listitem)
+
+		for s in range(1):
 			if player.isPlaying():
 				break
 			time.sleep(1)
+
 		if not player.isPlaying():
-			notifyText(translation(30004), 4000)
+			self.notify(self.i18n.ERROR_NO_INTERNET_CONNECTION, WARNING_TIMEOUT_SHORT)
 			player.stop()
+
 		pos = -1
 		if pos != playlist.getposition():
 			pos = playlist.getposition()
-			if cc_settings and len(ccs) >= playlist.size():
+			if self.options.show_subtitles() and len(ccs) >= playlist.size():
 				player.setSubtitles(ccs[pos])
-				player.showSubtitles(cc_settings)
+				player.showSubtitles(self.options.show_subtitles())
 			else:
-				xbmc.log("sp.addon: " + "["+addonID+"] missing some vtt subs...", xbmc.LOGERROR)
+				log_error("[{0}] missing some vtt subs...".format(self.addon_id))
 
 		while pos < playlist.size() and player.isPlaying():
 			while player.isPlaying():
 				time.sleep(0.05)
 				if pos != playlist.getposition():
 					pos = playlist.getposition()
-					if cc_settings and len(ccs) >= playlist.size():
+					if self.options.show_subtitles() and len(ccs) >= playlist.size():
 						player.setSubtitles(ccs[pos])
-						player.showSubtitles(cc_settings)
+						player.showSubtitles(self.options.show_subtitles())
 					else:
-						xbmc.log("sp.addon: " + "["+addonID+"] missing some vtt subs...", xbmc.LOGERROR)
+						log_error("[{0}] missing some vtt subs...".format(self.addon_id))
 			time.sleep(10)
 		return
 
@@ -566,13 +552,15 @@ class SouthParkAddon(object):
 		return ok
 
 	def add_entry(self, name, url, mode, iconimage, desc="", season="", episode="", date="", is_playable=False):
+		name = _encode(name)
+		desc = _encode(desc)
 		if "?" in iconimage:
 			pos = iconimage.index('?') - len(iconimage)
 			iconimage = iconimage[:pos]
 		url       = "{0}?url={1}&mode={2}&title={3}&thumbnail={4}".format(sys.argv[0], urllib.quote_plus(url), mode, name, iconimage)
 		convdate  = _date(date)
 		is_folder = not is_playable
-		entry = xbmcgui.ListItem(name, iconImage="DefaultVideo.png", thumbnailImage=iconimage)
+		entry = xbmcgui.ListItem(name, thumbnailImage=iconimage)
 		entry.setInfo(type="Video", infoLabels={"Title": name, "Plot": desc, "Season": season, "Episode": episode, "Aired": convdate})
 		entry.setProperty("fanart_image", self.paths.DEFAULT_FANART)
 		entry.setProperty("isPlayable", "true" if is_playable else "false")
@@ -581,6 +569,8 @@ class SouthParkAddon(object):
 
 	def handle(self):
 		kodi = KodiParams()
+		kodi.debug()
+		self.options.debug()
 		if kodi.PARAM_MODE == PLUGIN_MODE_SEASON:
 			self.create_episodes(kodi.PARAM_URL)
 		elif kodi.PARAM_MODE == PLUGIN_MODE_PLAY_EP:
@@ -595,8 +585,11 @@ class SouthParkAddon(object):
 			self.notify(self.i18n.WARNING_BANNED_EPISODE, WARNING_TIMEOUT_LONG)
 		elif kodi.PARAM_MODE == PLUGIN_MODE_PREMIERE:
 			self.notify(self.i18n.WARNING_PREMIERE, WARNING_TIMEOUT_LONG)
-		else:
+		elif kodi.PARAM_MODE == '':
 			self.create_menu()
+		else:
+			self.notify("---ERROR---")
+			return
 		xbmcplugin.endOfDirectory(self.phandle)
-		_xbmc.executebuiltin('Container.SetViewMode(504)')
+		xbmc.executebuiltin('Container.SetViewMode(504)')
 
