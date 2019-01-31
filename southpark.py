@@ -112,9 +112,9 @@ class KodiParams(object):
 	def __init__(self):
 		super(KodiParams, self).__init__()
 		params = _parameters_string_to_dict(sys.argv[2])
-		self.PARAM_MODE         = urllib.unquote_plus(params.get('mode', ''))
-		self.PARAM_URL          = urllib.unquote_plus(params.get('url', ''))
-		self.PARAM_EP_TITLE     = urllib.unquote_plus(params.get('title', ''))
+		self.PARAM_MODE         = urllib.unquote_plus(params.get('mode'     , ''))
+		self.PARAM_URL          = urllib.unquote_plus(params.get('url'      , ''))
+		self.PARAM_EP_TITLE     = urllib.unquote_plus(params.get('title'    , ''))
 		self.PARAM_EP_THUMBNAIL = urllib.unquote_plus(params.get('thumbnail', ''))
 
 	def debug(self):
