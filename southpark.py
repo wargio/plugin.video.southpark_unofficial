@@ -78,14 +78,14 @@ def _http_get(url):
 	return link
 
 def _parameters_string_to_dict(parameters):
-    paramDict = {}
-    if parameters:
-        paramPairs = parameters[1:].split("&")
-        for paramsPair in paramPairs:
-            paramSplits = paramsPair.split('=')
-            if (len(paramSplits)) == 2:
-                paramDict[paramSplits[0]] = paramSplits[1]
-    return paramDict
+	paramDict = {}
+	if parameters:
+		paramPairs = parameters[1:].split("&")
+		for paramsPair in paramPairs:
+			paramSplits = paramsPair.split('=')
+			if (len(paramSplits)) == 2:
+				paramDict[paramSplits[0]] = paramSplits[1]
+	return paramDict
 
 def _save_subs(fname, stream):
 	data = _unescape(_http_get(stream))
