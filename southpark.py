@@ -109,9 +109,9 @@ class SP_Paths(object):
 
 class KodiParams(object):
 	"""docstring for KodiParams"""
-	def __init__(self):
+	def __init__(self, param_string):
 		super(KodiParams, self).__init__()
-		params = _parameters_string_to_dict(sys.argv[2])
+		params = _parameters_string_to_dict(param_string)
 		self.PARAM_MODE         = urllib.unquote_plus(params.get('mode'     , ''))
 		self.PARAM_URL          = urllib.unquote_plus(params.get('url'      , ''))
 		self.PARAM_EP_TITLE     = urllib.unquote_plus(params.get('title'    , ''))
@@ -292,11 +292,12 @@ class Video(object):
 
 class SouthParkAddon(object):
 	"""South Park Addon"""
-	def __init__(self, last_season, addon_id='plugin.video.southpark_unofficial'):
+	def __init__(self, argv, last_season, addon_id='plugin.video.southpark_unofficial'):
 		super(SouthParkAddon, self).__init__()
 		self.addon_id  = addon_id
 		self.addon_obj = xbmcaddon.Addon(id=self.addon_id)
-		self.phandle   = int(sys.argv[1])
+		self.argv      = argv
+		self.phandle   = int(argv[1])
 		self.seasons   = last_season + 1
 		self.options = SP_Options(self.addon_obj)
 		self.i18n    = SP_I18N   (self.addon_obj)
@@ -543,7 +544,7 @@ class SouthParkAddon(object):
 		self.add_entry(ep_title, ep_url, ep_mode, ep_image, ep_desc, ep_seas, ep_numb, ep_aird, is_playable=True)
 
 	def add_directory(self, name, url, mode, iconimage="DefaultFolder.png"):
-		u = sys.argv[0]+"?url="+urllib.quote_plus(url)+"&mode="+str(mode)
+		u = self.argv[0]+"?url="+urllib.quote_plus(url)+"&mode="+str(mode)
 		ok = True
 		liz = xbmcgui.ListItem(name, iconImage=iconimage, thumbnailImage=iconimage)
 		liz.setInfo(type="Video", infoLabels={"Title": name})
@@ -557,7 +558,7 @@ class SouthParkAddon(object):
 		if "?" in iconimage:
 			pos = iconimage.index('?') - len(iconimage)
 			iconimage = iconimage[:pos]
-		url       = "{0}?url={1}&mode={2}&title={3}&thumbnail={4}".format(sys.argv[0], urllib.quote_plus(url), mode, name, iconimage)
+		url       = "{0}?url={1}&mode={2}&title={3}&thumbnail={4}".format(self.argv[0], urllib.quote_plus(url), mode, name, iconimage)
 		convdate  = _date(date)
 		is_folder = not is_playable
 		entry = xbmcgui.ListItem(name, thumbnailImage=iconimage)
@@ -568,7 +569,7 @@ class SouthParkAddon(object):
 		return xbmcplugin.addDirectoryItem(handle=self.phandle, url=url, listitem=entry, isFolder=is_folder)
 
 	def handle(self):
-		kodi = KodiParams()
+		kodi = KodiParams(self.argv[2])
 		kodi.debug()
 		self.options.debug()
 		if kodi.PARAM_MODE == PLUGIN_MODE_SEASON:

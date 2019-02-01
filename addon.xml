@@ -17,6 +17,7 @@
         <forum>http://forum.kodi.tv/showthread.php?tid=224662</forum>
         <email>wargio at libero dot it</email>
         <website>https://southpark.cc.com</website>
+        <reuselanguageinvoker>true</reuselanguageinvoker>
     </extension>
 </addon>
 
