@@ -1,6 +1,6 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-import sys, re, os
+import sys, os
 import json as _json
 import time
 import urllib
