@@ -309,8 +309,7 @@ class SouthParkAddon(object):
 		uaddonname = _encode(self.addon_obj.getAddonInfo('name'))
 		utime = _encode(str(time))
 		uicon = _encode(self.paths.PLUGIN_ICON);
-		notification = 'Notification(%s, %s, %s, %s)' % (uaddonname, utext, utime, uicon)
-		xbmc.executebuiltin(notification)
+		xbmcgui.Dialog().notification(uaddonname, utext, uicon, utime)
 
 	def create_menu(self):
 		#xbmcplugin.addSortMethod(self.phandle, xbmcplugin.SORT_METHOD_LABEL)
@@ -383,9 +382,9 @@ class SouthParkAddon(object):
 			self.add_episode(episode)
 
 	def play_episode(self, url, title, thumbnail):
-		log_debug(url)
-		log_debug(title)
-		log_debug(thumbnail)
+		##log_debug(url)
+		##log_debug(title)
+		##log_debug(thumbnail)
 		mediagen = self.get_mediagen(url)
 		if len(mediagen) < 1 or (self.options.audio(True) == "de" and len(mediagen) <= 1):
 			self.notify(self.i18n.WARNING_BANNED_EPISODE, WARNING_TIMEOUT_LONG)
@@ -406,7 +405,7 @@ class SouthParkAddon(object):
 				continue
 
 			playpath, rtmp = video.play_data(self.helper)
-			log_debug(rtmp)
+			##log_debug(rtmp)
 
 			videoname = "{title} ({i} of {n})".format(title=title, i=(i + 1), n=parts)
 			li = xbmcgui.ListItem(videoname, iconImage=thumbnail, thumbnailImage=thumbnail)
@@ -570,8 +569,8 @@ class SouthParkAddon(object):
 
 	def handle(self):
 		kodi = KodiParams(self.argv[2])
-		kodi.debug()
-		self.options.debug()
+		##kodi.debug()
+		##self.options.debug()
 		if kodi.PARAM_MODE == PLUGIN_MODE_SEASON:
 			self.create_episodes(kodi.PARAM_URL)
 		elif kodi.PARAM_MODE == PLUGIN_MODE_PLAY_EP:
@@ -592,5 +591,3 @@ class SouthParkAddon(object):
 			self.notify("---ERROR---")
 			return
 		xbmcplugin.endOfDirectory(self.phandle)
-		xbmc.executebuiltin('Container.SetViewMode(504)')
-
