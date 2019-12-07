@@ -9,6 +9,7 @@ import xbmcplugin
 import xbmcgui
 import xbmcaddon
 import xml.etree.ElementTree as ET
+import random
 
 # .major cannot be used in older versions, like kodi 16.
 IS_PY3 = sys.version_info[0] > 2
@@ -22,6 +23,14 @@ else:
 	from urllib import unquote_plus, quote_plus
 
 KODI_VERSION_MAJOR = int(xbmc.getInfoLabel('System.BuildVersion')[0:2])
+
+SP_SEASONS_EPS = [
+	13,18,17,17,14,
+	17,15,14,14,14,
+	14,14,14,14,14,
+	14,10,10,10,10,
+	10,10,10
+]
 
 USER_AGENT = 'Mozilla/5.0 (Windows NT 6.1; rv:25.0) Gecko/20100101 Firefox/25.0'
 WARNING_TIMEOUT_LONG  = 7000
@@ -383,18 +392,16 @@ class SouthParkAddon(object):
 		retries = 0
 		while retries < 10:
 			retries += 1
-			body = _http_get(self.helper.random_episode("random"))
-			rand = body.split("<link rel=\"canonical\" href=\"")[1].split("\" />")[0]
-			rand = rand.split(self.helper.random_episode("s"))[1].split("-")[0].split("e")
-			season  = int(rand[0])
-			episode = int(rand[1]) - 1
-
-			jsonrsp = _http_get(self.helper.season_data(season))
+			season  = random.randint(0, len(SP_SEASONS_EPS))
+			episode = random.randint(0, SP_SEASONS_EPS[season])
+			jsonrsp = _http_get(self.helper.season_data(season + 1))
 			if self.options.audio(True) == "de":
 				# sp.de returns a JS instead of a JSON so i need to convert it
 				jsonrsp = jsonrsp.decode('utf-8')
 
 			seasonjson = _json.loads(jsonrsp)
+			if episode >= len(seasonjson['results']):
+				episode = len(seasonjson['results']) - 1
 			episode_data = seasonjson['results'][episode]
 			if episode_data['_availability'] == "banned":
 				log_error("Found banned episode s{0}e{1}. trying again!".format(season, episode))
@@ -407,6 +414,8 @@ class SouthParkAddon(object):
 			else:
 				self.add_episode(episode_data)
 			break
+		if retries > 9:
+			log_error("Cannot find an episode to play!")
 
 	def create_search(self):
 		keyboard = xbmc.Keyboard('')
