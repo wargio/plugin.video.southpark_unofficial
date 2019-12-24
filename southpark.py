@@ -95,6 +95,8 @@ def log_error(message):
 
 def _http_get(url):
 	#log_debug("http get: {0}".format(url))
+	if len(url) < 1:
+		return None
 	req = Request(url)
 	req.add_header('User-Agent', USER_AGENT)
 	response = urlopen(req)
@@ -145,12 +147,14 @@ class KodiParams(object):
 		self.PARAM_URL          = unquote_plus(params.get('url'      , ''))
 		self.PARAM_EP_TITLE     = unquote_plus(params.get('title'    , ''))
 		self.PARAM_EP_THUMBNAIL = unquote_plus(params.get('thumbnail', ''))
+		self.PARAM_EP_WEBPAGE   = unquote_plus(params.get('webpage'  , ''))
 
 	def debug(self):
 		log_debug("PARAM_MODE:         {0}".format(self.PARAM_MODE        ))
 		log_debug("PARAM_URL:          {0}".format(self.PARAM_URL         ))
 		log_debug("PARAM_EP_TITLE:     {0}".format(self.PARAM_EP_TITLE    ))
 		log_debug("PARAM_EP_THUMBNAIL: {0}".format(self.PARAM_EP_THUMBNAIL))
+		log_debug("PARAM_EP_WEBPAGE:   {0}".format(self.PARAM_EP_WEBPAGE))
 		
 
 class SP_I18N(object):
@@ -410,7 +414,7 @@ class SouthParkAddon(object):
 				log_error("Found premiere episode s{0}e{1}. trying again!".format(season, episode))
 				continue
 			if self.options.playrandom():
-				self.play_episode(episode_data['itemId'], episode_data['title'], episode_data['images'])
+				self.play_episode(episode_data['itemId'], episode_data['title'], episode_data['images'], episode_data['_url']['default'])
 			else:
 				self.add_episode(episode_data)
 			break
@@ -438,10 +442,10 @@ class SouthParkAddon(object):
 		for episode in seasonjson['results']:
 			self.add_episode(episode)
 
-	def play_episode(self, url, title, thumbnail):
-		##log_debug(url)
-		##log_debug(title)
-		##log_debug(thumbnail)
+	def play_episode(self, url, title, thumbnail, webpage):
+		## maybe a firewall is checking if we are loading the episode webpage.
+		_http_get(webpage)
+
 		mediagen = self.get_mediagen(url)
 		if len(mediagen) < 1 or (self.options.audio(True) == "de" and len(mediagen) <= 1):
 			self.notify(self.i18n.WARNING_BANNED_EPISODE, WARNING_TIMEOUT_LONG)
@@ -587,12 +591,13 @@ class SouthParkAddon(object):
 		ep_url   = "invalid"
 		ep_mode  = PLUGIN_MODE_PLAY_EP
 
-		ep_title = _encode(episode['title'])
-		ep_image = _encode(episode['images'])
-		ep_desc  = _encode(episode['description'])
-		ep_seas  = episode['episodeNumber'][0] + episode['episodeNumber'][1] ## SEASON  NUMBER
-		ep_numb  = episode['episodeNumber'][2] + episode['episodeNumber'][3] ## EPISODE NUMBER
-		ep_aird  = episode['originalAirDate']
+		ep_title   = _encode(episode['title'])
+		ep_image   = _encode(episode['images'])
+		ep_desc    = _encode(episode['description'])
+		ep_seas    = episode['episodeNumber'][0] + episode['episodeNumber'][1] ## SEASON  NUMBER
+		ep_numb    = episode['episodeNumber'][2] + episode['episodeNumber'][3] ## EPISODE NUMBER
+		ep_aird    = episode['originalAirDate']
+		ep_webpage = _encode(episode['_url']['default'])
 
 		if episode['_availability'] == "banned":
 			ep_title += " [Banned]"
@@ -604,7 +609,7 @@ class SouthParkAddon(object):
 		else:
 			ep_url = episode['itemId']
 
-		self.add_entry(ep_title, ep_url, ep_mode, ep_image, ep_desc, ep_seas, ep_numb, ep_aird, is_playable=True)
+		self.add_entry(ep_title, ep_url, ep_mode, ep_image, ep_desc, ep_seas, ep_numb, ep_aird, ep_webpage, is_playable=True)
 
 	def add_directory(self, name, url, mode, iconimage="DefaultFolder.png"):
 		u = self.argv[0]+"?url="+quote_plus(url)+"&mode="+str(mode)
@@ -618,13 +623,14 @@ class SouthParkAddon(object):
 		ok = xbmcplugin.addDirectoryItem(handle=self.phandle, url=u, listitem=liz, isFolder=True)
 		return ok
 
-	def add_entry(self, name, url, mode, iconimage, desc="", season="", episode="", date="", is_playable=False):
-		name = _encode(name)
-		desc = _encode(desc)
+	def add_entry(self, name, url, mode, iconimage, desc="", season="", episode="", date="", webpage="", is_playable=False):
+		name    = _encode(name)
+		desc    = _encode(desc)
+		webpage = _encode(webpage)
 		if "?" in iconimage:
 			pos = iconimage.index('?') - len(iconimage)
 			iconimage = iconimage[:pos]
-		url       = "{0}?url={1}&mode={2}&title={3}&thumbnail={4}".format(self.argv[0], quote_plus(url), mode, quote_plus(name), iconimage)
+		url       = "{0}?url={1}&mode={2}&title={3}&thumbnail={4}&webpage={5}".format(self.argv[0], quote_plus(url), mode, quote_plus(name), iconimage, quote_plus(webpage))
 		convdate  = _date(date)
 		is_folder = not is_playable
 		entry = xbmcgui.ListItem(name)
@@ -644,7 +650,7 @@ class SouthParkAddon(object):
 		if kodi.PARAM_MODE == PLUGIN_MODE_SEASON:
 			self.create_episodes(kodi.PARAM_URL)
 		elif kodi.PARAM_MODE == PLUGIN_MODE_PLAY_EP:
-			self.play_episode(kodi.PARAM_URL, kodi.PARAM_EP_TITLE, kodi.PARAM_EP_THUMBNAIL)
+			self.play_episode(kodi.PARAM_URL, kodi.PARAM_EP_TITLE, kodi.PARAM_EP_THUMBNAIL, kodi.PARAM_EP_WEBPAGE)
 		elif kodi.PARAM_MODE == PLUGIN_MODE_FEATURED:
 			self.create_featured()
 		elif kodi.PARAM_MODE == PLUGIN_MODE_RANDOM:
