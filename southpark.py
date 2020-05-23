@@ -399,10 +399,7 @@ class SouthParkAddon(object):
 			season  = random.randint(0, len(SP_SEASONS_EPS))
 			episode = random.randint(0, SP_SEASONS_EPS[season])
 			jsonrsp = _http_get(self.helper.season_data(season + 1))
-			if self.options.audio(True) == "de":
-				# sp.de returns a JS instead of a JSON so i need to convert it
-				jsonrsp = jsonrsp.decode('utf-8')
-
+			jsonrsp = _encode(jsonrsp)
 			seasonjson = _json.loads(jsonrsp)
 			if episode >= len(seasonjson['results']):
 				episode = len(seasonjson['results']) - 1
