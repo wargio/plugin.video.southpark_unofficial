@@ -432,9 +432,7 @@ class SouthParkAddon(object):
 	def create_episodes(self, season):
 		xbmcplugin.addSortMethod(self.phandle, xbmcplugin.SORT_METHOD_EPISODE)
 		jsonrsp = _http_get(self.helper.season_data(season))
-		if self.options.audio(True) == "de":
-			# sp.de returns a JS instead of a JSON so i need to convert it
-			jsonrsp = jsonrsp.decode('utf-8')
+		jsonrsp = _encode(jsonrsp)
 		seasonjson = _json.loads(jsonrsp)
 		for episode in seasonjson['results']:
 			self.add_episode(episode)
