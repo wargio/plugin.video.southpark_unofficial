@@ -119,8 +119,9 @@ def _make_episode(data, season, episode, lang):
 		else:
 			url = url.replace("&device={device}", "") + "&format=json&acceptMethods=hls"
 		ep["mediagen"] = url
-	except HTTPError as e:
-		print("http get: {0}".format(url), e)
+	except HTTPError: # as e:
+		#print("http get: {0}".format(url), e)
+		pass
 
 	if len(ep["mediagen"]) < 1:
 		print("unavailable: {:2}x{:2} {}".format(ep["season"],ep["episode"], ep["title"]))
