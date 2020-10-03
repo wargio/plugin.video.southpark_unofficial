@@ -99,14 +99,14 @@ def _dk(obj, keys, default=None):
 					found = o
 					break
 			if found == None:
-				log_debug("not found: {}".format(k))
+				log_debug("not found: {} -> {}".format(k, keys).replace("'", '"'))
 				return default
 			obj = found
 		elif isinstance(obj, dict) and k not in obj:
-			log_debug("not found: {}".format(k))
+			log_debug("not found: {} -> {}".format(k, keys).replace("'", '"'))
 			return default
 		elif isinstance(obj, list) and isinstance(k, int) and k >= len(obj):
-			log_debug("not found: {}".format(k))
+			log_debug("not found: {} -> {}".format(k, keys).replace("'", '"'))
 			return default
 		else:
 			obj = obj[k]
@@ -176,13 +176,14 @@ def _parse_episodes(data, season, lang):
 		lists = list(filter(lambda x: "type" in x and x["type"] == "LineList", lists))
 		extra = list(filter(lambda x: _has_extra(x), [ _dk(s, ["props"], []) for s in lists ]))
 		lists = list(filter(lambda x: len(x) > 0 and "url" in x[0], [ _dk(s, ["props", "items"], []) for s in lists ]))[0]
-
-	elif lang == "se":
+	elif lang in ["se", "de"]:
 		lists = list(filter(lambda x: "type" in x and x["type"] == "LineList" and "type" in x["props"] and x["props"]["type"] == "video-guide", lists))
 		lists = _dk(lists[0], ["props", "items"], [])
-
-	if len(lists) > 0 and _dk(lists[0], ["meta", "subHeader"], None) == None:
+		if len(lists) > 0 and _dk(lists[0], ["meta", "subHeader"], None) == None:
+			return []
+	else:
 		return []
+
 
 	lists = [_make_episode(lists[i], season, i, lang) for i in range(0, len(lists))]
 
@@ -214,7 +215,8 @@ def _download_data(url, html_links):
 		if html_links:
 			links = re.findall(r"href=\"/seasons/south-park/[\w]+/[\w]+-\d+", webpage, flags=re.M)
 			links = [x.split('"')[1] for x in links]
-			data["links_found"] = links
+			data["links_found"] = [None]
+			data["links_found"].extend(links)
 		return data
 	return None
 
@@ -227,18 +229,20 @@ def generate_data(lang):
 	main = _dk(data,["children", "type|MainContainer", "children"])
 	seasons_urls = []
 	if "links_found" in data:
+		log_debug("using links")
 		seasons_urls = data["links_found"]
 	else:
 		seasons_urls = [ _dk(s, ["url"]) for s in _dk(main, ["type|SeasonSelector", "props", "items"], [])]
 
-	seasons = [_parse_episodes(data, len(seasons_urls) - 1, lang)]
+	log_debug("seasons: {}".format(len(seasons_urls)))
+
+	seasons = []
 
 	index = 0
 	for url in seasons_urls:
 		index += 1
-		if url == None:
-			continue
-		data = _download_data(domain + url, False)
+		if url != None:
+			data = _download_data(domain + url, False)
 		lists = _parse_episodes(data, len(seasons_urls) - index, lang)
 		if len(lists) < 1 and len(seasons) < 1:
 			continue
