@@ -106,28 +106,36 @@ def _make_episode(data, season, episode, lang):
 		"url":     _dk(data, ["url"], ""),
 		"season":  "{}".format(season  + 1),
 		"episode": "{}".format(episode + 1),
-		"mediagen": ""
+		"mediagen": []
 	}
 	try:
 		args = "uri=mgid:arc:episode:{mediagen}:{uuid}&configtype=edge&ref={dom}{ref}".format(mediagen=mediagen, uuid=ep["uuid"], dom=domapi, ref=ep["url"])
 		url  = "https://media.mtvnservices.com/pmt/e1/access/index.html?{args}".format(args=args)
 		service = _http_get(url, True)
-		url = _dk(service, ["feed", "items", 0, "group", "content"], "")
-		if url == "":
-			url = service["seamlessMediaGen"].replace('/{uri}/', "/" + service["uri"] + "/")
+		url = service["seamlessMediaGen"].replace('/{uri}/', "/" + service["uri"] + "/")
+		try:
 			_http_get(url, True)
-		else:
-			url = url.replace("&device={device}", "") + "&format=json&acceptMethods=hls"
-		ep["mediagen"] = url
+			urls = [url]
+		except HTTPError:
+			urls = []
+		if len(urls) < 1:
+			urls = _dk(service, ["feed", "items"], [])
+			i = 0
+			for url in urls:
+				urls[i] = _dk(url, ["group", "content"], "").replace("&device={device}", "") + "&format=json&acceptMethods=hls"
+				i += 1
+		ep["mediagen"] = urls
 	except HTTPError: # as e:
 		#print("http get: {0}".format(url), e)
 		pass
 
-	if len(ep["mediagen"]) < 1:
-		print("unavailable: {:2}x{:2} {}".format(ep["season"],ep["episode"], ep["title"]))
-	else:
-		print("available  : {:2}x{:2} {}".format(ep["season"],ep["episode"], ep["title"]))
-		ep["mediagen"] = base64.b64encode(ep["mediagen"].encode('ascii')).decode('ascii')
+	ep["mediagen"] = list(filter(None, ep["mediagen"]))
+
+	print("s{:<2}e{:<2} len:{}: {}".format(ep["season"], ep["episode"], len(ep["mediagen"]), ep["title"]))
+	i = 0
+	for url in ep["mediagen"]:
+		ep["mediagen"][i] = base64.b64encode(url.encode('ascii')).decode('ascii')
+		i += 1
 
 	return ep
 
