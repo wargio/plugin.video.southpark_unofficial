@@ -25,7 +25,7 @@ APIS = {
 	"es": {
 		"language": "es",
 		"mediagen": "southparkstudios.com",
-		"domain": "https://southparkstudios.com",
+		"domain": "https://southpark.cc.com",
 		"domapi": "https://southpark.cc.com",
 		"uri": "/es/seasons/south-park/",
 		"html_links": False,
@@ -144,7 +144,7 @@ def _has_extra(x):
 
 def _parse_episodes(data, season, lang):
 	domapi = APIS[lang]["domapi"]
-	print("parsing episodes from season", season)
+	print("parsing episodes from season", season + 1)
 	lists = _dk(data,["children", "type|MainContainer", "children"], [])
 	lists = list(filter(lambda x: "type" in x and x["type"] == "LineList", lists))
 
