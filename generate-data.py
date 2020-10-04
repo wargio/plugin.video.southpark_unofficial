@@ -22,7 +22,7 @@ APIS = {
 		"domapi": "https://southpark.cc.com",
 		"uri": "/seasons/south-park/",
 		"html_links": False,
-		"has_ads": False,
+		"has_ads": True,
 	},
 	"es": {
 		"language": "es",
@@ -47,6 +47,15 @@ APIS = {
 		"mediagen": "southpark.intl",
 		"domain": "https://southparkstudios.nu",
 		"domapi": "https://southparkstudios.nu",
+		"uri": "/seasons/south-park/",
+		"html_links": False,
+		"has_ads": False,
+	},
+	"it": {
+		"language": "en",
+		"mediagen": "southparkstudios.com",
+		"domain": "https://southparkstudios.com",
+		"domapi": "https://southpark.cc.com",
 		"uri": "/seasons/south-park/",
 		"html_links": False,
 		"has_ads": False,
@@ -268,6 +277,7 @@ def main():
 	group.add_argument('--es', action='store_true', default=False, help='language spanish')
 	group.add_argument('--de', action='store_true', default=False, help='language german ')
 	group.add_argument('--se', action='store_true', default=False, help='language swedish')
+	group.add_argument('--it', action='store_true', default=False, help='language swedish')
 	args = parser.parse_args()
 
 	os.chdir(WORKI_DIR)
@@ -280,8 +290,12 @@ def main():
 		generate_file("es")
 	elif args.de:
 		generate_file("de")
-	else:
+	elif args.se:
 		generate_file("se")
+	elif args.it:
+		generate_file("it")
+	else:
+		print("nothing was selected..")
 
 if __name__ == '__main__':
 	main()
