@@ -36,8 +36,8 @@ APIS = {
 	"de": {
 		"language": "de",
 		"mediagen": "southpark.intl",
-		"domain": "https://southpark.de",
-		"domapi": "https://southpark.de",
+		"domain": "https://www.southpark.de",
+		"domapi": "https://www.southpark.de",
 		"uri": "/seasons/south-park/",
 		"html_links": True,
 		"has_ads": False,
@@ -187,6 +187,8 @@ def _parse_episodes(data, season, lang):
 		lists = list(filter(lambda x: len(x) > 0 and "url" in x[0], [ _dk(s, ["props", "items"], []) for s in lists ]))[0]
 	elif lang in ["se", "de"]:
 		lists = list(filter(lambda x: "type" in x and x["type"] == "LineList" and "type" in x["props"] and x["props"]["type"] == "video-guide", lists))
+		if _dk(lists[0], ["props", "loadMore", "url"], "") != "":
+			extra.append(_dk(lists[0], ["props"], {}))
 		lists = _dk(lists[0], ["props", "items"], [])
 		if len(lists) > 0 and _dk(lists[0], ["meta", "subHeader"], None) == None:
 			return []
