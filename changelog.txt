@@ -1,5 +1,13 @@
+0.6.2
+- Use new apis
+- Added back all languages
+- unfortunately some streams might contain ads (based by location)
+0.6.1
+- Removed debug lines.
 0.6.0
 - New api. for now only english will work.
+0.5.9
+- Added season 24 (pandemic special)
 0.5.8
 - fixed issue with DE episode streaming.
 - fixed issue with PY3
