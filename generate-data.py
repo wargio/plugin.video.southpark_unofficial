@@ -51,10 +51,10 @@ APIS = {
 		"html_links": False,
 		"has_ads": False,
 	},
-	"it": {
+	"eu": {
 		"language": "en",
 		"mediagen": "southparkstudios.com",
-		"domain": "https://southparkstudios.com",
+		"domain": "https://www.southparkstudios.com",
 		"domapi": "https://southpark.cc.com",
 		"uri": "/seasons/south-park/",
 		"html_links": False,
@@ -181,7 +181,7 @@ def _parse_episodes(data, season, lang):
 	print("parsing episodes from season", season + 1)
 	extra = []
 	lists = _dk(data,["children", "type|MainContainer", "children"], [])
-	if lang in ["en", "es"]:
+	if lang in ["en", "es", "eu"]:
 		lists = list(filter(lambda x: "type" in x and x["type"] == "LineList", lists))
 		extra = list(filter(lambda x: _has_extra(x), [ _dk(s, ["props"], []) for s in lists ]))
 		lists = list(filter(lambda x: len(x) > 0 and "url" in x[0], [ _dk(s, ["props", "items"], []) for s in lists ]))[0]
@@ -275,11 +275,11 @@ def main():
 	parser = argparse.ArgumentParser()
 	parser.add_argument('--debug', action='store_true', default=False, help='enable debug')
 	group = parser.add_mutually_exclusive_group(required=True)
-	group.add_argument('--en', action='store_true', default=False, help='language english')
-	group.add_argument('--es', action='store_true', default=False, help='language spanish')
-	group.add_argument('--de', action='store_true', default=False, help='language german ')
-	group.add_argument('--se', action='store_true', default=False, help='language swedish')
-	group.add_argument('--it', action='store_true', default=False, help='language swedish')
+	group.add_argument('--en', action='store_true', default=False, help='language english (north america)')
+	group.add_argument('--es', action='store_true', default=False, help='language spanish (north america)')
+	group.add_argument('--de', action='store_true', default=False, help='language german (germany)')
+	group.add_argument('--se', action='store_true', default=False, help='language swedish (sweden)')
+	group.add_argument('--eu', action='store_true', default=False, help='language english (europe)')
 	args = parser.parse_args()
 
 	os.chdir(WORKI_DIR)
@@ -295,7 +295,7 @@ def main():
 	elif args.se:
 		generate_file("se")
 	elif args.it:
-		generate_file("it")
+		generate_file("eu")
 	else:
 		print("nothing was selected..")
 
