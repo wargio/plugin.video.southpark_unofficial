@@ -1,5 +1,5 @@
 {
-    "created": "2020-10-03 20:37:51.784781",
+    "created": "2020-10-14 14:12:33.670585",
     "seasons": [
         [
             {
@@ -161,6 +161,54 @@
                     "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjgyMmYwZDQxLTBmNTYtNDBlMC04OTdkLTJkZDFmMWFiNDVkZD9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
                     "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmUzOTUxZWMzLTY4NmItNDEwNC05ZGFhLTUxNGM5YzRhMjQxZj9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
                 ]
+            },
+            {
+                "image": "https://southparkstudios.mtvnimages.com/uri/mgid:arc:content:shared.southpark.nordics:bc419063-7342-11ea-a59c-0a7527021758?quality=0.7",
+                "uuid": "5fd4b1f2-ecfd-11e0-aca6-0026b9414f30",
+                "details": "While Mr. Garrison deserts the class for a visit to Tom's Rhinoplasty, Stan, Kyle, Kenny, and Cartman all compete for the attention of Ms. Ellen, the new substitute teacher.",
+                "date": "02/11/1998",
+                "title": "Tom's Rhinoplasty",
+                "url": "/episodes/44i3y3/south-park-tom-s-rhinoplasty-season-1-ep-11",
+                "season": "1",
+                "episode": "11",
+                "mediagen": [
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmQ1YWM3MTk3LWNjODUtNDI2Mi04NTRjLTczMDVkNjdhOWUyOT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmE0YjcwNzUxLTIyM2ItNDQzZC05MTZlLThmM2M1MzVjMWIwMz9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjc2NGI5YjZkLTg0YjYtNDI4OS05ZWJjLTU1OWJlYzdhYzc2ND9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmVhM2Y0OWFhLWYwYWQtNGFjOC1iNzNlLWNmM2M3NDVjNjQ1MT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
+                ]
+            },
+            {
+                "image": "https://southparkstudios.mtvnimages.com/uri/mgid:arc:content:shared.southpark.nordics:bc418e86-7342-11ea-a59c-0a7527021758?quality=0.7",
+                "uuid": "5feca712-ecfd-11e0-aca6-0026b9414f30",
+                "details": "The boys' discovery of a prehistoric relic spawns a monster that threatens to destroy South Park and the world.",
+                "date": "02/18/1998",
+                "title": "Mecha-Streisand",
+                "url": "/episodes/negd7t/south-park-mecha-streisand-season-1-ep-12",
+                "season": "1",
+                "episode": "12",
+                "mediagen": [
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjZkNjU1NTg0LTcxNmMtNDc1ZC04NzU5LTY4NGQ2ZjllZmQwMT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmVhYmMyMTFmLTNlMTItNDM5ZS1iNzU4LTQzYjI5YWZlNGQzNT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmEwMGFlZTNjLTAyZTItNDU2Zi05N2M2LTY1MGNjYmMwOGQ3Yj9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmRmOTUzZWNmLWY0ZTMtNDA0OC1hMjIyLWFhOWM3MDEzZWViYj9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
+                ]
+            },
+            {
+                "image": "https://southparkstudios.mtvnimages.com/uri/mgid:arc:content:shared.southpark.nordics:bc4192db-7342-11ea-a59c-0a7527021758?quality=0.7",
+                "uuid": "5fdad9f6-ecfd-11e0-aca6-0026b9414f30",
+                "details": "Who is Eric Cartman's father? It could be anyone who attended South Park's 12th Annual Drunken Barn Dance.",
+                "date": "02/25/1998",
+                "title": "Cartman's Mom Is A Dirty Slut",
+                "url": "/episodes/dumjvr/south-park-cartman-s-mom-is-a-dirty-slut-season-1-ep-13",
+                "season": "1",
+                "episode": "13",
+                "mediagen": [
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmZlYjdmMTMzLTNjZjMtNDBkMS1hYWE4LTI5ZWU5MTIzYjg1OD9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjNhNGQ1MzkzLTYwODUtNDAyNC1hZmI2LWI5NzI0OGI4NWMwMz9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmQxNjY5NzUzLTQzYjctNDU5ZS05OGFjLWZmMTQ5MTA3MDdjND9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjA4MzkwM2U4LTI4ODEtNDUxYi1hYTBkLTEyY2NlYTlhZGQ3Yj9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
+                ]
             }
         ],
         [
@@ -317,6 +365,134 @@
                     "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmY3ZDZhMjc0LWM0NjgtNDE2MC05NjQyLTNkZTE4YmM1ZDgxZD9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
                     "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmI2NWIyZGFhLTU0MjYtNDc4OC04ZDU1LThmMDA1OTIwMGRkNz9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
                     "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjdlZDdmZGE2LTk5ODEtNGNiYi1hNDZmLWMwYzkyOGI5N2U2MD9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
+                ]
+            },
+            {
+                "image": "https://southparkstudios.mtvnimages.com/uri/mgid:arc:content:shared.southpark.nordics:0d55675d-740b-11ea-a59c-0a7527021758?quality=0.7",
+                "uuid": "6007e82e-ecfd-11e0-aca6-0026b9414f30",
+                "details": "Is the new planetarium a harmless place to learn about the solar system, or the scene of a diabolical plot to control the minds of South Park's citizens?",
+                "date": "09/02/1998",
+                "title": "Roger Ebert Should Lay Off the Fatty Foods",
+                "url": "/episodes/2ixlzj/south-park-roger-ebert-should-lay-off-the-fatty-foods-season-2-ep-11",
+                "season": "2",
+                "episode": "11",
+                "mediagen": [
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjE5OWQ1MTZmLWU0ODQtNDA0ZC1hNTY4LWVlY2NlMDM2YjJkOD9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmViODU5Y2E4LTNhMzEtNDk2MC1hNDlmLTM4MGM0ZjVlMzc0MT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmM2ZTgxMWJmLTcyMTYtNGI4NS1hNWU5LWI4ZjcwMWY5ODA2Mz9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjQ4YWZkNTk1LWQyZmQtNDU0MS05ZDAzLWJjNGM2MzliMDhkND9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
+                ]
+            },
+            {
+                "image": "https://southparkstudios.mtvnimages.com/uri/mgid:arc:content:shared.southpark.nordics:0d55695c-740b-11ea-a59c-0a7527021758?quality=0.7",
+                "uuid": "5fcc32b6-ecfd-11e0-aca6-0026b9414f30",
+                "details": "Stan and kyle are psyched to have Wendy and Bebe visit their clubhouse for a game of Truth or Dare, but first they have to build one.",
+                "date": "09/23/1998",
+                "title": "Clubhouses",
+                "url": "/episodes/k58rq5/south-park-clubhouses-season-2-ep-12",
+                "season": "2",
+                "episode": "12",
+                "mediagen": [
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjE4OWM1YWQxLTBmMzMtNDY3OC1iNWY5LTFhOTZiNWFjNDBiZD9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjIzOWJlNWYxLWE1ZmUtNDMwMC05YmNkLTMzMzc0YWQwNzg2NT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjg0YmJhNThhLTU2ZDQtNGU3My1iZmJkLWVkZTFkMzU5MTY2Nz9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjllMThhMWYyLTdmMTUtNGY3YS05MzNhLWQyOTIzMGRlOTJiNT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
+                ]
+            },
+            {
+                "image": "https://southparkstudios.mtvnimages.com/uri/mgid:arc:content:shared.southpark.nordics:0d556b9f-740b-11ea-a59c-0a7527021758?quality=0.7",
+                "uuid": "5fce1b76-ecfd-11e0-aca6-0026b9414f30",
+                "details": "South Park's 14th Annual \"Cow Days\" rodeo and carnival is here and the boys are determined to win Terrance and Phillip dolls.",
+                "date": "09/30/1998",
+                "title": "Cow Days",
+                "url": "/episodes/4xxqgo/south-park-cow-days-season-2-ep-13",
+                "season": "2",
+                "episode": "13",
+                "mediagen": [
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmZkMTA0ZTE5LTIxMjItNGM4MS04ODQ2LWU4YWVhMTc3ZmY4Mz9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjI4MTMwMzYwLWNiZWEtNGRiZS1iMmMyLTg0NjU5YWY5YjU0YT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmZkN2Q5ZDU1LWE0YmMtNGZmYi1iYmNmLTIxOTU1ODY3OWRlMT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmMzOTI3NDE2LTNmNmEtNDg0My1hZmQ5LTA2NjNhNzAxNDRhNT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
+                ]
+            },
+            {
+                "image": "https://southparkstudios.mtvnimages.com/uri/mgid:arc:content:shared.southpark.nordics:0d556d47-740b-11ea-a59c-0a7527021758?quality=0.7",
+                "uuid": "5fcfeeb0-ecfd-11e0-aca6-0026b9414f30",
+                "details": "After a huge loss in court, Chef is left penniless, but he has some very famous and talented friends in the music business who want to help their old mentor.",
+                "date": "10/07/1998",
+                "title": "Chef Aid",
+                "url": "/episodes/23818m/south-park-chef-aid-season-2-ep-14",
+                "season": "2",
+                "episode": "14",
+                "mediagen": [
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjY4NmY3MDY1LWQ3NTQtNDY1MS1iZjE2LWUyMTI4YzU0MzQ2NT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjk0NzgxNTI3LWQxZDEtNDk4Ny04OTc2LTJmYmUyNWQ4MDgyMz9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjA1ODExN2Y0LTlmNmYtNDI2Yi1iZDkyLTc1MGMyM2QxODY0YT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjA3NDBmM2RkLTQ5OGUtNGE2Ny05Yzc3LWI1NDg2NmNkMmMwYz9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
+                ]
+            },
+            {
+                "image": "https://southparkstudios.mtvnimages.com/uri/mgid:arc:content:shared.southpark.nordics:0d556e8c-740b-11ea-a59c-0a7527021758?quality=0.7",
+                "uuid": "5fd59bbc-ecfd-11e0-aca6-0026b9414f30",
+                "details": "When Sharon Marsh's Aunt Flo makes a monthly visit, she brings a mysterious pet fish for Stan.",
+                "date": "10/28/1998",
+                "title": "Spookyfish",
+                "url": "/episodes/973coq/south-park-spookyfish-season-2-ep-15",
+                "season": "2",
+                "episode": "15",
+                "mediagen": [
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmRiYTEyMzZlLTBlZDgtNDA4YS1hNjZiLTg4Y2NkNTFlMzRkMD9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjllMmNkNGU0LTZmYmYtNGFlZC04MTJlLWIyNGQ5MDBiZmIyMT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjJiNzBhMmZkLWZiNTAtNDM4Mi1hMzE2LWFjZDU3NGFhMWFhOT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjQ4ZTQyMjFmLTczNzUtNGE5NS1iZTAxLTBhNzcyMWEzNzE1ND9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
+                ]
+            },
+            {
+                "image": "https://southparkstudios.mtvnimages.com/uri/mgid:arc:content:shared.southpark.nordics:0d55725c-740b-11ea-a59c-0a7527021758?quality=0.7",
+                "uuid": "5febf47a-ecfd-11e0-aca6-0026b9414f30",
+                "details": "Dinner with Cartman's family takes a bizarre twist when Uncle Howard shows up after breaking out of prison with the help of his cellmate, Charlie Manson.",
+                "date": "12/09/1998",
+                "title": "Merry Christmas Charlie Manson!",
+                "url": "/episodes/q52xqu/south-park-merry-christmas-charlie-manson-season-2-ep-16",
+                "season": "2",
+                "episode": "16",
+                "mediagen": [
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmJmODYwMWNhLWM5MDMtNDUxYS05ZGNmLTY3M2M3YmUyZjRlNj9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmI3ZDc0M2MzLWRkMTYtNGIyOC1hYmRiLTZhZTQ3OGZhMWVjYz9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjk5MzBiNWY4LWI5YTQtNGZiNi1iMmI3LTYyZmFjMjAwMDc2ND9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjZjYWY0ZjA0LTVkNDQtNGRlZC04NjRlLWQ1ZWFhMTEwNDRhNz9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
+                ]
+            },
+            {
+                "image": "https://southparkstudios.mtvnimages.com/uri/mgid:arc:content:shared.southpark.nordics:0d5573c7-740b-11ea-a59c-0a7527021758?quality=0.7",
+                "uuid": "5fd65700-ecfd-11e0-aca6-0026b9414f30",
+                "details": "Gnomes - Cartman, Stan, Kyle and Kenny are assigned to write a report with Tweek, the very nervous and highly caffeinated boy who insists gnomes are stealing his underpants.",
+                "date": "12/16/1998",
+                "title": "Gnomes",
+                "url": "/episodes/13y790/south-park-gnomes-season-2-ep-17",
+                "season": "2",
+                "episode": "17",
+                "mediagen": [
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjY1NmFkODAyLWFkZWUtNDQ5MC05OGQyLWIxZjJmM2ZjYTY5ZD9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmUwNWRlZDdiLWY5Y2ItNGJlMC04MTViLTYxMDE2ODVhOWEyNT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmRjNGRhY2JiLTY0ZmUtNDVlZS05YzBhLWViZGVmMGI4YmVlMT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjBmZTFlYmEzLWUxNjMtNGYwZi05ZThhLWNiZGI5ZmYzZjY5Yj9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
+                ]
+            },
+            {
+                "image": "https://southparkstudios.mtvnimages.com/uri/mgid:arc:content:shared.southpark.nordics:0d55758e-740b-11ea-a59c-0a7527021758?quality=0.7",
+                "uuid": "5fbcbaca-ecfd-11e0-aca6-0026b9414f30",
+                "details": "The boys' discovery of a man encased in ice threatens Stan and Kyle's friendship.",
+                "date": "01/20/1999",
+                "title": "Prehistoric Ice Man",
+                "url": "/episodes/19f06j/south-park-prehistoric-ice-man-season-2-ep-18",
+                "season": "2",
+                "episode": "18",
+                "mediagen": [
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmFkMzI4ODU2LTZjMDktNDFiZi05OWU1LThhYTc3MTMxZTJhOT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmM4MGEzZDVjLTRlMTUtNDc0ZS05MThlLTU3ZDA2ZjY4ODY3Nj9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjljMjA0NDA3LTdlMTItNDRiNC1hMjJlLTY1ZTFiZDFmN2QyNz9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjU4ODVhNTM3LWJmNDAtNDBjYy1iMmQxLTY1YjMwNjc5M2U5Yj9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
                 ]
             }
         ],
@@ -480,6 +656,113 @@
                     "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmFiNTRiYmE1LTY2OTAtNDlhNy1iNDg4LTEzNjM2NzViNmVlNz9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
                     "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjVjZGIxZGY4LTg0YzktNDY4ZS04NWNmLTViODJiZmEyYzEzMT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
                 ]
+            },
+            {
+                "image": "https://southparkstudios.mtvnimages.com/uri/mgid:arc:content:shared.southpark.nordics:ae85e774-741e-11ea-a59c-0a7527021758?quality=0.7",
+                "uuid": "5fd0e054-ecfd-11e0-aca6-0026b9414f30",
+                "details": "Stan, Kyle, Cartman and Kenny are caught up in the latest fad from Japan: Chinpoko Mon!",
+                "date": "11/03/1999",
+                "title": "Chinpokomon",
+                "url": "/episodes/mkw3sw/south-park-chinpokomon-season-3-ep-11",
+                "season": "3",
+                "episode": "11",
+                "mediagen": [
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmNmNjJiZTM0LWE3OTMtNDM0Zi1iNTg4LTU4ZjExZDk1ZTk5Yj9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjY0ZjgwZTllLTFkZGMtNGNlOS1hZDdlLTBhMzhmYTAzZDg3YT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjc5MTgzZTBmLTVhMzEtNDkyOC05NWE5LWE2YTllM2UwNDZiND9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjIxOGJiNWEzLWUzYTctNGI2Ni1hMjg5LTljNTJjYTg1YzcxMz9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
+                ]
+            },
+            {
+                "image": "https://southparkstudios.mtvnimages.com/uri/mgid:arc:content:shared.southpark.nordics:ae85eadd-741e-11ea-a59c-0a7527021758?quality=0.7",
+                "uuid": "60155a9a-ecfd-11e0-aca6-0026b9414f30",
+                "details": "To help Cartman win the school spelling bee, Cartman's Mom gives him the Hooked on Monkey Fonics spelling system.",
+                "date": "11/10/1999",
+                "title": "Hooked on Monkey Fonics",
+                "url": "/episodes/x7thqq/south-park-hooked-on-monkey-fonics-season-3-ep-12",
+                "season": "3",
+                "episode": "12",
+                "mediagen": [
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjVhYzMxODdlLTYyYzYtNDU2Yi05YTI1LTBlZjZlMTQ3YTMzYT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjMxMzllZDA3LTdjNjUtNGFmMy1iMWUxLWRmNmRhN2UwNTg0Mz9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmI0NmFiYmY4LWQyOTEtNDQ2OS05MTZjLWVjZTgyZGM1ODYzYT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjlkM2U4YjZlLWVhZTctNDhjMC05ZWRhLWFmZTZkZTE5NmU1NT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
+                ]
+            },
+            {
+                "image": "https://southparkstudios.mtvnimages.com/uri/mgid:arc:content:shared.southpark.nordics:ae85e83c-741e-11ea-a59c-0a7527021758?quality=0.7",
+                "uuid": "5fd1d46e-ecfd-11e0-aca6-0026b9414f30",
+                "details": "Starvin' Marvin returns to South Park with an alien spaceship and enlists Cartman, Stan, Kyle and Kenny's help to seek out a new home for his starving people.",
+                "date": "11/17/1999",
+                "title": "Starvin' Marvin In Space",
+                "url": "/episodes/ziuoor/south-park-starvin-marvin-in-space-season-3-ep-13",
+                "season": "3",
+                "episode": "13",
+                "mediagen": [
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmMxYjFiZjdjLTcyNDMtNGNkZi1hNGIxLWE4MjBhY2E5NWJjMD9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmQ2YmI4NGRhLWQ4YTgtNGFkZC05YmFmLTFjNDdhM2M4MGZlOD9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjViNWI1NzY5LWYyYWMtNGU1ZS05NWI4LTdmMDZlMDE1MjU1Mj9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjI1MTBhMTkzLWY3MjQtNGU2NC05MGYwLTYxMWU4NTIyNWExZj9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
+                ]
+            },
+            {
+                "image": "https://southparkstudios.mtvnimages.com/uri/mgid:arc:content:shared.southpark.nordics:ae85ebd8-741e-11ea-a59c-0a7527021758?quality=0.7",
+                "uuid": "5fef3842-ecfd-11e0-aca6-0026b9414f30",
+                "details": "Cartman has visions of glory as he suits up for the Confederacy in the annual reenactment of a Civil War battle, and leads the drunken rebels to defeat the union.",
+                "date": "11/24/1999",
+                "title": "The Red Badge of Gayness",
+                "url": "/episodes/d9sb5t/south-park-the-red-badge-of-gayness-season-3-ep-14",
+                "season": "3",
+                "episode": "14",
+                "mediagen": [
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmJhOWM5NGQ1LWZjYTMtNDdkZS04ZjczLWExMDQ2MmM1M2ZlZj9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmJkMWFlZGU1LTQ1MmQtNGQxMi1iNzgxLThjZWE2Zjg1OTIzZT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjRmZWFjNGE5LWRiMjAtNDMzYi1hOTU0LWQxMmI5OGQwNjNhMT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjkzODI1MDFlLWZjMzYtNGRhNS1iYTZmLTQ0MDhlYjdlY2ZiOT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
+                ]
+            },
+            {
+                "image": "https://southparkstudios.mtvnimages.com/uri/mgid:arc:content:shared.southpark.nordics:ae85eca3-741e-11ea-a59c-0a7527021758?quality=0.7",
+                "uuid": "5fd73616-ecfd-11e0-aca6-0026b9414f30",
+                "details": "An extravaganza of holiday songs are performed in unique South Park style, hosted by Mr. Hankey.",
+                "date": "12/01/1999",
+                "title": "Mr. Hankey's Christmas Classics",
+                "url": "/episodes/w7a0m8/south-park-mr-hankey-s-christmas-classics-season-3-ep-15",
+                "season": "3",
+                "episode": "15",
+                "mediagen": []
+            },
+            {
+                "image": "https://southparkstudios.mtvnimages.com/uri/mgid:arc:content:shared.southpark.nordics:ae85ed6c-741e-11ea-a59c-0a7527021758?quality=0.7",
+                "uuid": "5fe8e5d2-ecfd-11e0-aca6-0026b9414f30",
+                "details": "People from all over the world start to gather outside Jesus' house waiting for a millennium miracle.",
+                "date": "12/29/1999",
+                "title": "Are You There God? It's Me, Jesus",
+                "url": "/episodes/6ci3pc/south-park-are-you-there-god-it-s-me-jesus-season-3-ep-16",
+                "season": "3",
+                "episode": "16",
+                "mediagen": [
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjVmMTkxM2I5LThlYmYtNDRlNi04Mzg1LWVlNjY3MTcyYzU3Zj9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmQ5ZDE1NzUzLWJhZGUtNDM0ZS04MmQyLWE2MTEyMDAxYzM5YT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjU1Mzk2YmYzLTdiMmYtNDAwNS1hMDNiLWRkYWMzMGQwOWQ5MT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjJiMGViMjBiLWZmZjktNGJiOC05ZTY5LWUzMDM4NjcxMWZmNz9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
+                ]
+            },
+            {
+                "image": "https://southparkstudios.mtvnimages.com/uri/mgid:arc:content:shared.southpark.nordics:ae85ee36-741e-11ea-a59c-0a7527021758?quality=0.7",
+                "uuid": "6001fb8a-ecfd-11e0-aca6-0026b9414f30",
+                "details": "The boys go to Arkansas for the \"4 Million-Child Blow 2000!\", the first world-wide recorder concert.",
+                "date": "01/13/2000",
+                "title": "World Wide Recorder Concert",
+                "url": "/episodes/gxlmci/south-park-world-wide-recorder-concert-season-3-ep-17",
+                "season": "3",
+                "episode": "17",
+                "mediagen": [
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmRjODU5YTEwLTk0YjctNDA0OS1hNGU0LWVjYzZlYWUzMWI4ND9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjNmYmVjOWZjLThlN2UtNDhjYy04NjIzLTIwYTY0NzI1ZWJiYT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjZlNjI4NmY4LWIwNWEtNDUwYS1iNTM5LTg0OTQ0MDkzYTk4MD9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjk4Yjg3YmNmLTQyNDUtNGIxZC04ZTZlLWQ1YzA2NmUwYjY0Zj9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
+                ]
             }
         ],
         [
@@ -642,6 +925,118 @@
                     "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjRmMzEzMGVlLWJjZjEtNDk0YS05OTZmLWQ2MDgxMTJiZGFiNz9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
                     "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmIxNDY3NDM2LWI1MTgtNDlmOS1iNjRhLTJmYmQ1MmViODM4Mz9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
                 ]
+            },
+            {
+                "image": "https://southparkstudios.mtvnimages.com/uri/mgid:arc:content:shared.southpark.nordics:60884a2d-742a-11ea-a59c-0a7527021758?quality=0.7",
+                "uuid": "6021f02a-ecfd-11e0-aca6-0026b9414f30",
+                "details": "The boys devise a plan to travel back in time a full year and return to the third grade, with the help of Timmy and his electronic wheelchair.",
+                "date": "11/08/2000",
+                "title": "Fourth Grade",
+                "url": "/episodes/d9fr51/south-park-fourth-grade-season-4-ep-11",
+                "season": "4",
+                "episode": "11",
+                "mediagen": [
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmY1ZWI3NjRiLTgzZDgtNDA5MC04MjQyLTU5YzQzNWQwYjJmZT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjJjZjA4Zjc5LTExZGMtNDM5MC05ZGZiLTg3NDdhZTIzNzUxNz9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjVlYmEyODdlLTAxZDUtNGIzMC1iNzFiLWE1M2Y0NWMzZDVkND9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjZiODAyYzQzLTU4NGMtNGYxNC1hMWJlLTE1OWNjZmFkZjI5Zj9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
+                ]
+            },
+            {
+                "image": "https://southparkstudios.mtvnimages.com/uri/mgid:arc:content:shared.southpark.nordics:60884b6c-742a-11ea-a59c-0a7527021758?quality=0.7",
+                "uuid": "602117ea-ecfd-11e0-aca6-0026b9414f30",
+                "details": "When Cartman finally stops bragging about his new Trapper Keeper, a stranger informs him that it will eventually take over the world and destroy humankind, if they don't destroy it first.",
+                "date": "11/15/2000",
+                "title": "Trapper Keeper",
+                "url": "/episodes/5fuujn/south-park-trapper-keeper-season-4-ep-12",
+                "season": "4",
+                "episode": "12",
+                "mediagen": [
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmZlYWYzNDdiLTU5NjMtNDM4Yy1iYWMwLWRjNDNiOGE0MTVjZj9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjI1MWIzZmIyLWJlMWMtNDQyNy05Zjc1LWU1MjBlZWYzMzJlNz9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjIyZGI0MjU5LTNjNGMtNDY0MC05ZmIzLTg5MjQ0ODg3NWQxNz9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjk1MTc1MzQ3LWMxNDktNGFmYS04MDk3LTAzOTk0ZTVhYjk2YT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
+                ]
+            },
+            {
+                "image": "https://southparkstudios.mtvnimages.com/uri/mgid:arc:content:shared.southpark.nordics:60884cab-742a-11ea-a59c-0a7527021758?quality=0.7",
+                "uuid": "60203a78-ecfd-11e0-aca6-0026b9414f30",
+                "details": "When Butters informs the forth grader's that the Kindergarteners school play is a magnificent sight to behold, they go through a lot of pain to make sure they beat the tiny tots' show.",
+                "date": "11/22/2000",
+                "title": "Helen Keller! The Musical",
+                "url": "/episodes/dh0u78/south-park-helen-keller-the-musical-season-4-ep-13",
+                "season": "4",
+                "episode": "13",
+                "mediagen": [
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjk4MDBlYzQzLWY1ZDItNDNkMS04MzRhLTU5NGQyNzM4OGZkZT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmFhYjk1NTA2LWZmZGQtNDg5NC1iY2Q0LWU2M2MxOGU2OGNjYj9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjFhOGE3ZGY1LWI2NjctNDUzMC04MTBkLTVhYTY0NzI2NGM2ZT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjJlMzY5Y2ZiLTM1NjItNDUwNC04ODU1LTY2NDVhM2YxMzU2NT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
+                ]
+            },
+            {
+                "image": "https://southparkstudios.mtvnimages.com/uri/mgid:arc:content:shared.southpark.nordics:608840bf-742a-11ea-a59c-0a7527021758?quality=0.7",
+                "uuid": "602a5b48-ecfd-11e0-aca6-0026b9414f30",
+                "details": "When Pip is offered the opportunity to become a gentleman he goes to London only to discover that Miss Havisham plans to break his heart.",
+                "date": "11/29/2000",
+                "title": "Pip",
+                "url": "/episodes/6bxssx/south-park-pip-season-4-ep-14",
+                "season": "4",
+                "episode": "14",
+                "mediagen": [
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmQ5NjI4ZGZkLWNiZTAtNDI5Zi1hNWZkLTIxYjY5MWU4Y2UyMT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmIzZWZjZGVmLTFkZmQtNDQzMy05ZTZiLWE0YjJmNjE0NTkyND9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjVjNjJkMTE3LTVlNmMtNGM5NS1iNTc3LWQ0YjU3ZWEyNGJjYj9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjhhNTg1OGU5LTk4NGEtNGUyZC04YWE3LTQ3Y2IzOWEyNWFhOT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
+                ]
+            },
+            {
+                "image": "https://southparkstudios.mtvnimages.com/uri/mgid:arc:content:shared.southpark.nordics:60884f03-742a-11ea-a59c-0a7527021758?quality=0.7",
+                "uuid": "5fe9b28c-ecfd-11e0-aca6-0026b9414f30",
+                "details": "Cartman's family and friends have intervened and are forcing him to trim down. While Cartman's away, Kenny's star is on the rise when he gets his own reality TV show.",
+                "date": "12/06/2000",
+                "title": "Fat Camp",
+                "url": "/episodes/frgptn/south-park-fat-camp-season-4-ep-15",
+                "season": "4",
+                "episode": "15",
+                "mediagen": [
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjRiODEzODJmLTU2NjUtNDc3MC04NDk5LTRmMTZjMDljY2M1MT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjk3ZGI1NjExLWZlZTgtNGJlYi1hY2UxLTljMmJkZjk4ZGE3OT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjdlY2JjNmNmLTMxMGQtNDBmNC1iOGNhLTE4OGI1Zjg0ZDk2MT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmNkNWVkYTQyLTgxMWQtNDc5OC1hOTRjLTRjZjFlNjZlZDMxZT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
+                ]
+            },
+            {
+                "image": "https://southparkstudios.mtvnimages.com/uri/mgid:arc:content:shared.southpark.nordics:60885063-742a-11ea-a59c-0a7527021758?quality=0.7",
+                "uuid": "601b1336-ecfd-11e0-aca6-0026b9414f30",
+                "details": "To get back at his parents for not letting him go to a concert, Kyle tells the police that his parents molested him. Soon, the whole town is free of adults and divided into two rival cities.",
+                "date": "12/13/2000",
+                "title": "The Wacky Molestation Adventure",
+                "url": "/episodes/fmgki1/south-park-the-wacky-molestation-adventure-season-4-ep-16",
+                "season": "4",
+                "episode": "16",
+                "mediagen": [
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjcyNDJhN2QzLTIwZjAtNDU3Yy1hMjg4LWM1MTkzN2M4MWRkYj9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjFmODg2NDVmLWNhNDQtNDYxNC1hMzlhLTVhYjc2ZjUwMGQ1Yj9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmYxNDUyMmY0LTgwZGQtNGJmOS04NGExLWIwZWE1NzMxNjBlNz9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjY0ZGNjNGMxLWVmMGItNDEwZS04ODVjLTRkNjAxMzJiMDM0Nj9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
+                ]
+            },
+            {
+                "image": "https://southparkstudios.mtvnimages.com/uri/mgid:arc:content:shared.southpark.nordics:608851a7-742a-11ea-a59c-0a7527021758?quality=0.7",
+                "uuid": "6018d79c-ecfd-11e0-aca6-0026b9414f30",
+                "details": "When Mr. Hankey skips Christmas, the boys find him living with his alcoholic wife and their three little nuggets. He tells them that no one is into Christmas anymore.",
+                "date": "12/20/2000",
+                "title": "A Very Crappy Christmas",
+                "url": "/episodes/7rd3vw/south-park-a-very-crappy-christmas-season-4-ep-17",
+                "season": "4",
+                "episode": "17",
+                "mediagen": [
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmE0NzYxNWNjLTkwZGEtNDc1ZC1hZGY4LWQ3ODUxZGZmYjNjNj9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjFmZDM2NjdkLTY0ODctNDZkMS05NzNjLWMwMWNiMjBlYzc4Nz9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjhlMDIzYjk0LTE3MzctNDY4NS05OTJmLWYyNjNkNzU2MTFlMT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjJhNjA1OGRkLWJhMDQtNDQ3MC05YWMxLWUxNDlkMTE1NzUzNj9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
+                ]
             }
         ],
         [
@@ -793,6 +1188,70 @@
                     "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjkzZjkzZGQ4LWE3NDYtNDY2Mi05ZmU1LTk4MDFhNzkyMGU1Nz9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
                     "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjNhOTM0MjJmLWUxYzctNGY1Yy1hNWUxLWE3N2Q4NDI2ZDA3NT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
                     "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmI3MTQ1ZDA3LTQxNjktNDZmMC05YjdkLTlhNDQxNDliZDU5ND9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
+                ]
+            },
+            {
+                "image": "https://southparkstudios.mtvnimages.com/uri/mgid:arc:content:shared.southpark.nordics:414f3741-742d-11ea-a59c-0a7527021758?quality=0.7",
+                "uuid": "602e22dc-ecfd-11e0-aca6-0026b9414f30",
+                "details": "Mr. Garrison gets fed up with long lines, delayed flights and the airline industry in general and invents his own transportation device.",
+                "date": "11/21/2001",
+                "title": "The Entity",
+                "url": "/episodes/rxb67x/south-park-the-entity-season-5-ep-11",
+                "season": "5",
+                "episode": "11",
+                "mediagen": [
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjM4M2Q0MWMzLTAyNTMtNGY1My05ODljLTFkNTA2YmQ4Yzc0ZT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjQ5NmI4Y2YyLTU4Y2QtNDZiMC05ZmNiLTM2ZDJlMWNhMDI4MD9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjNjOWNjMGU2LTBmOTMtNDhhYy1hOTIzLTdhZjVjOTE3YTExND9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjJlMzg0ZmQxLWE5MjEtNGU0NS1hODAyLWY1YTYxZjY5ZGQ2Nj9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
+                ]
+            },
+            {
+                "image": "https://southparkstudios.mtvnimages.com/uri/mgid:arc:content:shared.southpark.nordics:414f3811-742d-11ea-a59c-0a7527021758?quality=0.7",
+                "uuid": "5fcee498-ecfd-11e0-aca6-0026b9414f30",
+                "details": "Token is tired of being the only rich kid in town, and succeeds in attracting several other wealthy families to South Park.",
+                "date": "11/28/2001",
+                "title": "Here Comes The Neighborhood",
+                "url": "/episodes/ulcvyu/south-park-here-comes-the-neighborhood-season-5-ep-12",
+                "season": "5",
+                "episode": "12",
+                "mediagen": [
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmE2NTcxYmZhLTIxNGEtNGVjZC04ZDdjLTFkYjcwYzliNDJjNz9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjdhZGI0NWIwLTI0ZmUtNGUzMi1hZGU4LWE5OGFjNWZmMDkxOT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjdkNmUwODNkLTA4YjMtNDc1NC04ODE2LWFkNDIyNzYwMGFhZT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjhlMDU4NzM4LTcwMDEtNDE0My05OGM5LTcyZDlhZTdhYTcxZD9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
+                ]
+            },
+            {
+                "image": "https://southparkstudios.mtvnimages.com/uri/mgid:arc:content:shared.southpark.nordics:414f38e2-742d-11ea-a59c-0a7527021758?quality=0.7",
+                "uuid": "602c1f5a-ecfd-11e0-aca6-0026b9414f30",
+                "details": "In a very special episode of \"South Park,\" Cartman fights for Kenny's life when he speaks before Congress in favor of stem-cell research.",
+                "date": "12/05/2001",
+                "title": "Kenny Dies",
+                "url": "/episodes/zb407b/south-park-kenny-dies-season-5-ep-13",
+                "season": "5",
+                "episode": "13",
+                "mediagen": [
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmUzZTE2ZjJiLTE5NTMtNDBjOC05MTMzLThkY2I3YmUyYjdkZj9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmIzMjkxOWVmLTgwYzItNGNiNi1iYzBhLTA0MjFlZDYyOTk2MD9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmNkNTdhNTVhLWYxNjItNDYyZi04MTk3LTNjNjY5ZmQxZWVhMj9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmViMWUyZDFiLWNjNzUtNDdkNS1hMTRmLWE2NTcyZWI5OThhND9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
+                ]
+            },
+            {
+                "image": "https://southparkstudios.mtvnimages.com/uri/mgid:arc:content:shared.southpark.nordics:414f3a2a-742d-11ea-a59c-0a7527021758?quality=0.7",
+                "uuid": "602b43c8-ecfd-11e0-aca6-0026b9414f30",
+                "details": "Alone and lost, Butters determinedly makes his way through porn theatres and gay bathhouses in an effort to get his dad back home in time to eat at Bennigan's for his parents' anniversary.",
+                "date": "12/12/2001",
+                "title": "Butters' Very Own Episode",
+                "url": "/episodes/8gq1cu/south-park-butters-very-own-episode-season-5-ep-14",
+                "season": "5",
+                "episode": "14",
+                "mediagen": [
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmQwMWZhNzA4LTIwMzYtNGQ4MC05OGZhLTc4NmVkMDFjMTUzNz9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjA3YjFhOWVkLTIxNTctNDZhYS04Nzk2LWQxYmMxMzkwYTI3ND9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjBiMzYxZjU4LTQxMWYtNGViMy1iNDM0LTVhZjIzODk2MjA1YT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjRkZDBjNGVlLTE3ZTctNGEzYy1iZmUyLWRlODFiMTcwNTJkYT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
                 ]
             }
         ],
@@ -956,6 +1415,118 @@
                     "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjExMmE4Y2EwLWNjZDItNDMwZS04OGZhLThjMzQ4NzIzYTNmND9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
                     "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjI5ODM0Yzc1LTc4OTEtNGU5NS1iNDYxLTRiYjAwMTE0MjE3YT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
                 ]
+            },
+            {
+                "image": "https://southparkstudios.mtvnimages.com/uri/mgid:arc:content:shared.southpark.nordics:15fff3af-74f6-11ea-a59c-0a7527021758?quality=0.7",
+                "uuid": "60428bd2-ecfd-11e0-aca6-0026b9414f30",
+                "details": "In an effort to protect their children from kidnappers, the parents hire the owner of City Wok Restaurant to build the Great Wall of South Park.",
+                "date": "07/24/2002",
+                "title": "Child Abduction is Not Funny",
+                "url": "/episodes/welysd/south-park-child-abduction-is-not-funny-season-6-ep-11",
+                "season": "6",
+                "episode": "11",
+                "mediagen": [
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmYxMmFhMzlhLWU5ODctNDljZS04NWMxLTA2NTNhZWVjNTE5Mj9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjk3OTQyZTFmLWQ3ZGMtNGJkNS04NDM1LTljMGNlNjhhMjU1YT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjdjNDU4ZDdjLTRlYmUtNDNhMS1iMWMzLTEyOWQ4ZDM1ZmI0Yj9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjM2NmM5NTdmLWY0MGItNDgyNy1iNWY1LTQ1NWJlMDM2MmJlZD9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
+                ]
+            },
+            {
+                "image": "https://southparkstudios.mtvnimages.com/uri/mgid:arc:content:shared.southpark.nordics:15fff4f5-74f6-11ea-a59c-0a7527021758?quality=0.7",
+                "uuid": "60436fe8-ecfd-11e0-aca6-0026b9414f30",
+                "details": "Kenny died with the winning ticket to a prize of endless candy in his pocket. The boys decide to build a ladder to Heaven where they expect to find him and get the ticket back.",
+                "date": "11/06/2002",
+                "title": "A Ladder to Heaven",
+                "url": "/episodes/qly8oc/south-park-a-ladder-to-heaven-season-6-ep-12",
+                "season": "6",
+                "episode": "12",
+                "mediagen": [
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjE0OTg0ODA4LTUxMDUtNDRkNi04Y2IyLWM0MDAyMTdiODM1Mz9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjI1Y2RlOWEzLTZiOTAtNGQ0My1iZmRhLTI3YTZiZWQzMjIzZj9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmRjYjU5OGVkLTVjM2ItNDUxOC04NGQ1LTY0MzE3ZWFhZDczOT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmRiZTczMWI1LTRlNmEtNGM4ZC1hZmQ5LWUyOTk4NjI2MWVmOT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
+                ]
+            },
+            {
+                "image": "https://southparkstudios.mtvnimages.com/uri/mgid:arc:content:shared.southpark.nordics:15fff5d7-74f6-11ea-a59c-0a7527021758?quality=0.7",
+                "uuid": "60445a7a-ecfd-11e0-aca6-0026b9414f30",
+                "details": "The boys embark upon a mythical quest as they set out to return their copy of the \"The Lord of the Rings\" movie to their local video store.",
+                "date": "11/13/2002",
+                "title": "The Return of the Fellowship of the Ring to the Two Towers",
+                "url": "/episodes/u2kecs/south-park-the-return-of-the-fellowship-of-the-ring-to-the-two-towers-season-6-ep-13",
+                "season": "6",
+                "episode": "13",
+                "mediagen": [
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjIzOTM1OGFkLTZiYzYtNGJkZi05ZjQyLWYwY2E5ZDQwOWJiMj9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjc1NjQyMjk4LTg0MTctNDQ0OC1iZDRiLWRlYTQzNzBhODBiZT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjc2ZDJhOWFjLWIzZWUtNDVjNS04YmQ1LTJjNDhiN2Y4NTYwZj9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjhhNTJjNzU3LWY4YWUtNDAwMS1iNTZhLWNhZjIwZGU0ODlhYz9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
+                ]
+            },
+            {
+                "image": "https://southparkstudios.mtvnimages.com/uri/mgid:arc:content:shared.southpark.nordics:15fff6b8-74f6-11ea-a59c-0a7527021758?quality=0.7",
+                "uuid": "60454110-ecfd-11e0-aca6-0026b9414f30",
+                "details": "The boys are sentenced to the Death Camp of Tolerance where they learn how to treat minorities. Mr. Slave and Lemmiwinks make their debut in this episode.",
+                "date": "11/20/2002",
+                "title": "The Death Camp of Tolerance",
+                "url": "/episodes/z0mpok/south-park-the-death-camp-of-tolerance-season-6-ep-14",
+                "season": "6",
+                "episode": "14",
+                "mediagen": [
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmE3NmM0MDAzLWE0NjQtNDM5Mi1hMDNhLWE3NDYzOGJkNzMyOD9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmQzNWU0MDA3LTg1MzItNDljMC1iYjJlLTFiNWI1NmU3ZTA2Yj9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmU1NTdjNjdmLTc5YzItNDNlMS05MWFiLWFlMzc2NDU0NDA4MD9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjUyMWFiMjdhLThmZGYtNGYxZi05OWE1LTYzMzZkOGM0NGFmND9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
+                ]
+            },
+            {
+                "image": "https://southparkstudios.mtvnimages.com/uri/mgid:arc:content:shared.southpark.nordics:15fff78e-74f6-11ea-a59c-0a7527021758?quality=0.7",
+                "uuid": "5fe19cc8-ecfd-11e0-aca6-0026b9414f30",
+                "details": "When a famous psychic fails to help him exorcise Kenny from his body, Cartman and Chef travel to the moors of Scotland, where Chef's mom tries a little of her voodoo magic on him.",
+                "date": "11/27/2002",
+                "title": "The Biggest Douche in the Universe",
+                "url": "/episodes/h70xwl/south-park-the-biggest-douche-in-the-universe-season-6-ep-15",
+                "season": "6",
+                "episode": "15",
+                "mediagen": [
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjlhMGM4MzY3LWJiYjYtNGI0YS1iYWM4LWRiOGU3Y2NiM2E5ND9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjg4YjMyODJjLTdkYWQtNDIzOS05MmI2LTUxZWEzMTM4ZmM3Zj9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjUyYzRiN2QwLTg2NzYtNDQ4Mi05YTZmLWRkNmU5ZmRlZTlhOT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjYwYjUyNmI3LWNkZmUtNGNiOC05ZTdjLWRmMjQ3MmM3NDY4Nz9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
+                ]
+            },
+            {
+                "image": "https://southparkstudios.mtvnimages.com/uri/mgid:arc:content:shared.southpark.nordics:15fff864-74f6-11ea-a59c-0a7527021758?quality=0.7",
+                "uuid": "5fe34ca8-ecfd-11e0-aca6-0026b9414f30",
+                "details": "When a 32-year-old man claiming to be Stan from the future shows up in South Park, young Stan is forced to come to terms with the loser he will become.",
+                "date": "12/04/2002",
+                "title": "My Future Self n' Me",
+                "url": "/episodes/xfaqzg/south-park-my-future-self-n-me-season-6-ep-16",
+                "season": "6",
+                "episode": "16",
+                "mediagen": [
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmUyMDRiNTYxLTg2MDEtNGY4MS1hZDZmLTQxYTBhYWMxZWQ1Mj9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjNiM2NhNDNkLTU4YjctNDY5Ny1iYTgzLThiYmYzZjY5OWVlNz9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmVkMmYwZDVkLTk0MGUtNDBiZS05ZGEzLTM4YjUzYTdhY2RmYz9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmZkMTkwOTA5LTdhMTUtNDY3ZC1hYzRlLWRkOGYwODkwMzQzNT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
+                ]
+            },
+            {
+                "image": "https://southparkstudios.mtvnimages.com/uri/mgid:arc:content:shared.southpark.nordics:15fff93b-74f6-11ea-a59c-0a7527021758?quality=0.7",
+                "uuid": "60462cb0-ecfd-11e0-aca6-0026b9414f30",
+                "details": "Cartman has to score one big \"nice\" to be eligible for Christmas presents this year. He recruits Santa, Mr. Hankey and Jesus in a desperate attempt to bring Christmas to the downtrodden citizens of Iraq.",
+                "date": "12/11/2002",
+                "title": "Red Sleigh Down",
+                "url": "/episodes/e8zvyz/south-park-red-sleigh-down-season-6-ep-17",
+                "season": "6",
+                "episode": "17",
+                "mediagen": [
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmViZGE5ZWRjLTFkNzAtNGJhYS1hZWE1LTBiMTdkZTdmZTllZD9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjA1ZjY2M2NkLTU5MmUtNDUyMy04NmFmLTE2ZWY2OGFmNmZjND9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmRmMzBlNTlhLTJmNGUtNGI1Yy05YTdlLTVkMzlkNTFjNzViNT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmQ4ZWYzYTk2LTk4ZGUtNDhiOC04ZWM4LWI2MjdiODdkN2M0Nj9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
+                ]
             }
         ],
         [
@@ -1113,6 +1684,86 @@
                     "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmJkN2NiNmY1LTJiNjAtNDZhZC05MTY5LTExYzBjYzQ5MWI3NT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
                     "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjQ1N2RmN2IyLTg3YTItNDZhZC1iMmUyLTVmYjNkOTVjMTk3Yj9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
                 ]
+            },
+            {
+                "image": "https://southparkstudios.mtvnimages.com/uri/mgid:arc:content:shared.southpark.nordics:f24fa07d-74f6-11ea-a59c-0a7527021758?quality=0.7",
+                "uuid": "602d33ea-ecfd-11e0-aca6-0026b9414f30",
+                "details": "Kyle chooses Stan, Kenny and Butters to celebrate his birthday at Casa Bonita. When Cartman finds out he's not invited, he arranges for Butters to conveniently go \"missing.\"",
+                "date": "11/12/2003",
+                "title": "Casa Bonita",
+                "url": "/episodes/me0b40/south-park-casa-bonita-season-7-ep-11",
+                "season": "7",
+                "episode": "11",
+                "mediagen": [
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmNhOTQ0Y2VkLTZkYzAtNGFmNS1hOTQ0LWU0MzE4NzExMTQ1ZT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmRmMGNjZGIxLTkwZGUtNDA0OC05NWRhLTU0MmY5MTE3NDNkZT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjA0ODVjNjgwLTU0MTQtNDJmMS05ODBkLTBmOGUwZjAzYWNiND9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmUxMDRhNzkzLWNjZTgtNDU1NS05YTIyLTNmYWQwZTg0NGY1NT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
+                ]
+            },
+            {
+                "image": "https://southparkstudios.mtvnimages.com/uri/mgid:arc:content:shared.southpark.nordics:f24fa19a-74f6-11ea-a59c-0a7527021758?quality=0.7",
+                "uuid": "60327008-ecfd-11e0-aca6-0026b9414f30",
+                "details": "A Mormon kid moves to South Park and it's up to Stan to kick his ass. But when Stan and his dad meet their new Mormon neighbors, they become fascinated with how genuinely nice they are.",
+                "date": "11/19/2003",
+                "title": "All About Mormons",
+                "url": "/episodes/rl7pjr/south-park-all-about-mormons-season-7-ep-12",
+                "season": "7",
+                "episode": "12",
+                "mediagen": [
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjAwNzYyN2IwLTNlNTQtNGRlZi04ZWQzLWQyMTBlYTgwMzI3Mz9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjI4ZTFlNWM4LTNkMmEtNGYzOC1hNmI5LTQ3ODg4NDFkYjZhZj9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmU5NTUyZDI3LTZhMjEtNDYwOC1hMDMzLTRjZTg4YjBhYzgzOD9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjQ2MjNkYzJiLTllYTMtNGE3ZS1hODI2LWQ1YTIzYjY1ZmY0Yj9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
+                ]
+            },
+            {
+                "image": "https://southparkstudios.mtvnimages.com/uri/mgid:arc:content:shared.southpark.nordics:f24fa2df-74f6-11ea-a59c-0a7527021758?quality=0.7",
+                "uuid": "60357ce4-ecfd-11e0-aca6-0026b9414f30",
+                "details": "After singing and dancing representatives from an anti-smoking campaign rap about the dangers of smoking, the kids at South Park Elementary realize how cool it really is and take up the habit.",
+                "date": "12/03/2003",
+                "title": "Butt Out",
+                "url": "/episodes/u9u3rq/south-park-butt-out-season-7-ep-13",
+                "season": "7",
+                "episode": "13",
+                "mediagen": [
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjcxNGI5NTY5LTRjNGUtNDI3ZC05MzQwLTJhY2VlMWQwMWRmNj9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjhhMWM0MDM4LTA5ZGUtNDI5My1hYjJjLTk0MGYyYTU5YjNkYz9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjMxY2QxMzgzLTgzODgtNDJhZS04ZjUzLWRhZmM0OTNhMmRkYT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmIzYTJiOGU3LWMwOTctNDYxZi1iNjJhLTk0ZTY2ZjU0ZjkyNj9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
+                ]
+            },
+            {
+                "image": "https://southparkstudios.mtvnimages.com/uri/mgid:arc:content:shared.southpark.nordics:f24fa3c0-74f6-11ea-a59c-0a7527021758?quality=0.7",
+                "uuid": "60375d34-ecfd-11e0-aca6-0026b9414f30",
+                "details": "After Wendy breaks up with Stan the boys take him to \"Raisins,\" a local restaurant known for its great chicken wings and hot girls.",
+                "date": "12/10/2003",
+                "title": "Raisins",
+                "url": "/episodes/tr6pou/south-park-raisins-season-7-ep-14",
+                "season": "7",
+                "episode": "14",
+                "mediagen": [
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmMxZWEyZTRiLTcxMmUtNGQyMC05ZGI4LWE1NGQwMmFkM2E1Mj9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjc0MTIyOTk0LWNkMzQtNDY2MC05ZjU1LTlmNTg4NWVkZjhiNz9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmE1NmUwMjIwLWIxZmYtNGRlYS05OTIyLTUxZjY4M2JiYzhmMD9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjE5NTg0NTFiLTViMjUtNDU5NC04NDQ5LWExOTQzY2YyMWJlMT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
+                ]
+            },
+            {
+                "image": "https://southparkstudios.mtvnimages.com/uri/mgid:arc:content:shared.southpark.nordics:f24fa491-74f6-11ea-a59c-0a7527021758?quality=0.7",
+                "uuid": "6039b782-ecfd-11e0-aca6-0026b9414f30",
+                "details": "The town decides to cancel Christmas and take up a collection when Ike's Canadian birth parents show up unexpectedly and want their baby back.",
+                "date": "12/17/2003",
+                "title": "It's Christmas in Canada",
+                "url": "/episodes/m91chj/south-park-it-s-christmas-in-canada-season-7-ep-15",
+                "season": "7",
+                "episode": "15",
+                "mediagen": [
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjllMDI3MzYzLTMyYjYtNGQ5Ni05MjVlLTEyYjZjMjNlMzI0Mj9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmY0Y2M2YWVlLTM0MDYtNGJmZS1iMDViLWM5OWZhYmFjOTc2Zj9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjI0ZTQ5M2FmLWQzYWItNDU1NS1iOWVjLTFhODYzMjc1MzM1ZD9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmI5OWQ5NjQ1LTkyOWMtNDdlNy1hNWZjLTM3YTgyZWY0NTllMD9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
+                ]
             }
         ],
         [
@@ -1269,6 +1920,70 @@
                     "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjc1MTU0OTM4LTA5MzgtNDk3Ni05MTZhLTY5MTg5MDc5YzE5MT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
                     "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjNmZDY3MGIxLWEwYjgtNDQ2MS05MWE5LTVkOWVjZTA3ODI0ZT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
                     "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjMzZjY5ODA2LWM0ODAtNGEzOS1iM2VlLTBhNjBjNzU5YWY1OD9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
+                ]
+            },
+            {
+                "image": "https://southparkstudios.mtvnimages.com/uri/mgid:arc:content:shared.southpark.nordics:c1ab452c-74f7-11ea-a59c-0a7527021758?quality=0.7",
+                "uuid": "6002d60e-ecfd-11e0-aca6-0026b9414f30",
+                "details": "The boys of South Park produce their own morning news show on the school's closed-circuit television station and are immediately caught up in an intense competition for ratings.",
+                "date": "11/17/2004",
+                "title": "Quest for Ratings",
+                "url": "/episodes/8fwe5a/south-park-quest-for-ratings-season-8-ep-11",
+                "season": "8",
+                "episode": "11",
+                "mediagen": [
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmM2ZDE2NWU1LTA2YzQtNGI2Yy05MmYzLWNiZWYzZjBhMGI2ZT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmI1YWE4NjZhLWNhYzYtNDY4ZS1iMzk3LTkxNjUwMTE5ZDM0Mj9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjJhZWQ1ZmVlLWUxNzItNDg5ZC05MmU2LWY2Y2RhNjE1NTFlZT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmMyMDMzMGE1LTEyZjctNDU3YS04YmU3LThjZWQxNDNlZWViZj9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
+                ]
+            },
+            {
+                "image": "https://southparkstudios.mtvnimages.com/uri/mgid:arc:content:shared.southpark.nordics:c1ab460c-74f7-11ea-a59c-0a7527021758?quality=0.7",
+                "uuid": "601a3434-ecfd-11e0-aca6-0026b9414f30",
+                "details": "Disturbed by the corruptive influence Paris Hilton has on all little girls in South Park, one of the town's favorite citizens challenges her to a \"whore-off.\"",
+                "date": "12/01/2004",
+                "title": "Stupid Spoiled Whore Video Playset",
+                "url": "/episodes/uixekv/south-park-stupid-spoiled-whore-video-playset-season-8-ep-12",
+                "season": "8",
+                "episode": "12",
+                "mediagen": [
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjg3NmRiYjkzLTUyMTItNDg4My1hNzY5LTEzNDc5ZjgzOGY5ZD9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjFhNzAwYmVhLWNkN2QtNDkxNC1hMDFiLWY3ZWZkNTBjYjk2Nz9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjI4OWE4MDYwLWE4YWUtNDNmOC1iMjExLTM0YTk0OTg2MDhlMj9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjMyNGYyMGQ2LWQ4NTYtNDgxZS1hMDRmLWUxMDYyZWM4ZjFlND9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
+                ]
+            },
+            {
+                "image": "https://southparkstudios.mtvnimages.com/uri/mgid:arc:content:shared.southpark.nordics:c1ab46ec-74f7-11ea-a59c-0a7527021758?quality=0.7",
+                "uuid": "6003a03e-ecfd-11e0-aca6-0026b9414f30",
+                "details": "After sustaining a severe head injury, Cartman appears to have the power to see into the future. South Park detectives are quick to enlist his help in cracking unsolved murder cases.",
+                "date": "12/08/2004",
+                "title": "Cartman's Incredible Gift",
+                "url": "/episodes/038jht/south-park-cartman-s-incredible-gift-season-8-ep-13",
+                "season": "8",
+                "episode": "13",
+                "mediagen": [
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmVmYmIxYzFjLTNkOWItNDQ5ZS1hMmQzLTc1MzE5OTM1MjAwZj9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjI0Mzc3ZGYzLTlhNDMtNDBhZC1hMDFkLTMzZTAwMGZjNDUyYT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmMxOGIwODMzLTkyOGMtNDBkMS1hOGVjLWIyZWI5MjNjNmJhZD9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjdmMzgyMWJhLTdhZTMtNDFmOC1iNmE2LTFkNzdiYTc1Zjc2ND9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
+                ]
+            },
+            {
+                "image": "https://southparkstudios.mtvnimages.com/uri/mgid:arc:content:shared.southpark.nordics:c1ab47cb-74f7-11ea-a59c-0a7527021758?quality=0.7",
+                "uuid": "60046f3c-ecfd-11e0-aca6-0026b9414f30",
+                "details": "Stan agrees to help a group of adorable woodland critters build a manger in anticipation of the birth of their Lord and Savior, only to find out that they serve Satan.",
+                "date": "12/15/2004",
+                "title": "Woodland Critter Christmas",
+                "url": "/episodes/itr2k3/south-park-woodland-critter-christmas-season-8-ep-14",
+                "season": "8",
+                "episode": "14",
+                "mediagen": [
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmNkNGMyMTlhLWEwNjYtNDVlZC05MDM4LWQxYWU4OTA3NGU0Yz9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmMzODQyMjVmLTA4OGYtNGEzNy1iYjAxLTEwMWZiNjgzODQ5YT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmQ3OGE3M2QwLTZjODQtNDE5Yy04ZjEwLWM0ZGZiY2E1ZjdmMT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmQyODBiMDQ0LWEyODEtNGRhMy04YjY1LTkxZDNkZGVlNWNkMT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
                 ]
             }
         ],
@@ -1432,6 +2147,70 @@
                     "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmMzM2RkODI5LWIwZjgtNDFkYy05NzI4LTI2ZjFmMWZiOGRlMj9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
                     "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjUwMDVmYzliLTIyMDctNDIyMS05OTIxLTdmOWI0NTBmN2RhOD9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
                 ]
+            },
+            {
+                "image": "https://southparkstudios.mtvnimages.com/uri/mgid:arc:content:shared.southpark.nordics:e40cb519-74fc-11ea-a59c-0a7527021758?quality=0.7",
+                "uuid": "5fe4ddde-ecfd-11e0-aca6-0026b9414f30",
+                "details": "After the sudden on-set of the disease Gingervitis, Cartman rallies all other ginger kids to rise up and assume their role as the master race.",
+                "date": "11/09/2005",
+                "title": "Ginger Kids",
+                "url": "/episodes/uvp08l/south-park-ginger-kids-season-9-ep-11",
+                "season": "9",
+                "episode": "11",
+                "mediagen": [
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjJkNGY3MGI3LTIxOTQtNGY2NS04ZmViLTlhZTI1YTBhZGUwNj9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjBmMTU4Yjc0LWVkMmMtNDVlNy04MzZkLTc4NDFlYTYxZmRjYj9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmM5NDY3NmI2LWYzOTctNGFlZS04N2E2LTQ2ZjUzNWVkNjJjYj9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjZhZDQ0YWYwLTU0ODctNGQxYi1hMGY1LTM3ZjE3MTI1NTI0NT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
+                ]
+            },
+            {
+                "image": "https://southparkstudios.mtvnimages.com/uri/mgid:arc:content:shared.southpark.nordics:e40cb60d-74fc-11ea-a59c-0a7527021758?quality=0.7",
+                "uuid": "5ff7dccc-ecfd-11e0-aca6-0026b9414f30",
+                "details": "Scientologists converge on Stan's house after he is identified as the reincarnation of L. Ron Hubbard. One A-lister locks himself in the closet and refuses to come out after Stan criticizes his \"talent.\"",
+                "date": "11/16/2005",
+                "title": "Trapped in the Closet",
+                "url": "/episodes/a3esfi/south-park-trapped-in-the-closet-season-9-ep-12",
+                "season": "9",
+                "episode": "12",
+                "mediagen": [
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmI5ZTYxNDdjLTRmMTYtNDk5YS1iYzljLTg0ZmM5OTQ3ZGUzMj9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjk4MGEzOTI1LTgxMmEtNDVjZS1hZGMxLTI1NTg5MjIzMjMwOD9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjIwYzA1MjgwLTA5MjEtNDk5MS1hMTg2LWMxYWEyMmI1YTY1Yj9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjgyMjYxODE1LTNkNjktNDRmOC04MzI2LWUyYjQzZWEyZDQyMD9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
+                ]
+            },
+            {
+                "image": "https://southparkstudios.mtvnimages.com/uri/mgid:arc:content:shared.southpark.nordics:e40cb6e9-74fc-11ea-a59c-0a7527021758?quality=0.7",
+                "uuid": "5ff6f1c2-ecfd-11e0-aca6-0026b9414f30",
+                "details": "The boys try to rescue their new friend Willzyx, a talking space whale, from the Denver Sea Park and with the help of MASA (Mexican Aeronautica y Spacia Administracion) get him home to the moon for $200.",
+                "date": "11/30/2005",
+                "title": "Free Willzyx",
+                "url": "/episodes/esubf0/south-park-free-willzyx-season-9-ep-13",
+                "season": "9",
+                "episode": "13",
+                "mediagen": [
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjU1MDliNDMwLWNhOWMtNGE0YS04MzhjLWMzYWY5Y2MxZGU4OD9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmQ1ZWE2MTI1LTVlNWQtNGM4ZC1hZjllLTEzOTk3OTRlYWI3OT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmQzMDZjOGM0LTk5MTAtNDVhZi04OTBlLWY0NDBmMjU0OGE4ZD9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjM3N2Q1MTM1LWQwZjctNDk0Yy1iMjU5LWQwZGM0MTI1YjVmMz9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
+                ]
+            },
+            {
+                "image": "https://southparkstudios.mtvnimages.com/uri/mgid:arc:content:shared.southpark.nordics:e40cb7c0-74fc-11ea-a59c-0a7527021758?quality=0.7",
+                "uuid": "5fe5b420-ecfd-11e0-aca6-0026b9414f30",
+                "details": "Stan is embarrassed when his dad gets pulled over for drunk driving. Randy believes that only one thing can save him from his \"disease,\" a bleeding statue of the Virgin Mary in the next town.",
+                "date": "12/07/2005",
+                "title": "Bloody Mary",
+                "url": "/episodes/dspvu8/south-park-bloody-mary-season-9-ep-14",
+                "season": "9",
+                "episode": "14",
+                "mediagen": [
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmEzMTBjMmY4LTBkYWEtNDkxNS1iMmZhLWJjNzliNTM3ZWUzMD9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjMzYTEzNzA5LTk3ZDctNDMzZi04NjVkLTRiMDZmYWJmOGZjMT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjJhNjc5MDExLTQ4ZDEtNDdmMy04Mzc3LWYzYzQwMTQ2OTY3OD9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmQ3MjExMGE3LWQyZDQtNDQ1ZC1hODVjLTQ1YmY2M2Q3ODQ3ND9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
+                ]
             }
         ],
         [
@@ -1584,6 +2363,74 @@
                     "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjRkZjgwZjkxLTNhM2MtNDAyNS05OGQ3LWY2NDI5MDFiYzY3OD9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
                     "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmUyYjYzMTE2LWNkNDItNGJjMS05MGE3LWE0ZjQyZWQwYTk2YT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
                     "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjMyMWFiN2I3LWMzZjctNDk1ZC05OTRkLWUzOWRkYWY0NDk0Nj9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
+                ]
+            },
+            {
+                "image": "https://southparkstudios.mtvnimages.com/uri/mgid:arc:content:shared.southpark.nordics:6eb9831f-74fd-11ea-a59c-0a7527021758?quality=0.7",
+                "uuid": "5ff38e7e-ecfd-11e0-aca6-0026b9414f30",
+                "details": "Satan is throwing the biggest Halloween costume party ever. Just like a girl getting ready for her sweet sixteen, every detail must be perfect for the prince of darkness. The antics of the most notorious serial killers of all time threaten his fun.",
+                "date": "10/25/2006",
+                "title": "Hell on Earth 2006",
+                "url": "/episodes/6ok1di/south-park-hell-on-earth-2006-season-10-ep-11",
+                "season": "10",
+                "episode": "11",
+                "mediagen": [
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmVkOWY3ZDE2LTgyMDktNDQ5Ny04YjJlLTA1M2EwNWJhNGM0YT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmFmNGVhY2UyLTc2MjktNGZjOS1iNmY2LTNmYWY2ZGY2YTQ0NT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmY1Mjk2YjdlLTgxYzktNGQ5NS1iMmQzLWM0ZjgxNzRkNDRkNj9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmE3YWE2M2UwLTdlNTQtNDY3NC05ZjUyLWIzODE3NDFmNjA5Mz9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjk3ZmU4MTI1LTI1OWUtNDI5Ni1hOWUyLWY3MWZiNzM2ZDI1ND9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
+                ]
+            },
+            {
+                "image": "https://southparkstudios.mtvnimages.com/uri/mgid:arc:content:shared.southpark.nordics:6eb9845d-74fd-11ea-a59c-0a7527021758?quality=0.7",
+                "uuid": "5ff4382e-ecfd-11e0-aca6-0026b9414f30",
+                "details": "South Park Elementary faces strong opposition to the topic of evolution. Cartman's too busy to notice as he plans to propel himself into the future on the precise release date of the newest, hottest game console.",
+                "date": "11/01/2006",
+                "title": "Go God Go",
+                "url": "/episodes/ekt82w/south-park-go-god-go-season-10-ep-12",
+                "season": "10",
+                "episode": "12",
+                "mediagen": [
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjM2MGUyYzhjLWYyODMtNDQwZS1hMzA0LWUzZTA1OTAyNjkyOD9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmJmNGYzMzA2LTdjMzMtNDY0Zi05NGRjLTI0MjZkNmM0ZmU2YT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjg5NDgxMTc2LTVmZDItNDBlMy1iYTg1LTVkM2ZjYTI4NWNkNj9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjcxYjBkMDg3LThkNzgtNDUyZS04Mzk3LWY1Y2I0NDUxMzkyMj9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjk3N2VmNjNmLWQ0MzgtNDliOS04NjBkLWYyM2JmMTcwZWYxYj9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
+                ]
+            },
+            {
+                "image": "https://southparkstudios.mtvnimages.com/uri/mgid:arc:content:shared.southpark.nordics:6eb98534-74fd-11ea-a59c-0a7527021758?quality=0.7",
+                "uuid": "5ff513d4-ecfd-11e0-aca6-0026b9414f30",
+                "details": "Eric Cartman has frozen himself in an attempt to make his three-week wait for a Nintendo Wii pass quickly. A freak accident landed him over 500 years in the future and now, he's stuck in a Godless world on the brink of war with no Nintendo Wii.",
+                "date": "11/08/2006",
+                "title": "Go God Go XII",
+                "url": "/episodes/rqe7bl/south-park-go-god-go-xii-season-10-ep-13",
+                "season": "10",
+                "episode": "13",
+                "mediagen": [
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjU4N2ViYWJjLWI2ZDktNDQxYS04MGJjLTI0ZGM2ZDgyNzdmMz9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjE4N2YzNGY2LTRhMTUtNGMzZS05NDAyLTNmODgxMGM4ZTIyYz9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjhiMmUwMTE4LTgyNzUtNGQ4NS05N2E5LTljYjQ0MTJhOGUyNj9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjQ1ZGFkZjg5LTliYWYtNDYwMC1iYmUzLTBkM2ZlZjJjYjMxZD9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmNjNjkzYzUxLTE3YzUtNDNlYi1hOWZjLThlY2MwZTYwMmYwMj9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
+                ]
+            },
+            {
+                "image": "https://southparkstudios.mtvnimages.com/uri/mgid:arc:content:shared.southpark.nordics:6eb9860a-74fd-11ea-a59c-0a7527021758?quality=0.7",
+                "uuid": "5ff6136a-ecfd-11e0-aca6-0026b9414f30",
+                "details": "Stan Marsh has hit rock bottom. He's got no job, no bicycle and his only way out of a bad situation is to coach the local pee wee hockey team. ",
+                "date": "11/15/2006",
+                "title": "Stanley's Cup",
+                "url": "/episodes/w19jp7/south-park-stanley-s-cup-season-10-ep-14",
+                "season": "10",
+                "episode": "14",
+                "mediagen": [
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmE0MjlhMjEyLTc3MDItNDM5Mi04Y2UzLTk4N2YyMDQ4MTkxOT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjAxZWM3MjFkLTM5YjgtNGRmZS1iOGFmLWIzZjNiMDA2ZDJkZD9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjk3NzYyZGVmLTg5YzgtNDljYi05ZGYyLWJkYTcxZDhiZGU3OD9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjBmMDYxMmRkLTUwNzUtNGY3OC05ZDcwLWJjYTFlYmM4OWJhNz9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjE4YWRkNTk5LWVjM2UtNDg4Ni04Mjc5LTcyYWZkYTQ4NzJlMT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
                 ]
             }
         ],
@@ -1751,6 +2598,74 @@
                     "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjY1ZmU1Y2Y5LTY0ZjYtNGRjYi04NjBkLWI1MTdkZTM1MDhlYj9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
                     "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmE4M2I5ZGIwLTk5NmUtNGIzNS1hMzY0LWEyM2VhNDk4ZDA5YT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
                 ]
+            },
+            {
+                "image": "https://southparkstudios.mtvnimages.com/uri/mgid:arc:content:shared.southpark.nordics:8446194a-75cf-11ea-a59c-0a7527021758?quality=0.7",
+                "uuid": "67216644-ecfd-11e0-aca6-0026b9414f30",
+                "details": "Stan and Kyle are being held in the bowels of the Pentagon until they tell the government how they got into Imaginationland. Meanwhile, Cartman simply won't rest until he finds Kyle and gets him to make good on their bet to suck his balls.",
+                "date": "10/24/2007",
+                "title": "Imaginationland Episode II",
+                "url": "/episodes/vtizvz/south-park-imaginationland-episode-ii-season-11-ep-11",
+                "season": "11",
+                "episode": "11",
+                "mediagen": [
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmZmODNkZTEzLTljMTctNDZmZi1iNzcyLTdlZmRjMDg1ZDg0Zj9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmY2NWZkOTcyLTllYzQtNGJlYi04Yzc2LThhZjRlZDRhNTViOT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjgwNjhhMzJkLThkYmItNDhjNS1iZGQzLTE0NGMzY2JjMDA3MD9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjM5YTlmOTRkLWQ3YjItNGZiYy1hMDQ2LTRhNzc2ZThiY2YzND9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjBjMWU0MWFlLTIwYmMtNDg1YS05MzMzLWNhOGU3MDgxMGFiNT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
+                ]
+            },
+            {
+                "image": "https://southparkstudios.mtvnimages.com/uri/mgid:arc:content:shared.southpark.nordics:84461a18-75cf-11ea-a59c-0a7527021758?quality=0.7",
+                "uuid": "684796ba-ecfd-11e0-aca6-0026b9414f30",
+                "details": "Inside Imaginationland, Stan and Butters engage in the battle of their lives as they fight the army of evil imaginary forces. Meanwhile, Cartman goes all the way to the Supreme Court to get Kyle to pay up on their bet.",
+                "date": "10/31/2007",
+                "title": "Imaginationland Episode III",
+                "url": "/episodes/yi4pad/south-park-imaginationland-episode-iii-season-11-ep-12",
+                "season": "11",
+                "episode": "12",
+                "mediagen": [
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjkwYzAyMzJkLWUzYzctNDMxNi1iMzgzLWQ4MWY4NmYzMzE2Yz9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjU5YTBmZTE4LWE5NmItNGExZS04NmVhLWM0MGFmNTQxMjE0ND9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjM1MTY3YzQ5LWZlZDgtNDc3NC1hMzljLTUwNTM0NGMxYjU3ND9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjBkY2RiOWQyLTMwZWUtNDUxZC1iMDgzLWFjYzFlODM5NjAxYz9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjk1NTM4ZTY0LWFkNTQtNDA3Ny05YzlkLWM5MmM0YjRjYjMzMz9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
+                ]
+            },
+            {
+                "image": "https://southparkstudios.mtvnimages.com/uri/mgid:arc:content:shared.southpark.nordics:84461ae9-75cf-11ea-a59c-0a7527021758?quality=0.7",
+                "uuid": "684e1508-ecfd-11e0-aca6-0026b9414f30",
+                "details": "Stan and Kyle are hooked on Guitar Hero. Unfortunately, Stan's superior skills on the video game damage his friendship with Kyle.",
+                "date": "11/07/2007",
+                "title": "Guitar Queer-O",
+                "url": "/episodes/xv5ktr/south-park-guitar-queer-o-season-11-ep-13",
+                "season": "11",
+                "episode": "13",
+                "mediagen": [
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmI4YjliNGJhLTUyNTEtNDdmZS1iYjI0LTRlYTY1OTFkODI2OD9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjlmMGQzYTY4LTY2ZmEtNGUzOC1hYWMxLWZhYTg5Zjk0YzMwMT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjAwZTkwMzI1LWU5MDEtNDkzOS05MzlkLTc0MmNjNmQ4NmE3YT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjMwMGY5ZjM5LTM4NGMtNGI5MS04ODFmLWI2NmVkMTUzYjA0Yz9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjVjYmQ4Njg4LTRiYjYtNDRmYy05M2Y4LTBjY2JiMWMxNjllMz9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
+                ]
+            },
+            {
+                "image": "https://southparkstudios.mtvnimages.com/uri/mgid:arc:content:shared.southpark.nordics:84461bb8-75cf-11ea-a59c-0a7527021758?quality=0.7",
+                "uuid": "68737190-ecfd-11e0-aca6-0026b9414f30",
+                "details": "The girls in the fourth grade class have made a secret list that rates every boy's looks from cutest to ugliest. When the boys steal the list, they are completely unprepared to deal with the results.",
+                "date": "11/14/2007",
+                "title": "The List",
+                "url": "/episodes/5uz0vg/south-park-the-list-season-11-ep-14",
+                "season": "11",
+                "episode": "14",
+                "mediagen": [
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmRiZGYxZmYyLWQyOWItNDNkMi1hNDNjLTU5YmE0OWMwMTFiNT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjU4NTliYmNlLTNjNjAtNGMwZC1hYzFlLWQzNGZlMWI1Yzc3OD9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjRiZGQzOWI1LTM2MTQtNDQ0Mi1iMjc0LWVmNzUzYWMzOGM3OT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmNjN2M1Y2Y1LWYyZmUtNGM2MC1iMWMyLTg1ODg5NzFkNzMzOT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjEzY2Q3MTljLTllYTctNDY4NS1hMzEyLWU4MmU2MDkyM2MzNz9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
+                ]
             }
         ],
         [
@@ -1910,6 +2825,74 @@
                     "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmJlMmE2NWYxLTQ0N2EtNGQzNi1iYmQ1LTVhYWNmZjA0ZjFjOT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
                     "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmY2YTI1ZTI2LTQ4N2ItNGQyOC1iYzQ4LTAxZDE2YjFiYzJjYz9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
                     "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmNiNmU5YmNiLWFlNDEtNDYwZi05YmVhLWY2NDFhOTM3MzYzZT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
+                ]
+            },
+            {
+                "image": "https://southparkstudios.mtvnimages.com/uri/mgid:arc:content:shared.southpark.nordics:0a271bc9-75d0-11ea-a59c-0a7527021758?quality=0.7",
+                "uuid": "6c4273fc-ecfd-11e0-aca6-0026b9414f30",
+                "details": "Giant guinea pigs are attacking cities all over the world.\u00a0 The boys have the key that will save everyone from the onslaught but they're stranded in the Andes Mountains.",
+                "date": "10/29/2008",
+                "title": "Pandemic 2 \u2013 The Startling",
+                "url": "/episodes/akix98/south-park-pandemic-2-the-startling-season-12-ep-11",
+                "season": "12",
+                "episode": "11",
+                "mediagen": [
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjgyYmExOTJkLWJmMTItNDc2OS05NDE2LWRjOTAzNzQyNzZhNz9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmZhOTNkMzFlLTlmYzctNDdlMi05OTBhLWMxYWEyNjU0NWQ0Nj9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjY4ODBiNGNhLWE1YmUtNDQ2Yi1iOWY0LTJiN2JiZDE2OWU1Nz9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjUxYjJhZDY4LWExZTktNDNhNC1iYWM3LTQ2N2Q0MzRjNTBlOT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmU4NTU2NTg4LWFjNDYtNDQ5Ni1hZDlkLWEyODUxZjAwYjhjNT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
+                ]
+            },
+            {
+                "image": "https://southparkstudios.mtvnimages.com/uri/mgid:arc:content:shared.southpark.nordics:0a271ca2-75d0-11ea-a59c-0a7527021758?quality=0.7",
+                "uuid": "6ee309aa-ecfd-11e0-aca6-0026b9414f30",
+                "details": "While the country celebrates the outcome of the election, the new President-elect catches everyone off guard when he arrives at the White House prematurely.",
+                "date": "11/05/2008",
+                "title": "About Last Night\u2026",
+                "url": "/episodes/dt5skl/south-park-about-last-night-season-12-ep-12",
+                "season": "12",
+                "episode": "12",
+                "mediagen": [
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmFlMTY0M2M4LTJkNjUtNDQwMS1iMTM5LTk2MjYwYzA2M2Q5Zj9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjc0ZjFkNWJlLTliMDgtNDg1NS05MGM1LTJhZTc0ZjIwZmM2Zj9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjA2MzBiZDQxLThiMzctNDk4YS04ZWE0LTI4YWUyNDBmNmMwMT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmE0NzU3YjM2LTVjZDktNGI1Zi1hZTNiLWRkYmFlNWI3Njk3MD9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjQ0ZDFhNjFhLWUxNjYtNGZkNS05NmM0LTFhNDJmMjEwMDFkOT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
+                ]
+            },
+            {
+                "image": "https://southparkstudios.mtvnimages.com/uri/mgid:arc:content:shared.southpark.nordics:0a271d74-75d0-11ea-a59c-0a7527021758?quality=0.7",
+                "uuid": "6f4ff236-ecfd-11e0-aca6-0026b9414f30",
+                "details": "The boys must embrace the latest fad to hit South Park Elementary or risk their status as the coolest kids in school.",
+                "date": "11/12/2008",
+                "title": "Elementary School Musical",
+                "url": "/episodes/x6u02r/south-park-elementary-school-musical-season-12-ep-13",
+                "season": "12",
+                "episode": "13",
+                "mediagen": [
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjhkYzg3N2U2LTVjYTgtNDJjYy05M2E4LWRmZGUwYTFiYjZhYz9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmRkNzkyNGU0LTMzMzYtNDVlMS1iNzczLWUyNjVkMDliZTgzMz9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmExNTY4YWM4LWM0YzItNGE1NC05ZmM3LTI2NjA5MmM2ZWRkZj9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmYxYmRjMDdmLWExYTUtNDA2My1iNDA5LTYzMjVhYmUzMmNkYT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmUzNGJjZGVkLTQyODMtNDhkYS04Yzc5LTI4NmEzODBhMDk4Mj9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
+                ]
+            },
+            {
+                "image": "https://southparkstudios.mtvnimages.com/uri/mgid:arc:content:shared.southpark.nordics:0a271e4a-75d0-11ea-a59c-0a7527021758?quality=0.7",
+                "uuid": "6f6052ca-ecfd-11e0-aca6-0026b9414f30",
+                "details": "Butters is sure he's seen a Vampire at school but he can't get anyone to listen to him. Meanwhile, the Goth Kids are angry and frustrated when the other kids can't tell the difference between a Goth and a Vampire.",
+                "date": "11/19/2008",
+                "title": "The Ungroundable",
+                "url": "/episodes/tt4m8l/south-park-the-ungroundable-season-12-ep-14",
+                "season": "12",
+                "episode": "14",
+                "mediagen": [
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjMyOTU4MzkzLTVjNzYtNDE3NS1iNjM4LTBiZTg3NzAwYWE1Mz9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjU0NWIwMTJiLTc4YTQtNGVjMi1hZGY0LWM0NTE5ZmNkODVhZD9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjBlNzZmMDBhLTA3NzYtNDU4YS04NGZmLThjYTNmOTc1M2VkNj9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmU3YTNlMjE5LTlkNWYtNGYyMi1hMTg3LWQ1YjlhNzZjY2JlMT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmY3NGFiOWZlLTY2YzUtNGJiMC1hZGE4LTEzMDhiYWJkODZkYT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
                 ]
             }
         ],
@@ -2077,6 +3060,74 @@
                     "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmI1ZGI0YzkwLTMxYmEtNGI1Ni05ZTUxLTQzMTQ5YTcyZjQ5OT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
                     "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjhmNGZlYWEzLTU2NDQtNGJhZS1hMzQxLWE5YjYwOTlkZTY0MD9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
                 ]
+            },
+            {
+                "image": "https://southparkstudios.mtvnimages.com/uri/mgid:arc:content:shared.southpark.nordics:5fdc7f5f-75d0-11ea-a59c-0a7527021758?quality=0.7",
+                "uuid": "73095c46-ecfd-11e0-aca6-0026b9414f30",
+                "details": "Stan takes action to stop the Japanese from killing the world's whales and dolphins.",
+                "date": "10/28/2009",
+                "title": "Whale Whores",
+                "url": "/episodes/lzz69d/south-park-whale-whores-season-13-ep-11",
+                "season": "13",
+                "episode": "11",
+                "mediagen": [
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjQ0ZTQyOTdlLTU2NjItNGZjZC05NWQzLTNlNWRmYTk1MjFlNz9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjRkN2FmNDJjLTU4OGEtNDA0OC1hOTg4LTUwYjc1YzBmYTExZj9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmMwZmU3YzFkLTIwNDMtNDM5NS1iMjJkLWI2MjZiYjFmMzZlZT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjUwYWZkMjAwLTI2NTAtNGZlZC04YjkzLWY4OGM5NGUwNTc0Yz9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjA0MzEwMTNkLTgyNGUtNGY3Yy1iMDYxLWM3N2VmM2I1ZGZkND9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
+                ]
+            },
+            {
+                "image": "https://southparkstudios.mtvnimages.com/uri/mgid:arc:content:shared.southpark.nordics:5fdc8028-75d0-11ea-a59c-0a7527021758?quality=0.7",
+                "uuid": "730bab40-ecfd-11e0-aca6-0026b9414f30",
+                "details": "The boys fight back against the loud and obnoxious Motorcycle Riders that are disrupting everyone in South Park.",
+                "date": "11/04/2009",
+                "title": "The F Word",
+                "url": "/episodes/wpmnpk/south-park-the-f-word-season-13-ep-12",
+                "season": "13",
+                "episode": "12",
+                "mediagen": [
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjk4MjhkMTA1LWYzNWItNDQzZC1iOTEwLTVlYjg0NGRlYjg0Yz9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmVmNjlhY2MzLThhZTAtNDk2NS1hNGViLTM3OGRkNzk0ZjY2ZD9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjJjYTU2YzE1LTg0ZDgtNGE3ZS04MTRiLTQxZDM4NTA0NzY1ND9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmExMTMyZTZkLTI3ZDktNDAyNS1hNmYyLTA2MTkzOWRkM2FkMT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmU5ZTQyZjMwLTg2NWUtNGMzYy04YWYyLTNmMmNkOTNkNWZmYT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
+                ]
+            },
+            {
+                "image": "https://southparkstudios.mtvnimages.com/uri/mgid:arc:content:shared.southpark.nordics:5fdc80fa-75d0-11ea-a59c-0a7527021758?quality=0.7",
+                "uuid": "730d42e8-ecfd-11e0-aca6-0026b9414f30",
+                "details": "Cartman is chosen to do the morning announcements at South Park Elementary.",
+                "date": "11/11/2009",
+                "title": "Dances with Smurfs",
+                "url": "/episodes/81p0af/south-park-dances-with-smurfs-season-13-ep-13",
+                "season": "13",
+                "episode": "13",
+                "mediagen": [
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmU3MzUxNjNjLTM2YTgtNDhhNS1iMWViLTg0YmY1MDllNWVjMT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjRkYzFiM2UzLTNkNGYtNGIxMS1hNjA5LTIxMGI0M2Q0ZTQ2Mj9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmVmYWZiYjZkLWM5ODktNDg2My04NGRkLTI2Y2M2N2YwZDljYj9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjE4NmIyMDg2LTE5N2QtNGE4OS1iOTE1LTI3MWQxYjA0MGMwMT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjNmZTMwMDFiLWJiNjQtNGNjMi05NzgxLWFiYTMyZjE3YzAzZD9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
+                ]
+            },
+            {
+                "image": "https://southparkstudios.mtvnimages.com/uri/mgid:arc:content:shared.southpark.nordics:5fdc81c8-75d0-11ea-a59c-0a7527021758?quality=0.7",
+                "uuid": "730eceec-ecfd-11e0-aca6-0026b9414f30",
+                "details": "The boys' fun-filled day at the water park is about to turn deadly.",
+                "date": "11/18/2009",
+                "title": "Pee",
+                "url": "/episodes/xenush/south-park-pee-season-13-ep-14",
+                "season": "13",
+                "episode": "14",
+                "mediagen": [
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjQ2MWEyYzhjLWMyNDktNGNlNS1iZDkwLWNjNjQyN2RkZmY3Nj9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjE2OTUzNzYyLTU1YTYtNDZjYy1hZjM2LWYzMmQyZDU2MjVmMz9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmI0OTE3YWI0LTdmYTktNGJhZC05NDhhLWNmN2Q3NzNkOWY5MT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmYyNGYyNjk3LWEwMzEtNDBjMi05OWY0LWY0ZjBhMGE5OWQzMz9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmEyYWRjMjNhLTIzYWEtNDU5Yi1iZjA4LTdhYWE4N2ViYjJhND9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
+                ]
             }
         ],
         [
@@ -2230,6 +3281,74 @@
                     "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjE4NzU4NmFmLWQyMzAtNGQ0Ni04MmQ3LTQ0ZTM0OGEzZDUzNj9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
                     "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjhjNWQyZjJlLTM4MWQtNDRlMS04NmM5LTgzYTRmMjlkOWFmOD9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
                     "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmJlYzE4ZGE3LWRlMDgtNGFjNS1hODU1LTRhYzBhZTc3YjhjZj9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
+                ]
+            },
+            {
+                "image": "https://southparkstudios.mtvnimages.com/uri/mgid:arc:content:shared.southpark.nordics:b1596a4a-75d0-11ea-a59c-0a7527021758?quality=0.7",
+                "uuid": "76dad37c-ecfd-11e0-aca6-0026b9414f30",
+                "details": "\"Coon and Friends\" set out to help the victims of BP's latest catastrophic drilling accident in the Gulf. Much to the Coon's dismay, another Super Hero gets there first.",
+                "date": "10/27/2010",
+                "title": "Coon 2: Hindsight",
+                "url": "/episodes/5xx4ao/south-park-coon-2-hindsight-season-14-ep-11",
+                "season": "14",
+                "episode": "11",
+                "mediagen": [
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmNkOTNmYjIzLTRmOGUtNDY1YS04MGYyLTUzMmQxNzhjZGU1Nj9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmRiNGRmZDllLTE5ODYtNGNmMy05NjA1LTBlZmY5MjY0MjhhOT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmNhOTRlYjkwLWFlMjQtNDk4YS05ZmEzLTliMzgyOGIwMDZkNj9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmYwNzY4ZTg3LWQ0ZTQtNDExNC05ZjliLWY1MjkyMmVlZTBiND9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjlmYzAyZWI4LWFjYTUtNGYyMy1iNzU1LTZhMzExYWNkZWJiZT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
+                ]
+            },
+            {
+                "image": "https://southparkstudios.mtvnimages.com/uri/mgid:arc:content:shared.southpark.nordics:b1596b1a-75d0-11ea-a59c-0a7527021758?quality=0.7",
+                "uuid": "76dc4928-ecfd-11e0-aca6-0026b9414f30",
+                "details": "Mysterion's true identity is revealed.\u00a0Meanwhile, the Coon, scorned by his fellow Super Heroes, is out for revenge.",
+                "date": "11/03/2010",
+                "title": "Mysterion Rises",
+                "url": "/episodes/2lhwyz/south-park-mysterion-rises-season-14-ep-12",
+                "season": "14",
+                "episode": "12",
+                "mediagen": [
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjIyNTA1NWRlLWJmZTktNDQ4ZC04YmYxLTUwYmM5MTMyMzkzYj9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjhmYzA4YmYwLWQxMTAtNDIxMS1hYTE2LTcyM2Y2ZjIwYjg5Nz9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmJhNWE1NTViLWNiMmYtNGNlOS1iMDEzLTgzOGQwMGExNjNiYj9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmYyYmZiNmNiLWE4YjktNDA4ZS05YjM0LTVlOWRjNWY4OTlmNj9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjQ5ODdiMGVkLTVhYTQtNGRlMi05ZDNmLTM5ODNjZWQ0ODc5Mz9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
+                ]
+            },
+            {
+                "image": "https://southparkstudios.mtvnimages.com/uri/mgid:arc:content:shared.southpark.nordics:b1596d06-75d0-11ea-a59c-0a7527021758?quality=0.7",
+                "uuid": "76dea2ea-ecfd-11e0-aca6-0026b9414f30",
+                "details": "Coon and Friends find themselves at the mercy of Cartman who now has the dark lord, Cthulhu, doing his bidding.  Kenny wrestles with the curse of his super power through his alter ego, Mysterion.",
+                "date": "11/10/2010",
+                "title": "Coon vs. Coon & Friends",
+                "url": "/episodes/avmdp8/south-park-coon-vs-coon-friends-season-14-ep-13",
+                "season": "14",
+                "episode": "13",
+                "mediagen": [
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjI2MWMxMjA0LWJiZDgtNGQ2OS04OWQxLTA3NzhkYjgzMmFlMD9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjZkMjNjODVlLWFmNGQtNDEyZi1iYjk3LTAyNTdlZTQyYTk0Yj9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmVmZjA4NGY0LTg5ODAtNDdkNS04NjZkLWIzNmIwNmYyZTRjYz9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmIxOWMxMWQxLTMwNzEtNGIxOS04ZjExLTk0NTQ0ODVlYmM4ZD9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjUwNDg0ODkyLTdjNWQtNGZkOC1iNzY0LTgzNjg1Y2U3OTZlMT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
+                ]
+            },
+            {
+                "image": "https://southparkstudios.mtvnimages.com/uri/mgid:arc:content:shared.southpark.nordics:b1596e6e-75d0-11ea-a59c-0a7527021758?quality=0.7",
+                "uuid": "76e03722-ecfd-11e0-aca6-0026b9414f30",
+                "details": "Randy's obsession with the Food Network forces Sharon to explore a new interest of her own.",
+                "date": "11/17/2010",
+                "title": "Cr\u00e8me Fraiche",
+                "url": "/episodes/dsbhg9/south-park-creme-fraiche-season-14-ep-14",
+                "season": "14",
+                "episode": "14",
+                "mediagen": [
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjM2NDdmOTIxLTdhNzMtNDUzZi1iYmY2LWYyYTY0OWM4NjIzZj9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjRmNjUzMDBhLThlYjEtNDY4YS1iNmIxLTU2ODI4YTVkMjdmOT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjc0ZTdhYTA0LTQ3MGUtNDlkNy1hZDNhLTk0YmQwNzRlMmY4OD9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjdiOWQyYWRjLWQ5YmYtNGZkZS1hNjQ0LWY3MDlhZDNjOTY4YT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmI4NGFiOTY5LTcxNmQtNDkyZC1hZjMzLTUwZmI1Zjk0MTViMj9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
                 ]
             }
         ],
@@ -2397,6 +3516,74 @@
                     "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjhjNGQxMzVhLWQyM2UtNDE3MS04YjdkLWJjNDgxN2EyYjRmMz9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
                     "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjhkNTkxODFmLTQzYTItNGI3MC05ZDMwLWJjMDNjM2I4ODMyMj9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
                 ]
+            },
+            {
+                "image": "https://southparkstudios.mtvnimages.com/uri/mgid:arc:content:shared.southpark.nordics:f9f2451a-75d0-11ea-a59c-0a7527021758?quality=0.7",
+                "uuid": "7a2ae0da-ecfd-11e0-aca6-0026b9414f30",
+                "details": "After Randy takes Sharon to see a hit musical, he becomes Broadway's biggest fan.",
+                "date": "10/26/2011",
+                "title": "Broadway Bro Down",
+                "url": "/episodes/1nq9xv/south-park-broadway-bro-down-season-15-ep-11",
+                "season": "15",
+                "episode": "11",
+                "mediagen": [
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjNlNTYxNmE1LTU0OTktNDQ5NC1hMTMzLWUwM2YxZjU5ZGMwYj9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjUyZjYyNTg3LWEzODEtNGU0OS05MTEzLTM3NmRmNDZkNDNhOD9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjk5NTVmYzY0LWFiZjUtNDE3NS1hOTNhLThmMjlkODFmMjE4Nz9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmE4OTYyODVmLTk0ZmQtNDFkOC1iYWUxLThjOTQyN2NhNjlhYz9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjcwNDYyZDc4LWFkMTMtNDNhYi04MDk5LTYwYzhlNjc2MTkzND9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
+                ]
+            },
+            {
+                "image": "https://southparkstudios.mtvnimages.com/uri/mgid:arc:content:shared.southpark.nordics:f9f2466a-75d0-11ea-a59c-0a7527021758?quality=0.7",
+                "uuid": "7a2dc764-ecfd-11e0-aca6-0026b9414f30",
+                "details": "The 99% is ganging up on Eric Cartman.",
+                "date": "11/02/2011",
+                "title": "1%",
+                "url": "/episodes/k5327t/south-park-1-season-15-ep-12",
+                "season": "15",
+                "episode": "12",
+                "mediagen": [
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjY3NDM4ODQyLTUyZjEtNGM4My04NmExLWI4MTZkYjI0Y2NiOD9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjFhNDY3M2E2LWJiZWUtNDBhYi04MDE0LTIzZmVmZTAzODRhZT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjNhYTkwNzQ5LWJmNmMtNDQ0MS04OWExLTE2ZDdlZmU2YjVhYz9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjFiZTNlYjZhLThkMjktNDlhZi04YmViLWUwZTUxNjE1YzVjOD9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmM3ZDE4ZTIzLTY0MTgtNDAxMy1iZjAwLTlkZmY3MDQxODhjOD9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
+                ]
+            },
+            {
+                "image": "https://southparkstudios.mtvnimages.com/uri/mgid:arc:content:shared.southpark.nordics:f9f247b6-75d0-11ea-a59c-0a7527021758?quality=0.7",
+                "uuid": "7a2f6df8-ecfd-11e0-aca6-0026b9414f30",
+                "details": "The boys are getting close to discovering the truth about the first Thanksgiving.",
+                "date": "11/09/2011",
+                "title": "A History Channel Thanksgiving",
+                "url": "/episodes/ex6roo/south-park-a-history-channel-thanksgiving-season-15-ep-13",
+                "season": "15",
+                "episode": "13",
+                "mediagen": [
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjNiNWNmMGIyLTVmYTEtNGQ4Zi1iZDEzLTI0OGY3NzQ0ZjQ5Mj9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjBhZGVmMmNkLWZjYTYtNDAzNi05YjliLTJkNzJlMDMyMTVlYz9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjJiNTYwNzNiLTU1MDMtNDJiNC04NDYzLTAyZGE2OTJmZmJjMj9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjk0OGUwMmFhLWY3NTUtNDk3Ni1hOTU3LTczYzhkMzY1MjBlMD9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjQ1YWQ0M2U1LTRlNTAtNDQ2ZC05NmQwLTYwOTIwMmFhOWQzOT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
+                ]
+            },
+            {
+                "image": "https://southparkstudios.mtvnimages.com/uri/mgid:arc:content:shared.southpark.nordics:f9f2489b-75d0-11ea-a59c-0a7527021758?quality=0.7",
+                "uuid": "7a3100d2-ecfd-11e0-aca6-0026b9414f30",
+                "details": "Kenny ends up in the foster care system after his parents are arrested.",
+                "date": "11/16/2011",
+                "title": "The Poor Kid",
+                "url": "/episodes/t9jqji/south-park-the-poor-kid-season-15-ep-14",
+                "season": "15",
+                "episode": "14",
+                "mediagen": [
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmI2NTAwNTE0LWJmZjUtNDg2ZC1iYWVlLTc1ZmFjODBjMDZhNz9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmQ4NDZiMTJhLWYzMTEtNDgxNi1iODZjLWZiYjg4NmQ5NDZkMz9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmM4MTJhODg3LTY2NDgtNDljYy1iZjkxLThkYTZlMWRkMTMyZj9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjdkNjc3ZDc3LWZkOGItNGVjNi1iNTE4LTg3NmE0YzcwZDNlMj9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmUzNzg1M2VhLWIyZWQtNDkxNC05MzgzLWUzZTA2MmU1ODdhYz9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
+                ]
             }
         ],
         [
@@ -2562,6 +3749,74 @@
                     "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmQ0MDU2MWVmLThkYTctNGM4YS04ODZhLTQzNjJhZDlmZThiND9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
                     "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjBjNzQ1ZWY2LTdhOWMtNDQwMC04YjM4LTQ0MWE1NGVkOGQ5Yz9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
                     "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjA4MDczOTllLTY4ZmEtNGIwMy04OTExLTg1OTIyYTE0ZDZlNT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
+                ]
+            },
+            {
+                "image": "https://southparkstudios.mtvnimages.com/uri/mgid:arc:content:shared.southpark.nordics:71e0263a-75d1-11ea-a59c-0a7527021758?quality=0.7",
+                "uuid": "4c016743-f5b4-4fab-9c26-795c774a43bf",
+                "details": "It is time for Butters to begin a journey where he will follow in the path of his Hawaiian ancestors.",
+                "date": "10/17/2012",
+                "title": "Going Native",
+                "url": "/episodes/hrno4n/south-park-going-native-season-16-ep-11",
+                "season": "16",
+                "episode": "11",
+                "mediagen": [
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjY0OGI5MWRiLTY5ZjItNDgzYi1hOGQ5LWQ0ZWNhNjVmMjRhOD9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjNlY2RmYWJkLWM1NTAtNDE2Zi1hZjY2LTYzYTE0MjUzNTkwZj9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmZiYjZkMTBlLTZiYzYtNDRhYi04MjU4LWIwNmE2YTMzYjZiNT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjY5MzMxODBmLTVhY2EtNDZiZC1iNDlkLWY1Y2U5NTEzMDAyYj9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjY3YjZjN2IxLWVkYWQtNGVmZS1iZTczLTk2ODI0NTNhY2M5MT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
+                ]
+            },
+            {
+                "image": "https://southparkstudios.mtvnimages.com/uri/mgid:arc:content:shared.southpark.nordics:71e0270b-75d1-11ea-a59c-0a7527021758?quality=0.7",
+                "uuid": "12381640-9327-4aba-9ff2-f9b8e1d6ec00",
+                "details": "Randy's big plans for Halloween night keep Stan from trick or treating with his friends.",
+                "date": "10/24/2012",
+                "title": "A Nightmare On FaceTime",
+                "url": "/episodes/bghu33/south-park-a-nightmare-on-facetime-season-16-ep-12",
+                "season": "16",
+                "episode": "12",
+                "mediagen": [
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmUwNzAzYWI0LTc4ODItNDZmNC1iMzAyLTQzMWZlYzM5NWNlYT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjc5MTgyZGFlLWI4NWEtNDJhNC05NjE3LTYyMGU2MzA0M2VlMD9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjMzZTFiM2E4LTRlOTAtNGE4MS1hMDE2LThhYjIyMGY4YjJlND9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjQwZTc4OGJkLTc5NTMtNGI2My1hNTIyLTM4NzBiZjk4NTg0Nj9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmFhN2JmZjdjLTkwYzAtNDMwZC1hNWFmLWQwMmE0ODExNzRkNj9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
+                ]
+            },
+            {
+                "image": "https://southparkstudios.mtvnimages.com/uri/mgid:arc:content:shared.southpark.nordics:71e027e4-75d1-11ea-a59c-0a7527021758?quality=0.7",
+                "uuid": "e1908a2f-95ee-472c-9a00-105200e1851b",
+                "details": "A serious doping scandal shakes everyone's faith in a beloved icon. Everyone who once supported the fallen hero is now cutting off their symbolic yellow wristbands.",
+                "date": "10/31/2012",
+                "title": "A Scause For Applause",
+                "url": "/episodes/1se5q4/south-park-a-scause-for-applause-season-16-ep-13",
+                "season": "16",
+                "episode": "13",
+                "mediagen": [
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjBmMTQ2N2QxLTUyYWQtNDYwMi1hMmM3LTZmNGM4YjM5ZTJjOT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjQ4MjgzOTBhLTljZWUtNDRlNi1hNmQwLWUyYjI1YWMzMzZkNj9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjZiMjA2N2E3LWE1OWUtNDlkNC1iYzZiLTI0YzgzYzJiNmY0MD9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjFhZThlNzBjLWYyZTQtNDZjNS04YWYxLTUzNDY1ZmRmZTc5OT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjY2MzcyNTc1LTk1N2YtNDkwNi1hNWExLTkzZTA1ZDYxZWQ3Mz9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
+                ]
+            },
+            {
+                "image": "https://southparkstudios.mtvnimages.com/uri/mgid:arc:content:shared.southpark.nordics:71e028b4-75d1-11ea-a59c-0a7527021758?quality=0.7",
+                "uuid": "5cb4087e-9738-4762-8444-25d24e65e77c",
+                "details": "Eric Cartman is hiding something in his bedroom that could change the entire outcome of the Presidential election.",
+                "date": "11/07/2012",
+                "title": "Obama Wins!",
+                "url": "/episodes/1oyb2s/south-park-obama-wins-season-16-ep-14",
+                "season": "16",
+                "episode": "14",
+                "mediagen": [
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjgxOGZmN2I5LTQ1YjEtNDg5NS1hMmEwLTg4ZDQ3ODY4ZmVjZj9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmFjOWJlZDQ2LWZmZGYtNDVjOS1iMmI0LTQ0NTc4NDhiMDQ1ND9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmRlYzBlODAwLWY4MjAtNDgxZi04MzUxLWUwY2RlMmY1YzUzMz9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjZlYWQ0Nzc2LTRmY2QtNDdjZi04YjQwLTNlMDY2Mzc0ZTJmNj9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjM4NWY3YTlkLTY0MDctNGNhYi05NDg2LWJkZTg0ZWI4M2VlNT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9ZDY3M2RmZjcmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
                 ]
             }
         ],

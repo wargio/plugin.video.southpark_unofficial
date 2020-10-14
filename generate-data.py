@@ -46,7 +46,7 @@ APIS = {
 		"language": "se",
 		"mediagen": "southpark.intl",
 		"domain": "https://southparkstudios.nu",
-		"domapi": "https://southparkstudios.nu",
+		"domapi": "https://www.southparkstudios.nu",
 		"uri": "/seasons/south-park/",
 		"html_links": False,
 		"has_ads": False,
