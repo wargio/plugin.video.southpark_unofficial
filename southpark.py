@@ -250,19 +250,12 @@ class SP_Options(object):
 	def __init__(self, addon):
 		super(SP_Options, self).__init__()
 		self.addon = addon
-		self.AUDIO_AVAILABLE = ["en", "es", "de", "se", "eu"]
-		self.VIDEO_QUALITY   = ["high", "low"]
+		self.geolocation = ["en", "es", "de", "se", "eu"]
 
 	def debug(self):
-		log_error("OPTIONS Audio                {0}".format(self.audio(True)))
+		log_error("OPTIONS Geolocation          {0}".format(self.audio(True)))
 		log_error("OPTIONS Show Subtitles       {0}".format(self.show_subtitles()))
 		log_error("OPTIONS Play Random Directly {0}".format(self.playrandom()))
-
-	def geolocation(self, as_string=False):
-		geo = int(self.addon.getSetting('geolocation'))
-		if as_string:
-			return self.GEO_LOCATIONS[geo] 
-		return geo
 
 	def show_subtitles(self):
 		return self.addon.getSetting('cc') == "true"
@@ -270,7 +263,7 @@ class SP_Options(object):
 	def audio(self, as_string=False):
 		au = int(self.addon.getSetting('audio_lang'))
 		if as_string:
-			return self.AUDIO_AVAILABLE[au] 
+			return self.geolocation[au] 
 		return au
 
 	def playrandom(self):
