@@ -435,7 +435,7 @@ class SouthParkAddon(object):
 		show_subs = self.options.show_subtitles()
 		for i in range(0, parts):
 			playitem = xbmcgui.ListItem(path=streams[i])
-			title = data["title"]
+			title = data["title"].encode("utf-8")
 			if len(streams) > 1:
 				title = "{title} ({i}/{n})".format(title=title, i=(i + 1), n=parts)
 
