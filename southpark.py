@@ -381,7 +381,7 @@ class SouthParkAddon(object):
 				log_error("Found locked episode '{0}'. trying again!".format(episode_data["title"]))
 				continue
 			if self.options.playrandom():
-				self.play_episode(episode_data['uuid'], episode_data['title'], episode_data['image'])
+				self.play_episode(episode_data['season'], episode_data['episode'])
 			else:
 				self.add_episode(episode_data)
 			break
