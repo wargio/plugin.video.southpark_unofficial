@@ -163,13 +163,13 @@ def _make_episode(data, season, episode, lang):
 		log_debug("http get: {0} {1}".format(url, e))
 
 	ep["mediagen"] = list(filter(None, ep["mediagen"]))
-	log_struct(ep)
 
 	print("s{:<2}e{:<2} len:{}: {}".format(ep["season"], ep["episode"], len(ep["mediagen"]), ep["title"]))
 	i = 0
 	for url in ep["mediagen"]:
 		ep["mediagen"][i] = base64.b64encode(url.encode('ascii')).decode('ascii')
 		i += 1
+	log_struct(ep)
 
 	return ep
 
@@ -294,7 +294,7 @@ def main():
 		generate_file("de")
 	elif args.se:
 		generate_file("se")
-	elif args.it:
+	elif args.eu:
 		generate_file("eu")
 	else:
 		print("nothing was selected..")
