@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="plugin.video.southpark_unofficial" name="South Park" version="0.6.4+matrix.1" provider-name="Deroad">
+<addon id="plugin.video.southpark_unofficial_serajr" name="South Park" version="0.6.3+matrix.1" provider-name="Deroad">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
     </requires>
@@ -13,9 +13,7 @@
         <description lang="en">Watch South Park episodes. The supported countries are the one that can view videos from https://southpark.cc.com, https://southparkstudios.co.uk, https://southparkstudios.nu, https://www.southpark.de or https://www.southparkstudios.com.br.</description>
         <disclaimer lang="en">Some parts of this addon may not be legal in your country of residence - please check with your local laws before installing.</disclaimer>
         <license>GPL-2.0</license>
-        <source>https://github.com/wargio/plugin.video.southpark_unofficial</source>
-        <forum>https://forum.kodi.tv/showthread.php?tid=224662</forum>
-        <email>wargio at libero dot it</email>
+        <source>https://github.com/serajr/plugin.video.southpark_unofficial</source>
         <website>https://southpark.cc.com</website>
         <reuselanguageinvoker>true</reuselanguageinvoker>
         <assets>
@@ -24,4 +22,3 @@
         </assets>
     </extension>
 </addon>
-
