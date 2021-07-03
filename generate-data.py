@@ -61,7 +61,7 @@ APIS = {
 		"has_ads": False,
 	},
 	"br": {
-		"language": "br",
+		"language": "brr",
 		"mediagen": "southpark.intl",
 		"domain": "https://www.southparkstudios.com.br",
 		"domapi": "https://www.southparkstudios.com.br",
