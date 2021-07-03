@@ -60,6 +60,15 @@ APIS = {
 		"html_links": False,
 		"has_ads": False,
 	}
+	"br": {
+		"language": "br",
+		"mediagen": "southparkstudios.com",
+		"domain": "https://www.southparkstudios.com.br/",
+		"domapi": "https://www.southparkstudios.com.br/",
+		"uri": "/seasons/south-park/",
+		"html_links": False,
+		"has_ads": False,
+	}
 }
 
 def log_debug(msg):
@@ -280,6 +289,7 @@ def main():
 	group.add_argument('--de', action='store_true', default=False, help='language german (germany)')
 	group.add_argument('--se', action='store_true', default=False, help='language swedish (sweden)')
 	group.add_argument('--eu', action='store_true', default=False, help='language english (europe)')
+	group.add_argument('--br', action='store_true', default=False, help='language portuguese (brazil)')
 	args = parser.parse_args()
 
 	os.chdir(WORKI_DIR)
@@ -296,6 +306,8 @@ def main():
 		generate_file("se")
 	elif args.eu:
 		generate_file("eu")
+	elif args.br:
+		generate_file("br")
 	else:
 		print("nothing was selected..")
 
