@@ -1,3 +1,5 @@
+0.6.4
+- Added brazilian portuguese episodes (BR)
 0.6.3
 - Cleanup, generic european stream and clear cache features.
 0.6.2
