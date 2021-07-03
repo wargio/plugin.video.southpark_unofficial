@@ -172,7 +172,7 @@ def _load_data(lang, path):
 			addon_data = None
 
 	if addon_data == None:
-		url = "https://raw.githubusercontent.com/wargio/plugin.video.southpark_unofficial/addon-data/addon-data-{}.json".format(lang)
+		url = "https://raw.githubusercontent.com/serajr/plugin.video.southpark_unofficial/addon-data/addon-data-{}.json".format(lang)
 		addon_data = _http_get(url, True)
 		addon_data["date"] = "{}".format(datetime.datetime.now()),
 
@@ -250,7 +250,7 @@ class SP_Options(object):
 	def __init__(self, addon):
 		super(SP_Options, self).__init__()
 		self.addon = addon
-		self.geolocation = ["en", "es", "de", "se", "eu"]
+		self.geolocation = ["en", "es", "de", "se", "eu", "br"]
 
 	def debug(self):
 		log_error("OPTIONS Geolocation          {0}".format(self.audio(True)))
