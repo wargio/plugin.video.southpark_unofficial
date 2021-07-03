@@ -59,7 +59,7 @@ APIS = {
 		"uri": "/seasons/south-park/",
 		"html_links": False,
 		"has_ads": False,
-	}
+	},
 	"br": {
 		"language": "br",
 		"mediagen": "southparkstudios.com",
