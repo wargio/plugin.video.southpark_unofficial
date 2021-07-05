@@ -250,7 +250,7 @@ class SP_Options(object):
 	def __init__(self, addon):
 		super(SP_Options, self).__init__()
 		self.addon = addon
-		self.geolocation = ["en", "es", "de", "se", "eu", "br"]
+		self.geolocation = ["en", "es", "de", "se", "eu", "br", "lat"]
 
 	def debug(self):
 		log_error("OPTIONS Geolocation          {0}".format(self.audio(True)))
