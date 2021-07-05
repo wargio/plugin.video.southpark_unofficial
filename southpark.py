@@ -441,8 +441,6 @@ class SouthParkAddon(object):
 
 			playitem.setArt({'icon': data["image"], 'thumb': data["image"]})
 			playitem.setInfo('video', {'Title': title, 'Plot': data["details"]})
-			playitem.setProperty('inputstreamaddon', 'inputstream.adaptive')
-			playitem.setProperty('inputstream.adaptive.manifest_type', 'hls')
 
 			if subtitles[i] != None and show_subs:
 				playitem.setSubtitles([subtitles[i]])
