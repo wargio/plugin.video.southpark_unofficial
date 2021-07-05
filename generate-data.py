@@ -68,6 +68,15 @@ APIS = {
 		"uri": "/seasons/south-park/",
 		"html_links": True,
 		"has_ads": False,
+	},
+	"lat": {
+		"language": "lat",
+		"mediagen": "southpark.intl",
+		"domain": "https://www.southpark.lat",
+		"domapi": "https://www.southpark.lat",
+		"uri": "/seasons/south-park/",
+		"html_links": True,
+		"has_ads": False,
 	}
 }
 
@@ -194,7 +203,7 @@ def _parse_episodes(data, season, lang):
 		lists = list(filter(lambda x: "type" in x and x["type"] == "LineList", lists))
 		extra = list(filter(lambda x: _has_extra(x), [ _dk(s, ["props"], []) for s in lists ]))
 		lists = list(filter(lambda x: len(x) > 0 and "url" in x[0], [ _dk(s, ["props", "items"], []) for s in lists ]))[0]
-	elif lang in ["se", "de", "br"]:
+	elif lang in ["se", "de", "br", "lat"]:
 		lists = list(filter(lambda x: "type" in x and x["type"] == "LineList" and "type" in x["props"] and x["props"]["type"] == "video-guide", lists))
 		if _dk(lists[0], ["props", "loadMore", "url"], "") != "":
 			extra.append(_dk(lists[0], ["props"], {}))
@@ -290,6 +299,7 @@ def main():
 	group.add_argument('--se', action='store_true', default=False, help='language swedish (sweden)')
 	group.add_argument('--eu', action='store_true', default=False, help='language english (europe)')
 	group.add_argument('--br', action='store_true', default=False, help='language portuguese (brazil)')
+	group.add_argument('--lat', action='store_true', default=False, help='language spanish (latin america)')
 	args = parser.parse_args()
 
 	os.chdir(WORKI_DIR)
@@ -308,6 +318,8 @@ def main():
 		generate_file("eu")
 	elif args.br:
 		generate_file("br")
+	elif args.lat:
+		generate_file("lat")
 	else:
 		print("nothing was selected..")
 
