@@ -2320,9 +2320,9 @@
             {
                 "image": "https://southparkstudios.mtvnimages.com/uri/mgid:arc:content:shared.southpark.us.en:0a271bc9-75d0-11ea-a59c-0a7527021758?quality=0.7",
                 "uuid": "6c4273fc-ecfd-11e0-aca6-0026b9414f30",
-                "details": "Giant guinea pigs are attacking cities all over the world.\u00a0 The boys have the key that will save everyone from the onslaught but they're stranded in the Andes Mountains.",
+                "details": "Giant guinea pigs are attacking cities all over the world.  The boys have the key that will save everyone from the onslaught but they're stranded in the Andes Mountains.",
                 "date": "10/29/2008",
-                "title": "Pandemic 2 \u2013 The Startling",
+                "title": "Pandemic 2 – The Startling",
                 "url": "/episodes/akix98/south-park-pandemic-2-the-startling-season-12-ep-11",
                 "season": "12",
                 "episode": "11",
@@ -2335,7 +2335,7 @@
                 "uuid": "6ee309aa-ecfd-11e0-aca6-0026b9414f30",
                 "details": "While the country celebrates the outcome of the election, the new President-elect catches everyone off guard when he arrives at the White House prematurely.",
                 "date": "11/05/2008",
-                "title": "About Last Night\u2026",
+                "title": "About Last Night…",
                 "url": "/episodes/dt5skl/south-park-about-last-night-season-12-ep-12",
                 "season": "12",
                 "episode": "12",
@@ -2697,7 +2697,7 @@
             {
                 "image": "https://southparkstudios.mtvnimages.com/uri/mgid:arc:content:shared.southpark.us.en:b1596b1a-75d0-11ea-a59c-0a7527021758?quality=0.7",
                 "uuid": "76dc4928-ecfd-11e0-aca6-0026b9414f30",
-                "details": "Mysterion's true identity is revealed.\u00a0Meanwhile, the Coon, scorned by his fellow Super Heroes, is out for revenge.",
+                "details": "Mysterion's true identity is revealed. Meanwhile, the Coon, scorned by his fellow Super Heroes, is out for revenge.",
                 "date": "11/03/2010",
                 "title": "Mysterion Rises",
                 "url": "/episodes/2lhwyz/south-park-mysterion-rises-season-14-ep-12",
@@ -2725,7 +2725,7 @@
                 "uuid": "76e03722-ecfd-11e0-aca6-0026b9414f30",
                 "details": "Randy's obsession with the Food Network forces Sharon to explore a new interest of her own.",
                 "date": "11/17/2010",
-                "title": "Cr\u00e8me Fraiche",
+                "title": "Crème Fraiche",
                 "url": "/episodes/dsbhg9/south-park-creme-fraiche-season-14-ep-14",
                 "season": "14",
                 "episode": "14",
@@ -3660,7 +3660,7 @@
             {
                 "image": "https://southparkstudios.mtvnimages.com/uri/mgid:arc:content:shared.southpark.global:79c0a98f-77f5-11ea-a59c-0a7527021758?quality=0.7",
                 "uuid": "0b3745e3-4405-4cb1-88d2-724b80624d4e",
-                "details": "In a return to form, a forbidden love story between a white man and a Native American man unfolds. However, the boys' story exploits people's misery for laughs. 4 \u00bd out of 5 stars. A-",
+                "details": "In a return to form, a forbidden love story between a white man and a Native American man unfolds. However, the boys' story exploits people's misery for laughs. 4 ½ out of 5 stars. A-",
                 "date": "09/27/2017",
                 "title": "Holiday Special",
                 "url": "/episodes/hswgo6/south-park-holiday-special-season-21-ep-3",
@@ -3725,7 +3725,7 @@
             {
                 "image": "https://southparkstudios.mtvnimages.com/uri/mgid:arc:content:shared.southpark.global:79c0addf-77f5-11ea-a59c-0a7527021758?quality=0.7",
                 "uuid": "09e6f8c2-5815-4846-88de-53ddb50df762",
-                "details": "Jimmy and Timmy's project has caught the attention of some very important people. Their experiment could have far reaching implications that could save the world\u2026 and they might even win first prize in this year's science fair.",
+                "details": "Jimmy and Timmy's project has caught the attention of some very important people. Their experiment could have far reaching implications that could save the world… and they might even win first prize in this year's science fair.",
                 "date": "11/15/2017",
                 "title": "Moss Piglets",
                 "url": "/episodes/b67nke/south-park-moss-piglets-season-21-ep-8",
@@ -4066,5 +4066,8 @@
                 ]
             }
         ]
+    ],
+    "date": [
+        "2022-02-02 14:43:36.363146"
     ]
 }
