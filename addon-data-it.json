@@ -1,5 +1,5 @@
 {
-    "created": "2022-02-02 14:43:36.363146",
+    "created": "2022-03-08 16:18:24.2846",
     "seasons": [
         [
             {
@@ -4068,11 +4068,11 @@
         ],
         [
             {
-                "image": "https://images.viacbs.tech/uri/mgid:arc:content:shared.southpark.global:bcbeae41-4fe9-46c9-9e5e-f08400cca55c?quality=0.7",
+                "image": "https://images.viacbs.tech/uri/mgid:arc:imageassetref:shared.southpark.global:bcbeae41-4fe9-46c9-9e5e-f08400cca55c?quality=0.7",
                 "uuid": "ff173532-7d50-11ec-a4f1-70df2f866ace",
-                "details": "The 4th grade class is banned from wearing their pajamas to school on the most important day of the year.",
+                "details": "After failing to show respect for their teacher, PC Principal revokes Pajama Day privileges for the entire 4th grade class. Cartman is distraught. The kids aren't going to stand for it but PC Principal refuses to back down.",
                 "date": "02/02/2022",
-                "title": "Pajama Day",
+                "title": "Pajama day",
                 "url": "/episodes/vrwkb7/south-park-pajama-day-season-25-ep-1",
                 "season": "25",
                 "episode": "1",
@@ -4087,35 +4087,52 @@
             {
                 "image": "https://images.viacbs.tech/uri/mgid:arc:imageassetref:shared.southpark.global:9309e4a5-47f8-45c2-a0dc-60f668c65bbe?quality=0.7",
                 "uuid": "c13ec47a-851e-11ec-a4f1-70df2f866ace",
-                "details": "Stan\u2019s horrified to realize he\u2019s misinterpreted some of the greatest writing of all time.",
+                "details": "Stan's horrified to realize he's misinterpreted some of the greatest writing of all time.",
                 "date": "02/09/2022",
                 "title": "The Big Fix",
                 "url": "/episodes/m339tu/south-park-the-big-fix-season-25-ep-2",
                 "season": "25",
                 "episode": "2",
                 "mediagen": [
-                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFya3N0dWRpb3MuY29tOjcyN2Y0ODg5LWFlMzEtNDFkMC04YTEwLTdmMWY1NzYyY2FiYj9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1jb21lZHljZW50cmFsLmNvbSZiaWxsaW5nU2VjdGlvbj1pbnRsJmVwPTlmOTQ5MGQ2JmZvcm1hdD1qc29uJmFjY2VwdE1ldGhvZHM9aGxz",
-                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFya3N0dWRpb3MuY29tOmMxNTZjYWNkLTViNTctNDQzNy05Yjk5LWNiOGNjMTMzNWMzMT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1jb21lZHljZW50cmFsLmNvbSZiaWxsaW5nU2VjdGlvbj1pbnRsJmVwPTlmOTQ5MGQ2JmZvcm1hdD1qc29uJmFjY2VwdE1ldGhvZHM9aGxz",
-                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFya3N0dWRpb3MuY29tOjBhMzQ2YzFmLWE5N2EtNGFmYy04MjM3LTg5MTkzNTdjYmZlYT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1jb21lZHljZW50cmFsLmNvbSZiaWxsaW5nU2VjdGlvbj1pbnRsJmVwPTlmOTQ5MGQ2JmZvcm1hdD1qc29uJmFjY2VwdE1ldGhvZHM9aGxz",
-                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFya3N0dWRpb3MuY29tOjhhN2EyOGVlLTE4M2UtNDg3NC05MjJlLWQ5MzJlMGYyMDA4Yz9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1jb21lZHljZW50cmFsLmNvbSZiaWxsaW5nU2VjdGlvbj1pbnRsJmVwPTlmOTQ5MGQ2JmZvcm1hdD1qc29uJmFjY2VwdE1ldGhvZHM9aGxz",
-                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFya3N0dWRpb3MuY29tOjdlNmE0NDY5LWE3M2UtNGMyZC05MzkwLTI2ZmQwNTcwZjc1NT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1jb21lZHljZW50cmFsLmNvbSZiaWxsaW5nU2VjdGlvbj1pbnRsJmVwPTlmOTQ5MGQ2JmZvcm1hdD1qc29uJmFjY2VwdE1ldGhvZHM9aGxz"
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFya3N0dWRpb3MuY29tOjVkYTRmYTgyLWJiOWItNDZhMy04YWJmLWExYjBmZTRkNzlhNz9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1jb21lZHljZW50cmFsLmNvbSZiaWxsaW5nU2VjdGlvbj1pbnRsJmVwPTlmOTQ5MGQ2JmZvcm1hdD1qc29uJmFjY2VwdE1ldGhvZHM9aGxz",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFya3N0dWRpb3MuY29tOjQwN2IzNjc3LTM0ZmQtNDM3Zi1iOGQ1LTRiMTcxOTdiY2MwMT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1jb21lZHljZW50cmFsLmNvbSZiaWxsaW5nU2VjdGlvbj1pbnRsJmVwPTlmOTQ5MGQ2JmZvcm1hdD1qc29uJmFjY2VwdE1ldGhvZHM9aGxz",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFya3N0dWRpb3MuY29tOjg4N2IxZTEyLTU0NDAtNGMzZS05ODAzLWY3MDE3OTc3YjIxYT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1jb21lZHljZW50cmFsLmNvbSZiaWxsaW5nU2VjdGlvbj1pbnRsJmVwPTlmOTQ5MGQ2JmZvcm1hdD1qc29uJmFjY2VwdE1ldGhvZHM9aGxz",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFya3N0dWRpb3MuY29tOjJhNjgxMGE5LTQwYzAtNDM1OC05OWQyLWU5NzljNDE2YWI1MD9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1jb21lZHljZW50cmFsLmNvbSZiaWxsaW5nU2VjdGlvbj1pbnRsJmVwPTlmOTQ5MGQ2JmZvcm1hdD1qc29uJmFjY2VwdE1ldGhvZHM9aGxz",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFya3N0dWRpb3MuY29tOjJlODJmN2NiLTllOWQtNDA0MC1iNTFlLTRkNGY5NzhmZDU4Mj9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1jb21lZHljZW50cmFsLmNvbSZiaWxsaW5nU2VjdGlvbj1pbnRsJmVwPTlmOTQ5MGQ2JmZvcm1hdD1qc29uJmFjY2VwdE1ldGhvZHM9aGxz"
                 ]
             },
             {
-                "image": "https://images.viacbs.tech/uri/mgid:arc:imageassetref:shared.southpark.us.en:9e0c350e-c9d8-4779-9063-4c1dff2b2829?quality=0.7",
+                "image": "https://images.viacbs.tech/uri/mgid:arc:imageassetref:shared.southpark.global:9e0c350e-c9d8-4779-9063-4c1dff2b2829?quality=0.7",
                 "uuid": "415bc2f5-851c-11ec-a4f1-70df2f866ace",
-                "details": "Cartman is furious with his mom when she tells him about her new job.",
+                "details": "Cartman is not happy when his mom gets a new job.",
                 "date": "02/16/2022",
                 "title": "City People",
                 "url": "/episodes/pnkrck/south-park-city-people-season-25-ep-3",
                 "season": "25",
                 "episode": "3",
                 "mediagen": [
-                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFya3N0dWRpb3MuY29tOjI3OTIwYTZlLTEzYzctNGMwOC1hOTJmLTJjNzE3YmI3ZDY5ND9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1jb21lZHljZW50cmFsLmNvbSZiaWxsaW5nU2VjdGlvbj1pbnRsJmVwPTlmOTQ5MGQ2JmZvcm1hdD1qc29uJmFjY2VwdE1ldGhvZHM9aGxz",
-                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFya3N0dWRpb3MuY29tOjEyZTNkM2ZlLWE4OTEtNDkyZi1hZWNlLWU2MDQxODE2YWJhNj9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1jb21lZHljZW50cmFsLmNvbSZiaWxsaW5nU2VjdGlvbj1pbnRsJmVwPTlmOTQ5MGQ2JmZvcm1hdD1qc29uJmFjY2VwdE1ldGhvZHM9aGxz",
-                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFya3N0dWRpb3MuY29tOmQ5MGFiZmM1LTJhNWMtNGY4OS04MzY2LTBmZDNkNTY3MzcwOT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1jb21lZHljZW50cmFsLmNvbSZiaWxsaW5nU2VjdGlvbj1pbnRsJmVwPTlmOTQ5MGQ2JmZvcm1hdD1qc29uJmFjY2VwdE1ldGhvZHM9aGxz",
-                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFya3N0dWRpb3MuY29tOjRkOThmMjUwLTVkNzEtNDRkZS05YzYxLTQxNWRlZTIxNGVmMT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1jb21lZHljZW50cmFsLmNvbSZiaWxsaW5nU2VjdGlvbj1pbnRsJmVwPTlmOTQ5MGQ2JmZvcm1hdD1qc29uJmFjY2VwdE1ldGhvZHM9aGxz",
-                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFya3N0dWRpb3MuY29tOjg1Yjc1MWRiLWIxNTgtNGQxMi04OTE5LTYxNTBjMWZmODJiOT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1jb21lZHljZW50cmFsLmNvbSZiaWxsaW5nU2VjdGlvbj1pbnRsJmVwPTlmOTQ5MGQ2JmZvcm1hdD1qc29uJmFjY2VwdE1ldGhvZHM9aGxz"
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFya3N0dWRpb3MuY29tOjA0YjY3ODEyLTZkYzEtNDk2My1hNGY3LTM1YWRlNDRmODY4YT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1jb21lZHljZW50cmFsLmNvbSZiaWxsaW5nU2VjdGlvbj1pbnRsJmVwPTlmOTQ5MGQ2JmZvcm1hdD1qc29uJmFjY2VwdE1ldGhvZHM9aGxz",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFya3N0dWRpb3MuY29tOmRjM2ZlZDU1LTIzOTYtNDJjMC05YjVmLTRjNjk5MGRhNGU0ZT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1jb21lZHljZW50cmFsLmNvbSZiaWxsaW5nU2VjdGlvbj1pbnRsJmVwPTlmOTQ5MGQ2JmZvcm1hdD1qc29uJmFjY2VwdE1ldGhvZHM9aGxz",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFya3N0dWRpb3MuY29tOmY0ODBjY2I4LWNmMzUtNDhiZS04NTJmLWEwOTYxOGI5MDQzZj9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1jb21lZHljZW50cmFsLmNvbSZiaWxsaW5nU2VjdGlvbj1pbnRsJmVwPTlmOTQ5MGQ2JmZvcm1hdD1qc29uJmFjY2VwdE1ldGhvZHM9aGxz",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFya3N0dWRpb3MuY29tOjMzNjlkNDYwLTcwZmItNDBjZS05ZWUyLWY0OWFkNmI4YzI3MT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1jb21lZHljZW50cmFsLmNvbSZiaWxsaW5nU2VjdGlvbj1pbnRsJmVwPTlmOTQ5MGQ2JmZvcm1hdD1qc29uJmFjY2VwdE1ldGhvZHM9aGxz",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFya3N0dWRpb3MuY29tOjI5NmVhZGUwLWZhOTQtNDlkOS04OGM2LThmOGI3MGQxZjE0ND9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1jb21lZHljZW50cmFsLmNvbSZiaWxsaW5nU2VjdGlvbj1pbnRsJmVwPTlmOTQ5MGQ2JmZvcm1hdD1qc29uJmFjY2VwdE1ldGhvZHM9aGxz"
+                ]
+            },
+            {
+                "image": "https://images.viacbs.tech/uri/mgid:arc:imageassetref:shared.southpark.global:ccc161a1-6071-47fa-875d-747d7281c1d0?quality=0.7",
+                "uuid": "83572850-851c-11ec-a4f1-70df2f866ace",
+                "details": "A lot is riding on Butter's ability to crush the competition in the all-important dressage championship.",
+                "date": "03/02/2022",
+                "title": "Back to the Cold War",
+                "url": "/episodes/ohj8pg/south-park-back-to-the-cold-war-season-25-ep-4",
+                "season": "25",
+                "episode": "4",
+                "mediagen": [
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFya3N0dWRpb3MuY29tOmExYjg3MzVlLTRmNTYtNGUxNS1iOTZiLWQ2MjY0NjlhMTU5ZT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1jb21lZHljZW50cmFsLmNvbSZiaWxsaW5nU2VjdGlvbj1pbnRsJmVwPTlmOTQ5MGQ2JmZvcm1hdD1qc29uJmFjY2VwdE1ldGhvZHM9aGxz",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFya3N0dWRpb3MuY29tOjZkZDkyNDEyLTFjNDItNGNmYi1hMmNlLTUzNTE1NjJlOTEzND9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1jb21lZHljZW50cmFsLmNvbSZiaWxsaW5nU2VjdGlvbj1pbnRsJmVwPTlmOTQ5MGQ2JmZvcm1hdD1qc29uJmFjY2VwdE1ldGhvZHM9aGxz",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFya3N0dWRpb3MuY29tOmVkMmE4MTk4LTI1OGUtNDlhZS1iMTMxLWU5M2ZmMWU5Y2I3ND9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1jb21lZHljZW50cmFsLmNvbSZiaWxsaW5nU2VjdGlvbj1pbnRsJmVwPTlmOTQ5MGQ2JmZvcm1hdD1qc29uJmFjY2VwdE1ldGhvZHM9aGxz",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFya3N0dWRpb3MuY29tOjU1ZGQwMjU2LWQ1OGUtNDU5ZS04ZjAyLTdlYWMxODYxY2UyOT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1jb21lZHljZW50cmFsLmNvbSZiaWxsaW5nU2VjdGlvbj1pbnRsJmVwPTlmOTQ5MGQ2JmZvcm1hdD1qc29uJmFjY2VwdE1ldGhvZHM9aGxz",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFya3N0dWRpb3MuY29tOmU2ZDZiYjFkLWM3ZWMtNDFiNC1iODVjLWM4ZDQ3ODhiMTM2OT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1jb21lZHljZW50cmFsLmNvbSZiaWxsaW5nU2VjdGlvbj1pbnRsJmVwPTlmOTQ5MGQ2JmZvcm1hdD1qc29uJmFjY2VwdE1ldGhvZHM9aGxz"
                 ]
             }
         ]
