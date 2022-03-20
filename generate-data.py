@@ -194,7 +194,7 @@ def _make_episode(data, season, episode, lang):
 def _has_extra(x):
 	return "loadMore" in x and x["loadMore"] != None and "type" in x and x["type"] == "video-guide"
 
-def _parse_episodes(data, season, lang):
+def _parse_episodes(data, season, lang, inverted):
 	domapi = APIS[lang]["domapi"]
 	print("parsing episodes from season", season + 1)
 	extra = []
@@ -213,16 +213,21 @@ def _parse_episodes(data, season, lang):
 	else:
 		return []
 
-
-	lists = [_make_episode(lists[i], season, i, lang) for i in range(0, len(lists))]
+	n_episodes = len(lists)
+	lists = [_make_episode(lists[i], season, n_episodes - i - 1 if inverted else i, lang) for i in range(0, len(lists))]
 
 	if len(extra) > 0:
 		url = _dk(extra[0], ["loadMore", "url"], "")
 		if len(url) > 0:
 			extra = _http_get(domapi + url, True)
-			lists.extend([_make_episode(extra["items"][i], season, i + len(lists), lang) for i in range(0, len(extra["items"]))])
+			n_extras = len(extra["items"])
+			lists.extend([_make_episode(extra["items"][i], season, (n_extras - i - 1 if inverted else i) + n_episodes, lang) for i in range(0, n_extras)])
 		else:
 			raise Exception("Cannot fetch all episodes")
+
+	if inverted:
+		lists.reverse()
+
 	return lists
 
 def _download_data(url, html_links):
@@ -272,7 +277,7 @@ def generate_data(lang):
 		index += 1
 		if url != None:
 			data = _download_data(domain + url, False)
-		lists = _parse_episodes(data, len(seasons_urls) - index, lang)
+		lists = _parse_episodes(data, len(seasons_urls) - index, lang, index == 1)
 		if len(lists) < 1 and len(seasons) < 1:
 			continue
 		seasons.append(lists)
