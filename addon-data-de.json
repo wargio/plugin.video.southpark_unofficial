@@ -5102,15 +5102,82 @@
         ],
         [
             {
-                "image": "https://images.viacbs.tech/uri/mgid:arc:content:shared.southpark.gsa.de:bcbeae41-4fe9-46c9-9e5e-f08400cca55c?quality=0.7",
+                "image": "https://images.viacbs.tech/uri/mgid:arc:imageassetref:shared.southpark.gsa.de:bcbeae41-4fe9-46c9-9e5e-f08400cca55c?quality=0.7",
                 "uuid": "ff173532-7d50-11ec-a4f1-70df2f866ace",
-                "details": "The 4th grade class is banned from wearing their pajamas to school on the most important day of the year.",
-                "date": "03.02.2022",
-                "title": "Pajama Day",
-                "url": "/folgen/vrwkb7/south-park-pajama-day-staffel-25-ep-1",
+                "details": "Die 4. Klasse darf keinen Pyjama in der Schule tragen, und das am wichtigsten Tag des Jahres.",
+                "date": "09.02.2022",
+                "title": "Pyjama-Tag",
+                "url": "/folgen/vrwkb7/south-park-pyjama-tag-staffel-25-ep-1",
                 "season": "25",
                 "episode": "1",
-                "mediagen": []
+                "mediagen": [
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmFlYzlkZGJmLTg4ZmQtMTFlYy05YjFiLTBlNDBjZjJmYzI4NT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9NTBjNzgxOTkmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
+                ]
+            },
+            {
+                "image": "https://images.viacbs.tech/uri/mgid:arc:imageassetref:shared.southpark.gsa.de:9309e4a5-47f8-45c2-a0dc-60f668c65bbe?quality=0.7",
+                "uuid": "c13ec47a-851e-11ec-a4f1-70df2f866ace",
+                "details": "Stan stellt mit Schrecken fest, dass er einige der bedeutendsten Texte falsch ausgelegt hat.",
+                "date": "14.02.2022",
+                "title": "Der Gro\u00dfe Trick",
+                "url": "/folgen/m339tu/south-park-der-grosse-trick-staffel-25-ep-2",
+                "season": "25",
+                "episode": "2",
+                "mediagen": [
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmI0MzE2NDljLThiNjQtMTFlYy05YjFiLTBlNDBjZjJmYzI4NT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9NTBjNzgxOTkmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
+                ]
+            },
+            {
+                "image": "https://images.viacbs.tech/uri/mgid:arc:imageassetref:shared.southpark.gsa.de:9e0c350e-c9d8-4779-9063-4c1dff2b2829?quality=0.7",
+                "uuid": "415bc2f5-851c-11ec-a4f1-70df2f866ace",
+                "details": "Cartman ist nicht gl\u00fccklich, als seine Mutter einen neuen Job annimmt.",
+                "date": "21.02.2022",
+                "title": "Stadtmenschen",
+                "url": "/folgen/pnkrck/south-park-stadtmenschen-staffel-25-ep-3",
+                "season": "25",
+                "episode": "3",
+                "mediagen": [
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmExZjdjOWZiLTkwZDEtMTFlYy05YjFiLTBlNDBjZjJmYzI4NT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9NTBjNzgxOTkmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
+                ]
+            },
+            {
+                "image": "https://images.viacbs.tech/uri/mgid:arc:imageassetref:shared.southpark.gsa.de:ccc161a1-6071-47fa-875d-747d7281c1d0?quality=0.7",
+                "uuid": "83572850-851c-11ec-a4f1-70df2f866ace",
+                "details": "Es steht einiges auf dem Spiel: Wird Butters die entscheidende Dressur-Meisterschaft gewinnen?",
+                "date": "07.03.2022",
+                "title": "Zur\u00fcck zum Kalten Krieg",
+                "url": "/folgen/ohj8pg/south-park-zurueck-zum-kalten-krieg-staffel-25-ep-4",
+                "season": "25",
+                "episode": "4",
+                "mediagen": [
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmZhMTgzMDFjLTliZGYtMTFlYy05YjFiLTBlNDBjZjJmYzI4NT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9NTBjNzgxOTkmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
+                ]
+            },
+            {
+                "image": "https://images.paramount.tech/uri/mgid:arc:imageassetref:shared.southpark.gsa.de:f9d6e019-01b5-4659-96d7-2010dd6280aa?quality=0.7&gen=ntrn",
+                "uuid": "762255ae-9ef8-11ec-a4f1-70df2f866ace",
+                "details": "Die Jungs entdecken Airsoft f\u00fcr sich, m\u00fcssen sich dabei aber einer neuen Herausforderung stellen: Teenagern.",
+                "date": "14.03.2022",
+                "title": "Hilfe, mein Teenager hasst mich!",
+                "url": "/folgen/b6uh34/south-park-hilfe-mein-teenager-hasst-mich-staffel-25-ep-5",
+                "season": "25",
+                "episode": "5",
+                "mediagen": [
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjIwNjBhOGIwLWEzOWUtMTFlYy05YjFiLTBlNDBjZjJmYzI4NT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9NTBjNzgxOTkmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
+                ]
+            },
+            {
+                "image": "https://images.paramount.tech/uri/mgid:arc:imageassetref:shared.southpark.gsa.de:c191b7d1-bf73-4dce-82e3-9ecf040a13f6?quality=0.7&gen=ntrn",
+                "uuid": "192d2362-9f29-11ec-a4f1-70df2f866ace",
+                "details": "Butters ist geschockt, als er erf\u00e4hrt, dass die Bewohner von South Park gar nicht wissen, worum es beim St. Patrick's Day geht.",
+                "date": "21.03.2022",
+                "title": "Credigree Weed St. Patrick's Day Special",
+                "url": "/folgen/l3rtf5/south-park-credigree-weed-st-patrick-s-day-special-staffel-25-ep-6",
+                "season": "25",
+                "episode": "6",
+                "mediagen": [
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmY3ZDlkOTg3LWE2ZGMtMTFlYy05YjFiLTBlNDBjZjJmYzI4NT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9NTBjNzgxOTkmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
+                ]
             }
         ]
     ]
