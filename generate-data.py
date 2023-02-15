@@ -93,7 +93,11 @@ def _http_get(url, is_json=False):
 		return None
 	req = Request(url)
 	req.add_header('User-Agent', USER_AGENT)
-	response = urlopen(req)
+	try:
+		response = urlopen(req)
+	except HTTPError as e:
+		print(url, "has failed.")
+		return None
 	data = response.read()
 	response.close()
 	data = data.decode("utf-8")
@@ -220,8 +224,9 @@ def _parse_episodes(data, season, lang, inverted):
 		url = _dk(extra[0], ["loadMore", "url"], "")
 		if len(url) > 0:
 			extra = _http_get(domapi + url, True)
-			n_extras = len(extra["items"])
-			lists.extend([_make_episode(extra["items"][i], season, (n_extras - i - 1 if inverted else i) + n_episodes, lang) for i in range(0, n_extras)])
+			if extra != None:
+				n_extras = len(extra["items"])
+				lists.extend([_make_episode(extra["items"][i], season, (n_extras - i - 1 if inverted else i) + n_episodes, lang) for i in range(0, n_extras)])
 		else:
 			raise Exception("Cannot fetch all episodes")
 
