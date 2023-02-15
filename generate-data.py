@@ -88,11 +88,13 @@ def log_struct(data):
 	if IS_DEBUG:
 		print(json.dumps(data, indent=4))
 
-def _http_get(url, is_json=False):
+def _http_get(url, is_json=False, referer=None):
 	if len(url) < 1:
 		return None
 	req = Request(url)
 	req.add_header('User-Agent', USER_AGENT)
+	if referer:
+		req.add_header('Referer', referer)
 	try:
 		response = urlopen(req)
 	except HTTPError as e:
@@ -198,7 +200,7 @@ def _make_episode(data, season, episode, lang):
 def _has_extra(x):
 	return "loadMore" in x and x["loadMore"] != None and "type" in x and x["type"] == "video-guide"
 
-def _parse_episodes(data, season, lang, inverted):
+def _parse_episodes(data, season, lang, inverted, referer_url):
 	domapi = APIS[lang]["domapi"]
 	print("parsing episodes from season", season + 1)
 	extra = []
@@ -223,7 +225,7 @@ def _parse_episodes(data, season, lang, inverted):
 	if len(extra) > 0:
 		url = _dk(extra[0], ["loadMore", "url"], "")
 		if len(url) > 0:
-			extra = _http_get(domapi + url, True)
+			extra = _http_get(domapi + url.replace(':', '%3A'), True, referer_url)
 			if extra != None:
 				n_extras = len(extra["items"])
 				lists.extend([_make_episode(extra["items"][i], season, (n_extras - i - 1 if inverted else i) + n_episodes, lang) for i in range(0, n_extras)])
@@ -280,9 +282,11 @@ def generate_data(lang):
 	index = 0
 	for url in seasons_urls:
 		index += 1
+		referer = None
 		if url != None:
+			referer = domain + url
 			data = _download_data(domain + url, False)
-		lists = _parse_episodes(data, len(seasons_urls) - index, lang, index == 1)
+		lists = _parse_episodes(data, len(seasons_urls) - index, lang, index == 1, referer)
 		if len(lists) < 1 and len(seasons) < 1:
 			continue
 		seasons.append(lists)
