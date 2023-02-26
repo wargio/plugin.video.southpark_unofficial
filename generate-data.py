@@ -1,9 +1,7 @@
 #!/usr/bin/python3
 
 import argparse
-from urllib.request import Request
-from urllib.request import urlopen
-from urllib.error import HTTPError
+import requests
 import json
 import os
 import re
@@ -91,22 +89,16 @@ def log_struct(data):
 def _http_get(url, is_json=False, referer=None):
 	if len(url) < 1:
 		return None
-	req = Request(url)
-	req.add_header('User-Agent', USER_AGENT)
+	headers = {
+		'User-Agent': USER_AGENT,
+	}
 	if referer:
-		req.add_header('Referer', referer)
-	try:
-		response = urlopen(req)
-	except HTTPError as e:
-		print(url, "has failed.")
-		return None
-	data = response.read()
-	response.close()
-	data = data.decode("utf-8")
-	if is_json:
-		data = json.loads(data, strict=False)
+		headers['Referer'] = referer
+	resp = requests.get(url, headers=headers)
 	log_debug("http get: {0}".format(url))
-	return data
+	if is_json:
+		return resp.json()
+	return resp.text
 
 def write_data(path, data):
 	with open(path,'w') as output:
@@ -166,24 +158,16 @@ def _make_episode(data, season, episode, lang):
 		args = "uri=mgid:arc:episode:{mediagen}:{uuid}&configtype=edge&ref={dom}{ref}".format(mediagen=mediagen, uuid=ep["uuid"], dom=domapi, ref=ep["url"])
 		url  = "https://media.mtvnservices.com/pmt/e1/access/index.html?{args}".format(args=args)
 		service = _http_get(url, True)
-		url = service["seamlessMediaGen"].replace('/{uri}/', "/" + service["uri"] + "/")
+		items = _dk(service, ["feed", "items"], [])
+		i = 0
 		urls = []
-		try:
-			if len(url) > 0:
-				_http_get(url, True)
-				urls = [url]
-		except HTTPError:
-			urls = []
-		if len(urls) < 1 or has_ads:
-			items = _dk(service, ["feed", "items"], [])
-			i = 0
-			for url in items:
-				items[i] = _dk(url, ["group", "content"], "").replace("&device={device}", "") + "&format=json&acceptMethods=hls"
-				i += 1
-			if len(items) > 0:
-				urls = items
+		for url in items:
+			items[i] = _dk(url, ["group", "content"], "").replace("&device={device}", "") + "&format=json&acceptMethods=hls"
+			i += 1
+		if len(items) > 0:
+			urls = items
 		ep["mediagen"] = urls
-	except HTTPError as e:
+	except Exception as e:
 		log_debug("http get: {0} {1}".format(url, e))
 
 	ep["mediagen"] = list(filter(None, ep["mediagen"]))
