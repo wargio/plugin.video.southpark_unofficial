@@ -110,6 +110,10 @@ def write_json(path, data):
 		fp.truncate()
 		json.dump(data, fp, indent=4)
 
+def read_json(path):
+	with open(path, 'r') as fp:
+		return json.load(fp)
+
 def _dk(obj, keys, default=None):
 	if not isinstance(obj, list) and not isinstance(obj, dict):
 		return default
@@ -245,7 +249,7 @@ def _download_data(url, html_links):
 		return data
 	return None
 
-def generate_data(lang):
+def generate_data(lang, old_data):
 	domain     = APIS[lang]["domain"]
 	uri        = APIS[lang]["uri"]
 	html_links = APIS[lang]["html_links"]
@@ -274,15 +278,26 @@ def generate_data(lang):
 		if len(lists) < 1 and len(seasons) < 1:
 			continue
 		seasons.append(lists)
+		if old_data:
+			break
 
-	seasons.reverse()
+	if old_data:
+		last_season = seasons[0]
+		seasons = old_data["seasons"]
+		seasons[-1] = last_season
+	else:
+		seasons.reverse()
+
 	return {
 		"created": "{}".format(datetime.datetime.now()),
 		"seasons": seasons
 	}	
 
-def generate_file(lang):
-	data = generate_data(lang)
+def generate_file(lang, only_last_season):
+	old_data = None
+	if only_last_season:
+		old_data = read_json("addon-data-{}.json".format(lang))
+	data = generate_data(lang, old_data)
 	write_json("addon-data-{}.json".format(lang), data)
 
 def main():
@@ -290,6 +305,7 @@ def main():
 
 	parser = argparse.ArgumentParser()
 	parser.add_argument('--debug', action='store_true', default=False, help='enable debug')
+	parser.add_argument('--only-last-season', action='store_true', default=False, help='updates only the last season')
 	group = parser.add_mutually_exclusive_group(required=True)
 	group.add_argument('--en', action='store_true', default=False, help='language english (north america)')
 	group.add_argument('--es', action='store_true', default=False, help='language spanish (north america)')
@@ -305,19 +321,19 @@ def main():
 	IS_DEBUG = args.debug
 
 	if args.en:
-		generate_file("en")
+		generate_file("en", args.only_last_season)
 	elif args.es:
-		generate_file("es")
+		generate_file("es", args.only_last_season)
 	elif args.de:
-		generate_file("de")
+		generate_file("de", args.only_last_season)
 	elif args.se:
-		generate_file("se")
+		generate_file("se", args.only_last_season)
 	elif args.eu:
-		generate_file("eu")
+		generate_file("eu", args.only_last_season)
 	elif args.br:
-		generate_file("br")
+		generate_file("br", args.only_last_season)
 	elif args.lat:
-		generate_file("lat")
+		generate_file("lat", args.only_last_season)
 	else:
 		print("nothing was selected..")
 
