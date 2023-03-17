@@ -1,5 +1,5 @@
 {
-    "created": "2023-03-08 13:48:29.827048",
+    "created": "2023-03-17 11:58:21.433923",
     "seasons": [
         [
             {
@@ -4980,9 +4980,9 @@
         ],
         [
             {
-                "image": "https://images.paramount.tech/uri/mgid:arc:imageassetref:shared.southpark.global:c6373b7d-c713-4dbd-8f48-880de290ef39?quality=0.7&gen=ntrn&legacyStatusCode=true",
+                "image": "https://images.paramount.tech/uri/mgid:arc:imageassetref:shared.southpark.us.en:c6373b7d-c713-4dbd-8f48-880de290ef39?quality=0.7&gen=ntrn&legacyStatusCode=true",
                 "uuid": "94ad0b35-9036-11ed-ad8e-0e40cf2fc285",
-                "details": "Kyle explains what he learned about Hollywood and stereotypes.",
+                "details": "Cartman is jealous of the friendship that's developed between Kyle and Tolkien and decides to do something about it.",
                 "date": "02/08/2023",
                 "title": "Cupid Ye",
                 "url": "/episodes/2dhgcd/south-park-cupid-ye-season-26-ep-1",
@@ -4997,12 +4997,12 @@
                 ]
             },
             {
-                "image": "https://images.paramount.tech/uri/mgid:arc:imageassetref:shared.southpark.global:3f26146f-dd21-415a-ab52-34fe4dff3175?quality=0.7&gen=ntrn&legacyStatusCode=true",
+                "image": "https://images.paramount.tech/uri/mgid:arc:imageassetref:shared.southpark.us.en:3f26146f-dd21-415a-ab52-34fe4dff3175?quality=0.7&gen=ntrn&legacyStatusCode=true",
                 "uuid": "99514316-9036-11ed-ad8e-0e40cf2fc285",
                 "details": "The prince of Canada and his wife try to find privacy and seclusion in a small mountain town.",
                 "date": "02/15/2023",
-                "title": "The World-Wide Privacy Tour",
-                "url": "/episodes/3ne660/south-park-the-world-wide-privacy-tour-season-26-ep-2",
+                "title": "The Worldwide Privacy Tour",
+                "url": "/episodes/3ne660/south-park-the-worldwide-privacy-tour-season-26-ep-2",
                 "season": "26",
                 "episode": "2",
                 "mediagen": [
@@ -5014,7 +5014,7 @@
                 ]
             },
             {
-                "image": "https://images.paramount.tech/uri/mgid:arc:imageassetref:shared.southpark.global:bd71dd0d-a167-4d81-ac4c-b1c8802ec710?quality=0.7&gen=ntrn&legacyStatusCode=true",
+                "image": "https://images.paramount.tech/uri/mgid:arc:imageassetref:shared.southpark.us.en:bd71dd0d-a167-4d81-ac4c-b1c8802ec710?quality=0.7&gen=ntrn&legacyStatusCode=true",
                 "uuid": "a62d69e6-9036-11ed-ad8e-0e40cf2fc285",
                 "details": "South Park learns about the wonders of Japanese toilets.",
                 "date": "03/01/2023",
@@ -5028,6 +5028,23 @@
                     "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmVhM2NkMDA3LWI5NTktMTFlZC1hZDhlLTBlNDBjZjJmYzI4NT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9OTA4Nzc5NjMmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
                     "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmVhNTU5OTc1LWI5NTktMTFlZC1hZDhlLTBlNDBjZjJmYzI4NT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9OTA4Nzc5NjMmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
                     "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOmVhNmVmNmIzLWI5NTktMTFlZC1hZDhlLTBlNDBjZjJmYzI4NT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9OTA4Nzc5NjMmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
+                ]
+            },
+            {
+                "image": "https://images.paramount.tech/uri/mgid:arc:imageassetref:shared.southpark.us.en:facb926d-51f2-4be4-ae79-ef6df4acdf30?quality=0.7&gen=ntrn&legacyStatusCode=true",
+                "uuid": "51922573-9037-11ed-ad8e-0e40cf2fc285",
+                "details": "Stan is reeling when a cheating scandal hits the school.",
+                "date": "03/08/2023",
+                "title": "Deep Learning",
+                "url": "/episodes/8byci4/south-park-deep-learning-season-26-ep-4",
+                "season": "26",
+                "episode": "4",
+                "mediagen": [
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjVlMzg2MDM0LWJlZGMtMTFlZC1hZDhlLTBlNDBjZjJmYzI4NT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9OTA4Nzc5NjMmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjVlNjUyZDgxLWJlZGMtMTFlZC1hZDhlLTBlNDBjZjJmYzI4NT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9OTA4Nzc5NjMmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjVlN2ZhN2RlLWJlZGMtMTFlZC1hZDhlLTBlNDBjZjJmYzI4NT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9OTA4Nzc5NjMmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjVlOThkMWM4LWJlZGMtMTFlZC1hZDhlLTBlNDBjZjJmYzI4NT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9OTA4Nzc5NjMmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM=",
+                    "aHR0cHM6Ly9tZWRpYS11dGlscy5tdHZuc2VydmljZXMuY29tL3NlcnZpY2VzL01lZGlhR2VuZXJhdG9yL21naWQ6YXJjOnZpZGVvOnNvdXRocGFyay5pbnRsOjVlYjFkZjNmLWJlZGMtMTFlZC1hZDhlLTBlNDBjZjJmYzI4NT9hcmNTdGFnZT1zdGFnaW5nJmFjY291bnRPdmVycmlkZT1pbnRsLm10dmkuY29tJmJpbGxpbmdTZWN0aW9uPWludGwmZXA9OTA4Nzc5NjMmZm9ybWF0PWpzb24mYWNjZXB0TWV0aG9kcz1obHM="
                 ]
             }
         ]
