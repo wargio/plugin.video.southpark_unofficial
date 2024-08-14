@@ -17,7 +17,7 @@ APIS = {
 		"language": "en",
 		"mediagen": "shared.southpark.global",
 		"domain": "https://southparkstudios.com",
-		"domapi": "https://southparkstudios.com",
+		"domapi": "https://www.southparkstudios.com",
 		"uri": "/seasons/south-park/",
 		"html_links": False,
 		"has_ads": True,
@@ -26,7 +26,7 @@ APIS = {
 		"language": "es",
 		"mediagen": "shared.southpark.global",
 		"domain": "https://southparkstudios.com",
-		"domapi": "https://southparkstudios.com",
+		"domapi": "https://www.southparkstudios.com",
 		"uri": "/es/seasons/south-park/",
 		"html_links": False,
 		"has_ads": True,
@@ -158,22 +158,10 @@ def _make_episode(data, season, episode, lang):
 		"mediagen": []
 	}
 
-	try:
-		url  = "https://topaz.viacomcbs.digital/topaz/api/mgid:arc:episode:{mediagen}:{uuid}/mica.json?clientPlatform=mobile&browser=Chrome&device=UNKNOWN&os=Unknown&widevineSupport=L3".format(mediagen=mediagen, uuid=ep["uuid"])
-		print(url)
-		service = _http_get(url, True)
-		m3u8 = _dk(service, ["stitchedstream", "source"], None)
-		ep["mediagen"] = [m3u8]
-	except Exception as e:
-		log_debug("http get: {0} {1}".format(url, e))
+	ep["mediagen"] = "https://topaz.viacomcbs.digital/topaz/api/mgid:arc:episode:{mediagen}:{uuid}/mica.json?clientPlatform=mobile&browser=Chrome&device=UNKNOWN&os=Unknown&widevineSupport=L3".format(mediagen=mediagen, uuid=ep["uuid"])
 
-	ep["mediagen"] = list(filter(None, ep["mediagen"]))
-
-	print("s{:<2}e{:<2} len:{}: {}".format(ep["season"], ep["episode"], len(ep["mediagen"]), ep["title"]))
-	i = 0
-	for url in ep["mediagen"]:
-		ep["mediagen"][i] = base64.b64encode(url.encode('ascii')).decode('ascii')
-		i += 1
+	print("s{:<2}e{:<2} {}".format(ep["season"], ep["episode"], ep["title"]))
+	ep["mediagen"] = base64.b64encode(ep["mediagen"].encode('ascii')).decode('ascii')
 	log_struct(ep)
 
 	return ep
@@ -255,6 +243,8 @@ def _download_data(url, html_links):
 	return None
 
 def generate_data(lang, old_data):
+	if lang == "test":
+		lang = "en"
 	domain     = APIS[lang]["domain"]
 	uri        = APIS[lang]["uri"]
 	html_links = APIS[lang]["html_links"]
@@ -312,6 +302,7 @@ def main():
 	group.add_argument('--eu', action='store_true', default=False, help='language english (europe)')
 	group.add_argument('--br', action='store_true', default=False, help='language portuguese (brazil)')
 	group.add_argument('--lat', action='store_true', default=False, help='language spanish (latin america)')
+	group.add_argument('--test', action='store_true', default=False, help='test language')
 	args = parser.parse_args()
 
 	os.chdir(WORKI_DIR)
@@ -332,6 +323,8 @@ def main():
 		generate_file("br", args.only_last_season)
 	elif args.lat:
 		generate_file("lat", args.only_last_season)
+	elif args.test:
+		generate_file("test", args.only_last_season)
 	else:
 		print("nothing was selected..")
 
