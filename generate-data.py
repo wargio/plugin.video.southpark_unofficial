@@ -15,7 +15,7 @@ IS_DEBUG   = False
 APIS = {
 	"en": {
 		"language": "en",
-		"mediagen": "southpark.intl",
+		"mediagen": "shared.southpark.global",
 		"domain": "https://southparkstudios.com",
 		"domapi": "https://southparkstudios.com",
 		"uri": "/seasons/south-park/",
@@ -24,7 +24,7 @@ APIS = {
 	},
 	"es": {
 		"language": "es",
-		"mediagen": "southpark.intl",
+		"mediagen": "shared.southpark.global",
 		"domain": "https://southparkstudios.com",
 		"domapi": "https://southparkstudios.com",
 		"uri": "/es/seasons/south-park/",
@@ -33,7 +33,7 @@ APIS = {
 	},
 	"de": {
 		"language": "de",
-		"mediagen": "southpark.intl",
+		"mediagen": "shared.southpark.global",
 		"domain": "https://www.southpark.de",
 		"domapi": "https://www.southpark.de",
 		"uri": "/seasons/south-park/",
@@ -42,7 +42,7 @@ APIS = {
 	},
 	"se": {
 		"language": "se",
-		"mediagen": "southpark.intl",
+		"mediagen": "shared.southpark.global",
 		"domain": "https://southparkstudios.nu",
 		"domapi": "https://www.southparkstudios.nu",
 		"uri": "/seasons/south-park/",
@@ -51,7 +51,7 @@ APIS = {
 	},
 	"eu": {
 		"language": "en",
-		"mediagen": "southpark.intl",
+		"mediagen": "shared.southpark.global",
 		"domain": "https://www.southparkstudios.com",
 		"domapi": "https://www.southparkstudios.com",
 		"uri": "/seasons/south-park/",
@@ -60,7 +60,7 @@ APIS = {
 	},
 	"br": {
 		"language": "br",
-		"mediagen": "southpark.intl",
+		"mediagen": "shared.southpark.global",
 		"domain": "https://www.southparkstudios.com.br",
 		"domapi": "https://www.southparkstudios.com.br",
 		"uri": "/seasons/south-park/",
@@ -69,7 +69,7 @@ APIS = {
 	},
 	"lat": {
 		"language": "lat",
-		"mediagen": "southpark.intl",
+		"mediagen": "shared.southpark.global",
 		"domain": "https://www.southpark.lat",
 		"domapi": "https://www.southpark.lat",
 		"uri": "/seasons/south-park/",
@@ -159,18 +159,11 @@ def _make_episode(data, season, episode, lang):
 	}
 
 	try:
-		args = "uri=mgid:arc:episode:{mediagen}:{uuid}&configtype=edge&ref={dom}{ref}".format(mediagen=mediagen, uuid=ep["uuid"], dom=domapi, ref=ep["url"])
-		url  = "https://media.mtvnservices.com/pmt/e1/access/index.html?{args}".format(args=args)
+		url  = "https://topaz.viacomcbs.digital/topaz/api/mgid:arc:episode:{mediagen}:{uuid}/mica.json?clientPlatform=mobile&browser=Chrome&device=UNKNOWN&os=Unknown&widevineSupport=L3".format(mediagen=mediagen, uuid=ep["uuid"])
+		print(url)
 		service = _http_get(url, True)
-		items = _dk(service, ["feed", "items"], [])
-		i = 0
-		urls = []
-		for url in items:
-			items[i] = _dk(url, ["group", "content"], "").replace("&device={device}", "") + "&format=json&acceptMethods=hls"
-			i += 1
-		if len(items) > 0:
-			urls = items
-		ep["mediagen"] = urls
+		m3u8 = _dk(service, ["stitchedstream", "source"], None)
+		ep["mediagen"] = [m3u8]
 	except Exception as e:
 		log_debug("http get: {0} {1}".format(url, e))
 
