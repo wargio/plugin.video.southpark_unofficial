@@ -33,7 +33,7 @@ APIS = {
 	},
 	"de": {
 		"language": "de",
-		"mediagen": "shared.southpark.global",
+		"mediagen": "shared.southpark.gsa.de",
 		"domain": "https://www.southpark.de",
 		"domapi": "https://www.southpark.de",
 		"uri": "/seasons/south-park/",
@@ -158,7 +158,7 @@ def _make_episode(data, season, episode, lang):
 		"mediagen": []
 	}
 
-	ep["mediagen"] = "https://topaz.viacomcbs.digital/topaz/api/mgid:arc:episode:{mediagen}:{uuid}/mica.json?clientPlatform=mobile&browser=Chrome&device=UNKNOWN&os=Unknown&widevineSupport=L3".format(mediagen=mediagen, uuid=ep["uuid"])
+	ep["mediagen"] = "https://topaz.viacomcbs.digital/topaz/api/mgid:arc:episode:{mediagen}:{uuid}/mica.json?clientPlatform=mobile&browser=Chrome&device=UNKNOWN&os=Unknown".format(mediagen=mediagen, uuid=ep["uuid"])
 
 	print("s{:<2}e{:<2} {}".format(ep["season"], ep["episode"], ep["title"]))
 	ep["mediagen"] = base64.b64encode(ep["mediagen"].encode('ascii')).decode('ascii')
