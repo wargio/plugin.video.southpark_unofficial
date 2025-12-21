@@ -15,25 +15,25 @@ IS_DEBUG   = False
 APIS = {
 	"en": {
 		"language": "en",
-		"mediagen": "southpark.intl",
+		"mediagen": "shared.southpark.global",
 		"domain": "https://southparkstudios.com",
-		"domapi": "https://southparkstudios.com",
+		"domapi": "https://www.southparkstudios.com",
 		"uri": "/seasons/south-park/",
 		"html_links": False,
 		"has_ads": True,
 	},
 	"es": {
 		"language": "es",
-		"mediagen": "southpark.intl",
+		"mediagen": "shared.southpark.global",
 		"domain": "https://southparkstudios.com",
-		"domapi": "https://southparkstudios.com",
+		"domapi": "https://www.southparkstudios.com",
 		"uri": "/es/seasons/south-park/",
 		"html_links": False,
 		"has_ads": True,
 	},
 	"de": {
 		"language": "de",
-		"mediagen": "southpark.intl",
+		"mediagen": "shared.southpark.gsa.de",
 		"domain": "https://www.southpark.de",
 		"domapi": "https://www.southpark.de",
 		"uri": "/seasons/south-park/",
@@ -42,7 +42,7 @@ APIS = {
 	},
 	"se": {
 		"language": "se",
-		"mediagen": "southpark.intl",
+		"mediagen": "shared.southpark.global",
 		"domain": "https://southparkstudios.nu",
 		"domapi": "https://www.southparkstudios.nu",
 		"uri": "/seasons/south-park/",
@@ -51,7 +51,7 @@ APIS = {
 	},
 	"eu": {
 		"language": "en",
-		"mediagen": "southpark.intl",
+		"mediagen": "shared.southpark.global",
 		"domain": "https://www.southparkstudios.com",
 		"domapi": "https://www.southparkstudios.com",
 		"uri": "/seasons/south-park/",
@@ -60,7 +60,7 @@ APIS = {
 	},
 	"br": {
 		"language": "br",
-		"mediagen": "southpark.intl",
+		"mediagen": "shared.southpark.global",
 		"domain": "https://www.southparkstudios.com.br",
 		"domapi": "https://www.southparkstudios.com.br",
 		"uri": "/seasons/south-park/",
@@ -69,7 +69,7 @@ APIS = {
 	},
 	"lat": {
 		"language": "lat",
-		"mediagen": "southpark.intl",
+		"mediagen": "shared.southpark.global",
 		"domain": "https://www.southpark.lat",
 		"domapi": "https://www.southpark.lat",
 		"uri": "/seasons/south-park/",
@@ -158,29 +158,10 @@ def _make_episode(data, season, episode, lang):
 		"mediagen": []
 	}
 
-	try:
-		args = "uri=mgid:arc:episode:{mediagen}:{uuid}&configtype=edge&ref={dom}{ref}".format(mediagen=mediagen, uuid=ep["uuid"], dom=domapi, ref=ep["url"])
-		url  = "https://media.mtvnservices.com/pmt/e1/access/index.html?{args}".format(args=args)
-		service = _http_get(url, True)
-		items = _dk(service, ["feed", "items"], [])
-		i = 0
-		urls = []
-		for url in items:
-			items[i] = _dk(url, ["group", "content"], "").replace("&device={device}", "") + "&format=json&acceptMethods=hls"
-			i += 1
-		if len(items) > 0:
-			urls = items
-		ep["mediagen"] = urls
-	except Exception as e:
-		log_debug("http get: {0} {1}".format(url, e))
+	ep["mediagen"] = "https://topaz.viacomcbs.digital/topaz/api/mgid:arc:episode:{mediagen}:{uuid}/mica.json?clientPlatform=mobile&browser=Chrome&device=UNKNOWN&os=Unknown".format(mediagen=mediagen, uuid=ep["uuid"])
 
-	ep["mediagen"] = list(filter(None, ep["mediagen"]))
-
-	print("s{:<2}e{:<2} len:{}: {}".format(ep["season"], ep["episode"], len(ep["mediagen"]), ep["title"]))
-	i = 0
-	for url in ep["mediagen"]:
-		ep["mediagen"][i] = base64.b64encode(url.encode('ascii')).decode('ascii')
-		i += 1
+	print("s{:<2}e{:<2} {}".format(ep["season"], ep["episode"], ep["title"]))
+	ep["mediagen"] = base64.b64encode(ep["mediagen"].encode('ascii')).decode('ascii')
 	log_struct(ep)
 
 	return ep
@@ -262,6 +243,8 @@ def _download_data(url, html_links):
 	return None
 
 def generate_data(lang, old_data):
+	if lang == "test":
+		lang = "en"
 	domain     = APIS[lang]["domain"]
 	uri        = APIS[lang]["uri"]
 	html_links = APIS[lang]["html_links"]
@@ -319,6 +302,7 @@ def main():
 	group.add_argument('--eu', action='store_true', default=False, help='language english (europe)')
 	group.add_argument('--br', action='store_true', default=False, help='language portuguese (brazil)')
 	group.add_argument('--lat', action='store_true', default=False, help='language spanish (latin america)')
+	group.add_argument('--test', action='store_true', default=False, help='test language')
 	args = parser.parse_args()
 
 	os.chdir(WORKI_DIR)
@@ -339,6 +323,8 @@ def main():
 		generate_file("br", args.only_last_season)
 	elif args.lat:
 		generate_file("lat", args.only_last_season)
+	elif args.test:
+		generate_file("test", args.only_last_season)
 	else:
 		print("nothing was selected..")
 
