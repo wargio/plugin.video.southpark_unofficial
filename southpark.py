@@ -175,7 +175,7 @@ def _load_data(lang, path):
 	if addon_data == None:
 		url = "https://raw.githubusercontent.com/wargio/plugin.video.southpark_unofficial/addon-data/addon-data-{}.json".format(lang)
 		addon_data = _http_get(url, True)
-		addon_data["date"] = "{}".format(datetime.datetime.now()),
+		addon_data["date"] = "{}".format(datetime.datetime.now())
 
 		with open(path,'w') as output:
 			output.truncate()
