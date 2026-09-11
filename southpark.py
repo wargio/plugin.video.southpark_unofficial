@@ -10,6 +10,7 @@ import xbmcgui
 import xbmcaddon
 import time
 import base64
+from stream_resolver import StreamResolutionError, resolve_episode_stream
 
 # .major cannot be used in older versions, like kodi 16.
 IS_PY3 = sys.version_info[0] > 2
@@ -355,7 +356,7 @@ class SouthParkAddon(object):
 		ep_aird    = episode['date']
 		ep_uuid    = episode['uuid']
 
-		if len(episode['mediagen']) < 1:
+		if not episode.get('url') and len(episode['mediagen']) < 1:
 			ep_title += " [Unavailable]"
 			ep_mode = PLUGIN_MODE_UNAVAILABLE
 
@@ -377,7 +378,7 @@ class SouthParkAddon(object):
 		while retries < 10:
 			retries += 1
 			episode_data = self.data.random()
-			if len(episode_data['mediagen']) < 1:
+			if not episode_data.get('url') and len(episode_data['mediagen']) < 1:
 				log_error("Found locked episode '{0}'. trying again!".format(episode_data["title"]))
 				continue
 			if self.options.playrandom():
@@ -395,30 +396,44 @@ class SouthParkAddon(object):
 		self.notify("{0} {1}".format(self.i18n.WARNING_LOADING, _encode(data["title"])), WARNING_TIMEOUT_SHORT)
 		streams   = []
 		subtitles = []
+		manifest_types = []
 		try:
-			for url in data["mediagen"]:
-				url = base64.b64decode(url.encode('ascii')).decode('ascii')
-				mediagen = _http_get(url, True)
+			stream = resolve_episode_stream(
+				self.options.audio(True), data.get("url"), lambda url: _http_get(url, False))
+			streams.append(stream["source"])
+			subtitles.append(None)
+			manifest_types.append(stream["manifest_type"])
+		except StreamResolutionError as e:
+			log_error("Dynamic stream resolution failed: {}".format(e))
 
-				subs = _dk(mediagen, ["package", "video", "item", 0, "transcript", 0, "typographic"], [])
-				subs = list(filter(lambda x: "format" in x and x["format"] == "vtt", subs))
-				if len(subs) > 0:
-					subtitles.append(subs[0]["src"])
-				else:
-					subtitles.append(None)
+		# Temporary fallback for old addon-data while MTVN still serves it.
+		if len(streams) < 1:
+			try:
+				for url in data["mediagen"]:
+					url = base64.b64decode(url.encode('ascii')).decode('ascii')
+					mediagen = _http_get(url, True)
 
-				m3u8 = None
-				try:
-					m3u8 = _dk(mediagen, ["package", "video", "item", 0, "rendition", "src"], None)
-				except TypeError:
-					m3u8 = _dk(mediagen, ["package", "video", "item", 0, "rendition", 0, "src"], None)
+					subs = _dk(mediagen, ["package", "video", "item", 0, "transcript", 0, "typographic"], [])
+					subs = list(filter(lambda x: "format" in x and x["format"] == "vtt", subs))
+					if len(subs) > 0:
+						subtitles.append(subs[0]["src"])
+					else:
+						subtitles.append(None)
 
-				if m3u8 == None:
-					raise Exception("invalid m3u8")
-				streams.append(m3u8)
-		except Exception as e:
-			streams = []
-			log_error(e)
+					m3u8 = None
+					try:
+						m3u8 = _dk(mediagen, ["package", "video", "item", 0, "rendition", "src"], None)
+					except TypeError:
+						m3u8 = _dk(mediagen, ["package", "video", "item", 0, "rendition", 0, "src"], None)
+
+					if m3u8 == None:
+						raise Exception("invalid m3u8")
+					streams.append(m3u8)
+					manifest_types.append("hls")
+			except Exception as e:
+				streams = []
+				manifest_types = []
+				log_error(e)
 
 		if len(streams) < 1:
 			self.notify(self.i18n.WARNING_UNAVAILABLE_EPISODE, WARNING_TIMEOUT_LONG)
@@ -441,6 +456,13 @@ class SouthParkAddon(object):
 
 			playitem.setArt({'icon': data["image"], 'thumb': data["image"]})
 			playitem.setInfo('video', {'Title': title, 'Plot': data["details"]})
+			if manifest_types[i] == "dash":
+				playitem.setMimeType("application/dash+xml")
+				playitem.setContentLookup(False)
+				playitem.setProperty("inputstream", "inputstream.adaptive")
+				playitem.setProperty("inputstream.adaptive.manifest_type", "mpd")
+			else:
+				playitem.setMimeType("application/vnd.apple.mpegurl")
 
 			if subtitles[i] != None and show_subs:
 				playitem.setSubtitles([subtitles[i]])
