@@ -10,7 +10,9 @@ import xbmcgui
 import xbmcaddon
 import time
 import base64
+import io
 from stream_resolver import StreamResolutionError, resolve_episode_stream
+from subtitles import build_subtitles
 
 # .major cannot be used in older versions, like kodi 16.
 IS_PY3 = sys.version_info[0] > 2
@@ -391,6 +393,23 @@ class SouthParkAddon(object):
 		xbmcplugin.endOfDirectory(self.phandle)
 
 
+	def build_subtitles(self, stream):
+		# Kodi ignores HLS subtitle renditions, so merge them into a local file.
+		if not self.options.show_subtitles() or stream["manifest_type"] != "hls":
+			return None
+		try:
+			vtt, language = build_subtitles(stream["source"], self.options.audio(True), lambda url: _http_get(url, False))
+			if vtt is None:
+				log_error("Stream has no subtitle track")
+				return None
+			path = os.path.join(self.paths.TEMPORARY_FOLDER, "episode.{}.vtt".format(language))
+			with io.open(path, "w", encoding="utf-8") as output:
+				output.write(vtt)
+			return path
+		except Exception as e:
+			log_error("Cannot load subtitles: {}".format(e))
+			return None
+
 	def play_episode(self, season, episode):
 		data = self.data.episode(int(season) - 1, int(episode) - 1)
 		self.notify("{0} {1}".format(self.i18n.WARNING_LOADING, _encode(data["title"])), WARNING_TIMEOUT_SHORT)
@@ -401,7 +420,7 @@ class SouthParkAddon(object):
 			stream = resolve_episode_stream(
 				self.options.audio(True), data.get("url"), lambda url: _http_get(url, False))
 			streams.append(stream["source"])
-			subtitles.append(None)
+			subtitles.append(self.build_subtitles(stream))
 			manifest_types.append(stream["manifest_type"])
 		except StreamResolutionError as e:
 			log_error("Dynamic stream resolution failed: {}".format(e))
