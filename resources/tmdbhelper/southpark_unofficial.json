@@ -1,0 +1,10 @@
+{
+    "name"          : "South Park",
+    "plugin"        : "plugin.video.southpark_unofficial",
+    "priority"      : 100,
+    "is_resolvable" : "true",
+    "assert"        : {
+                        "play_episode": ["tmdb", "season", "episode"]
+                      },
+    "play_episode"  : "plugin://plugin.video.southpark_unofficial/?mode=sp:play&season={season}&episode={episode}&tmdb_id={tmdb}"
+}

@@ -42,6 +42,9 @@ PLUGIN_MODE_UNAVAILABLE = "sp:unavailable"
 PLUGIN_MODE_PREMIERE    = "sp:beforepremiere"
 PLUGIN_MODE_CLEARCACHE  = "sp:clearcache"
 
+# South Park on themoviedb.org, sent by the TMDb Helper player file.
+TMDB_SHOW_ID = "2190"
+
 def log_debug(message):
 	xbmc.log("[sp.addon] {}".format(message), xbmc.LOGDEBUG)
 
@@ -214,11 +217,13 @@ class KodiParams(object):
 		self.PARAM_MODE    = unquote_plus(params.get('mode'     , ''))
 		self.PARAM_SEASON  = unquote_plus(params.get('season'   , ''))
 		self.PARAM_EPISODE = unquote_plus(params.get('episode'  , ''))
+		self.PARAM_TMDB_ID = unquote_plus(params.get('tmdb_id'  , ''))
 
 	def debug(self):
 		log_debug("PARAM_MODE:    {0}".format(self.PARAM_MODE   ))
 		log_debug("PARAM_SEASON:  {0}".format(self.PARAM_SEASON ))
 		log_debug("PARAM_EPISODE: {0}".format(self.PARAM_EPISODE))
+		log_debug("PARAM_TMDB_ID: {0}".format(self.PARAM_TMDB_ID))
 
 class SP_Paths(object):
 	"""South Park plugin Paths"""
@@ -286,6 +291,9 @@ class SP_Data(object):
 
 	def episode(self, season, episode):
 		return self.seasons[season][episode]
+
+	def has_episode(self, season, episode):
+		return 0 <= season < len(self.seasons) and 0 <= episode < len(self.seasons[season])
 
 	def last_season(self):
 		return len(self.seasons) + 1
@@ -410,8 +418,23 @@ class SouthParkAddon(object):
 			log_error("Cannot load subtitles: {}".format(e))
 			return None
 
+	def play_failed(self):
+		self.notify(self.i18n.WARNING_UNAVAILABLE_EPISODE, WARNING_TIMEOUT_LONG)
+		if self.phandle != -1:
+			# Callers like TMDb Helper wait for the resolved url, so tell them it failed.
+			xbmcplugin.setResolvedUrl(handle=self.phandle, succeeded=False, listitem=xbmcgui.ListItem())
+		xbmcplugin.endOfDirectory(self.phandle)
+
 	def play_episode(self, season, episode):
-		data = self.data.episode(int(season) - 1, int(episode) - 1)
+		try:
+			season, episode = int(season) - 1, int(episode) - 1
+		except ValueError:
+			season, episode = -1, -1
+		if not self.data.has_episode(season, episode):
+			log_error("No episode data for season {0} episode {1}".format(season + 1, episode + 1))
+			self.play_failed()
+			return
+		data = self.data.episode(season, episode)
 		self.notify("{0} {1}".format(self.i18n.WARNING_LOADING, _encode(data["title"])), WARNING_TIMEOUT_SHORT)
 		streams   = []
 		subtitles = []
@@ -455,8 +478,7 @@ class SouthParkAddon(object):
 				log_error(e)
 
 		if len(streams) < 1:
-			self.notify(self.i18n.WARNING_UNAVAILABLE_EPISODE, WARNING_TIMEOUT_LONG)
-			xbmcplugin.endOfDirectory(self.phandle)
+			self.play_failed()
 			return
 
 		playlist = None
@@ -512,6 +534,11 @@ class SouthParkAddon(object):
 			self.create_episodes(kodi.PARAM_SEASON)
 			return
 		elif kodi.PARAM_MODE == PLUGIN_MODE_PLAY_EP:
+			if kodi.PARAM_TMDB_ID and kodi.PARAM_TMDB_ID != TMDB_SHOW_ID:
+				# TMDb Helper offers every player for every show.
+				log_error("Not South Park: tmdb id {0}".format(kodi.PARAM_TMDB_ID))
+				self.play_failed()
+				return
 			self.play_episode(kodi.PARAM_SEASON, kodi.PARAM_EPISODE)
 			return
 		elif kodi.PARAM_MODE == PLUGIN_MODE_RANDOM:
