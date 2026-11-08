@@ -400,20 +400,44 @@ class SouthParkAddon(object):
 	def create_random(self):
 		if not self.options.playrandom():
 			self.notify(self.i18n.WARNING_LOADING_RANDOM_EPISODE, WARNING_TIMEOUT_SHORT)
-		retries = 0
-		while retries < 10:
-			retries += 1
-			episode_data = self.data.random()
-			if not episode_data.get('url') and len(episode_data['mediagen']) < 1:
-				log_error("Found locked episode '{0}'. trying again!".format(episode_data["title"]))
-				continue
-			if self.options.playrandom():
+		# Pick evenly from the site episodes and the library episodes the site doesn't have
+		# (seasons missing from addon-data, locked episodes).
+		pool = []
+		on_site = set()
+		for season in self.data.seasons:
+			for episode_data in season:
+				if episode_data.get('url') or len(episode_data['mediagen']) > 0:
+					pool.append(("site", episode_data))
+					on_site.add((int(episode_data['season']), int(episode_data['episode'])))
+		for item in self.library_episodes():
+			if (item["season"], item["episode"]) not in on_site:
+				pool.append(("library", item))
+		log_error("Random episode from {0} site and {1} library episodes".format(len(on_site), len(pool) - len(on_site)))
+
+		for _ in range(10):
+			if not pool:
+				break
+			source, episode_data = random.choice(pool)
+			if source == "library":
+				if not xbmcvfs.exists(episode_data["file"]):
+					log_error("Library file is missing: '{0}'. trying again!".format(episode_data["file"]))
+					pool.remove((source, episode_data))
+					continue
+				if self.options.playrandom():
+					self.play_library(episode_data["episodeid"], episode_data["file"])
+					return
+				self.add_library_episode(episode_data)
+			elif self.options.playrandom():
 				self.play_episode(episode_data['season'], episode_data['episode'])
+				return
 			else:
 				self.add_episode(episode_data)
-			break
-		if retries > 9:
-			log_error("Cannot find an episode to play!")
+			xbmcplugin.endOfDirectory(self.phandle)
+			return
+		log_error("Cannot find an episode to play!")
+		if self.options.playrandom():
+			self.play_failed()
+			return
 		xbmcplugin.endOfDirectory(self.phandle)
 
 
@@ -434,21 +458,43 @@ class SouthParkAddon(object):
 			log_error("Cannot load subtitles: {}".format(e))
 			return None
 
-	def library_episode(self, season, episode):
-		"""This episode in the Kodi library (episodeid, file), or None."""
+	def library_episodes(self, season=None):
+		"""South Park episodes in the Kodi library (all, or one season). Files are not checked."""
+		found = []
 		try:
 			shows = _rpc("VideoLibrary.GetTVShows", properties=["uniqueid"]).get("tvshows", [])
 			for show in shows:
 				if show.get("uniqueid", {}).get("tmdb") != TMDB_SHOW_ID:
 					continue
-				episodes = _rpc("VideoLibrary.GetEpisodes", tvshowid=show["tvshowid"], season=int(season),
-					properties=["episode", "file"]).get("episodes", [])
-				for item in episodes:
-					if item["episode"] == int(episode) and item.get("file") and xbmcvfs.exists(item["file"]):
-						return item["episodeid"], item["file"]
+				params = {"tvshowid": show["tvshowid"], "properties": ["season", "episode", "file", "title", "plot", "art"]}
+				if season is not None:
+					params["season"] = int(season)
+				found += [item for item in _rpc("VideoLibrary.GetEpisodes", **params).get("episodes", []) if item.get("file")]
 		except (ValueError, KeyError) as e:
 			log_error("Cannot search the library: {0}".format(e))
+		return found
+
+	def library_episode(self, season, episode):
+		"""This episode in the Kodi library (episodeid, file), or None."""
+		for item in self.library_episodes(season):
+			if item["episode"] == int(episode) and xbmcvfs.exists(item["file"]):
+				return item["episodeid"], item["file"]
 		return None
+
+	def add_library_episode(self, item):
+		art   = item.get("art", {})
+		image = art.get("thumb") or art.get("tvshow.poster") or self.paths.PLUGIN_ICON
+		entry = xbmcgui.ListItem(_encode(item.get("label") or item["title"]), path=item["file"])
+		entry.setArt({'thumb': image, 'icon': image})
+		entry.setInfo(type="Video", infoLabels={"Title": item["title"], "Plot": item.get("plot", ""),
+			"Season": item["season"], "Episode": item["episode"], "mediatype": "episode"})
+		tag = entry.getVideoInfoTag()
+		if hasattr(tag, "setDbId"):
+			tag.setDbId(item["episodeid"])
+		entry.setProperty("fanart_image", self.paths.DEFAULT_FANART)
+		entry.setProperty("isPlayable", "true")
+		xbmcplugin.setContent(self.phandle, 'episodes')
+		xbmcplugin.addDirectoryItem(handle=self.phandle, url=item["file"], listitem=entry, isFolder=False)
 
 	def play_library(self, episodeid, path):
 		playitem = xbmcgui.ListItem(path=path)
