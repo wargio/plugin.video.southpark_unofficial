@@ -412,7 +412,10 @@ class SouthParkAddon(object):
 		for item in self.library_episodes():
 			if (item["season"], item["episode"]) not in on_site:
 				pool.append(("library", item))
-		log_error("Random episode from {0} site and {1} library episodes".format(len(on_site), len(pool) - len(on_site)))
+		movies = self.library_movies()
+		pool += [("library", item) for item in movies]
+		log_error("Random episode from {0} site episodes, {1} library episodes and {2} movies".format(
+			len(on_site), len(pool) - len(on_site) - len(movies), len(movies)))
 
 		for _ in range(10):
 			if not pool:
@@ -424,9 +427,9 @@ class SouthParkAddon(object):
 					pool.remove((source, episode_data))
 					continue
 				if self.options.playrandom():
-					self.play_library(episode_data["episodeid"], episode_data["file"])
+					self.play_library(episode_data["dbid"], episode_data["file"], episode_data["mediatype"])
 					return
-				self.add_library_episode(episode_data)
+				self.add_library_item(episode_data)
 			elif self.options.playrandom():
 				self.play_episode(episode_data['season'], episode_data['episode'])
 				return
@@ -469,9 +472,26 @@ class SouthParkAddon(object):
 				params = {"tvshowid": show["tvshowid"], "properties": ["season", "episode", "file", "title", "plot", "art"]}
 				if season is not None:
 					params["season"] = int(season)
-				found += [item for item in _rpc("VideoLibrary.GetEpisodes", **params).get("episodes", []) if item.get("file")]
+				for item in _rpc("VideoLibrary.GetEpisodes", **params).get("episodes", []):
+					if item.get("file"):
+						item.update(dbid=item["episodeid"], mediatype="episode")
+						found.append(item)
 		except (ValueError, KeyError) as e:
 			log_error("Cannot search the library: {0}".format(e))
+		return found
+
+	def library_movies(self):
+		"""Movies in the Kodi library whose title starts with "South Park" (Post COVID, ...)."""
+		found = []
+		try:
+			movies = _rpc("VideoLibrary.GetMovies", properties=["file", "title", "plot", "art"],
+				filter={"field": "title", "operator": "startswith", "value": "South Park"}).get("movies", [])
+			for item in movies:
+				if item.get("file"):
+					item.update(dbid=item["movieid"], mediatype="movie")
+					found.append(item)
+		except (ValueError, KeyError) as e:
+			log_error("Cannot search the library for movies: {0}".format(e))
 		return found
 
 	def library_episode(self, season, episode):
@@ -481,28 +501,31 @@ class SouthParkAddon(object):
 				return item["episodeid"], item["file"]
 		return None
 
-	def add_library_episode(self, item):
+	def add_library_item(self, item):
+		"""A playable list entry for a library episode or movie."""
 		art   = item.get("art", {})
-		image = art.get("thumb") or art.get("tvshow.poster") or self.paths.PLUGIN_ICON
+		image = art.get("thumb") or art.get("poster") or art.get("tvshow.poster") or self.paths.PLUGIN_ICON
 		entry = xbmcgui.ListItem(_encode(item.get("label") or item["title"]), path=item["file"])
 		entry.setArt({'thumb': image, 'icon': image})
-		entry.setInfo(type="Video", infoLabels={"Title": item["title"], "Plot": item.get("plot", ""),
-			"Season": item["season"], "Episode": item["episode"], "mediatype": "episode"})
+		info = {"Title": item["title"], "Plot": item.get("plot", ""), "mediatype": item["mediatype"]}
+		if item["mediatype"] == "episode":
+			info.update(Season=item["season"], Episode=item["episode"])
+		entry.setInfo(type="Video", infoLabels=info)
 		tag = entry.getVideoInfoTag()
 		if hasattr(tag, "setDbId"):
-			tag.setDbId(item["episodeid"])
+			tag.setDbId(item["dbid"])
 		entry.setProperty("fanart_image", self.paths.DEFAULT_FANART)
 		entry.setProperty("isPlayable", "true")
 		xbmcplugin.setContent(self.phandle, 'episodes')
 		xbmcplugin.addDirectoryItem(handle=self.phandle, url=item["file"], listitem=entry, isFolder=False)
 
-	def play_library(self, episodeid, path):
+	def play_library(self, dbid, path, mediatype="episode"):
 		playitem = xbmcgui.ListItem(path=path)
 		tag = playitem.getVideoInfoTag()
 		if hasattr(tag, "setDbId"):
-			# Lets Kodi mark the library episode as watched.
-			tag.setMediaType("episode")
-			tag.setDbId(episodeid)
+			# Lets Kodi mark the library episode or movie as watched.
+			tag.setMediaType(mediatype)
+			tag.setDbId(dbid)
 		self.notify(self.i18n.WARNING_PLAYING_FROM_LIBRARY, WARNING_TIMEOUT_SHORT)
 		xbmcplugin.setResolvedUrl(handle=self.phandle, succeeded=True, listitem=playitem)
 		xbmcplugin.endOfDirectory(self.phandle)
