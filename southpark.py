@@ -10,6 +10,9 @@ import xbmcgui
 import xbmcaddon
 import time
 import base64
+import io
+from stream_resolver import StreamResolutionError, resolve_episode_stream
+from subtitles import build_subtitles
 
 # .major cannot be used in older versions, like kodi 16.
 IS_PY3 = sys.version_info[0] > 2
@@ -17,10 +20,10 @@ IS_PY3 = sys.version_info[0] > 2
 if IS_PY3:
 	from urllib.request import Request
 	from urllib.request import urlopen
-	from urllib.parse import unquote_plus
+	from urllib.parse import unquote_plus, quote_plus
 else:
 	from urllib2 import Request, urlopen
-	from urllib import unquote_plus
+	from urllib import unquote_plus, quote_plus
 
 KODI_VERSION_MAJOR = int(xbmc.getInfoLabel('System.BuildVersion')[0:2])
 
@@ -38,6 +41,12 @@ PLUGIN_MODE_PLAY_EP     = "sp:play"
 PLUGIN_MODE_UNAVAILABLE = "sp:unavailable"
 PLUGIN_MODE_PREMIERE    = "sp:beforepremiere"
 PLUGIN_MODE_CLEARCACHE  = "sp:clearcache"
+
+# South Park on themoviedb.org, sent by the TMDb Helper player file.
+TMDB_SHOW_ID = "2190"
+TMDB_PLAYER_FILE = "southpark_unofficial.json"
+# ignore_default skips the per-season default, which would send the episode back here.
+TMDB_HELPER_PLAY = "plugin://plugin.video.themoviedb.helper/?info=play&tmdb_type=tv&tmdb_id={0}&season={1}&episode={2}&ignore_default=true"
 
 def log_debug(message):
 	xbmc.log("[sp.addon] {}".format(message), xbmc.LOGDEBUG)
@@ -92,6 +101,13 @@ def _http_get(url, json=False):
 	if json:
 		data = _json.loads(data, strict=False)
 	return data
+
+def _rpc(method, **params):
+	request  = {"jsonrpc": "2.0", "id": 1, "method": method, "params": params}
+	response = _json.loads(xbmc.executeJSONRPC(_json.dumps(request)))
+	if "error" in response:
+		raise ValueError("{0}: {1}".format(method, response["error"]))
+	return response.get("result") or {}
 
 def _decode_dictionary(string):
 	newd = {}
@@ -174,7 +190,7 @@ def _load_data(lang, path):
 	if addon_data == None:
 		url = "https://raw.githubusercontent.com/wargio/plugin.video.southpark_unofficial/addon-data/addon-data-{}.json".format(lang)
 		addon_data = _http_get(url, True)
-		addon_data["date"] = "{}".format(datetime.datetime.now()),
+		addon_data["date"] = "{}".format(datetime.datetime.now())
 
 		with open(path,'w') as output:
 			output.truncate()
@@ -197,6 +213,8 @@ class SP_I18N(object):
 		self.OPTIONS_PLAY_DIRECTLY_RANDOM_EPISODE = _translation(addon, 30015)
 		self.WARNING_BAD_INTERNET_CONNECTION      = _translation(addon, 30010)
 		self.WARNING_UNAVAILABLE_EPISODE          = _translation(addon, 30011)
+		self.WARNING_TRYING_OTHER_PLAYER          = _translation(addon, 30017)
+		self.WARNING_PLAYING_FROM_LIBRARY         = _translation(addon, 30019)
 		self.WARNING_GEOBLOCKED                   = _translation(addon, 30002)
 		self.WARNING_LOADING                      = _translation(addon, 30009)
 		self.WARNING_LOADING_RANDOM_EPISODE       = _translation(addon, 30003)
@@ -211,11 +229,13 @@ class KodiParams(object):
 		self.PARAM_MODE    = unquote_plus(params.get('mode'     , ''))
 		self.PARAM_SEASON  = unquote_plus(params.get('season'   , ''))
 		self.PARAM_EPISODE = unquote_plus(params.get('episode'  , ''))
+		self.PARAM_TMDB_ID = unquote_plus(params.get('tmdb_id'  , ''))
 
 	def debug(self):
 		log_debug("PARAM_MODE:    {0}".format(self.PARAM_MODE   ))
 		log_debug("PARAM_SEASON:  {0}".format(self.PARAM_SEASON ))
 		log_debug("PARAM_EPISODE: {0}".format(self.PARAM_EPISODE))
+		log_debug("PARAM_TMDB_ID: {0}".format(self.PARAM_TMDB_ID))
 
 class SP_Paths(object):
 	"""South Park plugin Paths"""
@@ -269,6 +289,9 @@ class SP_Options(object):
 	def playrandom(self):
 		return self.addon.getSetting('playrandom') == "true"
 
+	def fallback_player(self):
+		return self.addon.getSetting('tmdb_fallback_player').strip()
+
 class SP_Data(object):
 	"""Contains the data that is needed by the addon"""
 	def __init__(self, seasons, created):
@@ -283,6 +306,9 @@ class SP_Data(object):
 
 	def episode(self, season, episode):
 		return self.seasons[season][episode]
+
+	def has_episode(self, season, episode):
+		return 0 <= season < len(self.seasons) and 0 <= episode < len(self.seasons[season])
 
 	def last_season(self):
 		return len(self.seasons) + 1
@@ -299,6 +325,7 @@ class SouthParkAddon(object):
 		self.options   = SP_Options  (self.addon_obj)
 		self.i18n      = SP_I18N   (self.addon_obj)
 		self.data      = _load_data(self.options.audio(True), self.paths.PLUGIN_DATA)
+		self.tmdb_id   = ''
 
 	def notify(self, text, utime=WARNING_TIMEOUT_SHORT):
 		utext      = _encode(text)
@@ -355,7 +382,7 @@ class SouthParkAddon(object):
 		ep_aird    = episode['date']
 		ep_uuid    = episode['uuid']
 
-		if len(episode['mediagen']) < 1:
+		if not episode.get('url') and len(episode['mediagen']) < 1:
 			ep_title += " [Unavailable]"
 			ep_mode = PLUGIN_MODE_UNAVAILABLE
 
@@ -373,56 +400,214 @@ class SouthParkAddon(object):
 	def create_random(self):
 		if not self.options.playrandom():
 			self.notify(self.i18n.WARNING_LOADING_RANDOM_EPISODE, WARNING_TIMEOUT_SHORT)
-		retries = 0
-		while retries < 10:
-			retries += 1
-			episode_data = self.data.random()
-			if len(episode_data['mediagen']) < 1:
-				log_error("Found locked episode '{0}'. trying again!".format(episode_data["title"]))
-				continue
-			if self.options.playrandom():
+		# Pick evenly from the site episodes and the library episodes the site doesn't have
+		# (seasons missing from addon-data, locked episodes).
+		pool = []
+		on_site = set()
+		for season in self.data.seasons:
+			for episode_data in season:
+				if episode_data.get('url') or len(episode_data['mediagen']) > 0:
+					pool.append(("site", episode_data))
+					on_site.add((int(episode_data['season']), int(episode_data['episode'])))
+		for item in self.library_episodes():
+			if (item["season"], item["episode"]) not in on_site:
+				pool.append(("library", item))
+		movies = self.library_movies()
+		pool += [("library", item) for item in movies]
+		log_error("Random episode from {0} site episodes, {1} library episodes and {2} movies".format(
+			len(on_site), len(pool) - len(on_site) - len(movies), len(movies)))
+
+		for _ in range(10):
+			if not pool:
+				break
+			source, episode_data = random.choice(pool)
+			if source == "library":
+				if not xbmcvfs.exists(episode_data["file"]):
+					log_error("Library file is missing: '{0}'. trying again!".format(episode_data["file"]))
+					pool.remove((source, episode_data))
+					continue
+				if self.options.playrandom():
+					self.play_library(episode_data["dbid"], episode_data["file"], episode_data["mediatype"])
+					return
+				self.add_library_item(episode_data)
+			elif self.options.playrandom():
 				self.play_episode(episode_data['season'], episode_data['episode'])
+				return
 			else:
 				self.add_episode(episode_data)
-			break
-		if retries > 9:
-			log_error("Cannot find an episode to play!")
+			xbmcplugin.endOfDirectory(self.phandle)
+			return
+		log_error("Cannot find an episode to play!")
+		if self.options.playrandom():
+			self.play_failed()
+			return
 		xbmcplugin.endOfDirectory(self.phandle)
 
 
+	def build_subtitles(self, stream):
+		# Kodi ignores HLS subtitle renditions, so merge them into a local file.
+		if not self.options.show_subtitles() or stream["manifest_type"] != "hls":
+			return None
+		try:
+			vtt, language = build_subtitles(stream["source"], self.options.audio(True), lambda url: _http_get(url, False))
+			if vtt is None:
+				log_error("Stream has no subtitle track")
+				return None
+			path = os.path.join(self.paths.TEMPORARY_FOLDER, "episode.{}.vtt".format(language))
+			with io.open(path, "w", encoding="utf-8") as output:
+				output.write(vtt)
+			return path
+		except Exception as e:
+			log_error("Cannot load subtitles: {}".format(e))
+			return None
+
+	def library_episodes(self, season=None):
+		"""South Park episodes in the Kodi library (all, or one season). Files are not checked."""
+		found = []
+		try:
+			shows = _rpc("VideoLibrary.GetTVShows", properties=["uniqueid"]).get("tvshows", [])
+			for show in shows:
+				if show.get("uniqueid", {}).get("tmdb") != TMDB_SHOW_ID:
+					continue
+				params = {"tvshowid": show["tvshowid"], "properties": ["season", "episode", "file", "title", "plot", "art"]}
+				if season is not None:
+					params["season"] = int(season)
+				for item in _rpc("VideoLibrary.GetEpisodes", **params).get("episodes", []):
+					if item.get("file"):
+						item.update(dbid=item["episodeid"], mediatype="episode")
+						found.append(item)
+		except (ValueError, KeyError) as e:
+			log_error("Cannot search the library: {0}".format(e))
+		return found
+
+	def library_movies(self):
+		"""Movies in the Kodi library whose title starts with "South Park" (Post COVID, ...)."""
+		found = []
+		try:
+			movies = _rpc("VideoLibrary.GetMovies", properties=["file", "title", "plot", "art"],
+				filter={"field": "title", "operator": "startswith", "value": "South Park"}).get("movies", [])
+			for item in movies:
+				if item.get("file"):
+					item.update(dbid=item["movieid"], mediatype="movie")
+					found.append(item)
+		except (ValueError, KeyError) as e:
+			log_error("Cannot search the library for movies: {0}".format(e))
+		return found
+
+	def library_episode(self, season, episode):
+		"""This episode in the Kodi library (episodeid, file), or None."""
+		for item in self.library_episodes(season):
+			if item["episode"] == int(episode) and xbmcvfs.exists(item["file"]):
+				return item["episodeid"], item["file"]
+		return None
+
+	def add_library_item(self, item):
+		"""A playable list entry for a library episode or movie."""
+		art   = item.get("art", {})
+		image = art.get("thumb") or art.get("poster") or art.get("tvshow.poster") or self.paths.PLUGIN_ICON
+		entry = xbmcgui.ListItem(_encode(item.get("label") or item["title"]), path=item["file"])
+		entry.setArt({'thumb': image, 'icon': image})
+		info = {"Title": item["title"], "Plot": item.get("plot", ""), "mediatype": item["mediatype"]}
+		if item["mediatype"] == "episode":
+			info.update(Season=item["season"], Episode=item["episode"])
+		entry.setInfo(type="Video", infoLabels=info)
+		tag = entry.getVideoInfoTag()
+		if hasattr(tag, "setDbId"):
+			tag.setDbId(item["dbid"])
+		entry.setProperty("fanart_image", self.paths.DEFAULT_FANART)
+		entry.setProperty("isPlayable", "true")
+		xbmcplugin.setContent(self.phandle, 'episodes')
+		xbmcplugin.addDirectoryItem(handle=self.phandle, url=item["file"], listitem=entry, isFolder=False)
+
+	def play_library(self, dbid, path, mediatype="episode"):
+		playitem = xbmcgui.ListItem(path=path)
+		tag = playitem.getVideoInfoTag()
+		if hasattr(tag, "setDbId"):
+			# Lets Kodi mark the library episode or movie as watched.
+			tag.setMediaType(mediatype)
+			tag.setDbId(dbid)
+		self.notify(self.i18n.WARNING_PLAYING_FROM_LIBRARY, WARNING_TIMEOUT_SHORT)
+		xbmcplugin.setResolvedUrl(handle=self.phandle, succeeded=True, listitem=playitem)
+		xbmcplugin.endOfDirectory(self.phandle)
+
+	def play_failed(self, season=None, episode=None):
+		if self.tmdb_id == TMDB_SHOW_ID and season is not None and self.phandle != -1:
+			# Started from TMDb Helper: try the Kodi library, then hand the episode back
+			# to TMDb Helper for another player (or its player menu).
+			found = self.library_episode(season, episode)
+			if found:
+				log_error("Playing from the library: {0}".format(found[1]))
+				self.play_library(*found)
+				return
+			url = TMDB_HELPER_PLAY.format(TMDB_SHOW_ID, season, episode)
+			player = self.options.fallback_player()
+			if player and player != TMDB_PLAYER_FILE:
+				url += "&player={0}&mode=play".format(quote_plus(player))
+			log_error("Trying another player: {0}".format(url))
+			self.notify(self.i18n.WARNING_TRYING_OTHER_PLAYER, WARNING_TIMEOUT_SHORT)
+			xbmcplugin.setResolvedUrl(handle=self.phandle, succeeded=True, listitem=xbmcgui.ListItem(path=url))
+			xbmcplugin.endOfDirectory(self.phandle)
+			return
+		self.notify(self.i18n.WARNING_UNAVAILABLE_EPISODE, WARNING_TIMEOUT_LONG)
+		if self.phandle != -1:
+			# Callers like TMDb Helper wait for the resolved url, so tell them it failed.
+			xbmcplugin.setResolvedUrl(handle=self.phandle, succeeded=False, listitem=xbmcgui.ListItem())
+		xbmcplugin.endOfDirectory(self.phandle)
+
 	def play_episode(self, season, episode):
-		data = self.data.episode(int(season) - 1, int(episode) - 1)
+		try:
+			index = (int(season) - 1, int(episode) - 1)
+		except ValueError:
+			index = (-1, -1)
+		if not self.data.has_episode(*index):
+			log_error("No episode data for season {0} episode {1}".format(season, episode))
+			self.play_failed(season, episode)
+			return
+		data = self.data.episode(*index)
 		self.notify("{0} {1}".format(self.i18n.WARNING_LOADING, _encode(data["title"])), WARNING_TIMEOUT_SHORT)
 		streams   = []
 		subtitles = []
+		manifest_types = []
 		try:
-			for url in data["mediagen"]:
-				url = base64.b64decode(url.encode('ascii')).decode('ascii')
-				mediagen = _http_get(url, True)
+			stream = resolve_episode_stream(
+				self.options.audio(True), data.get("url"), lambda url: _http_get(url, False))
+			streams.append(stream["source"])
+			subtitles.append(self.build_subtitles(stream))
+			manifest_types.append(stream["manifest_type"])
+		except StreamResolutionError as e:
+			log_error("Dynamic stream resolution failed: {}".format(e))
 
-				subs = _dk(mediagen, ["package", "video", "item", 0, "transcript", 0, "typographic"], [])
-				subs = list(filter(lambda x: "format" in x and x["format"] == "vtt", subs))
-				if len(subs) > 0:
-					subtitles.append(subs[0]["src"])
-				else:
-					subtitles.append(None)
+		# Temporary fallback for old addon-data while MTVN still serves it.
+		if len(streams) < 1:
+			try:
+				for url in data["mediagen"]:
+					url = base64.b64decode(url.encode('ascii')).decode('ascii')
+					mediagen = _http_get(url, True)
 
-				m3u8 = None
-				try:
-					m3u8 = _dk(mediagen, ["package", "video", "item", 0, "rendition", "src"], None)
-				except TypeError:
-					m3u8 = _dk(mediagen, ["package", "video", "item", 0, "rendition", 0, "src"], None)
+					subs = _dk(mediagen, ["package", "video", "item", 0, "transcript", 0, "typographic"], [])
+					subs = list(filter(lambda x: "format" in x and x["format"] == "vtt", subs))
+					if len(subs) > 0:
+						subtitles.append(subs[0]["src"])
+					else:
+						subtitles.append(None)
 
-				if m3u8 == None:
-					raise Exception("invalid m3u8")
-				streams.append(m3u8)
-		except Exception as e:
-			streams = []
-			log_error(e)
+					m3u8 = None
+					try:
+						m3u8 = _dk(mediagen, ["package", "video", "item", 0, "rendition", "src"], None)
+					except TypeError:
+						m3u8 = _dk(mediagen, ["package", "video", "item", 0, "rendition", 0, "src"], None)
+
+					if m3u8 == None:
+						raise Exception("invalid m3u8")
+					streams.append(m3u8)
+					manifest_types.append("hls")
+			except Exception as e:
+				streams = []
+				manifest_types = []
+				log_error(e)
 
 		if len(streams) < 1:
-			self.notify(self.i18n.WARNING_UNAVAILABLE_EPISODE, WARNING_TIMEOUT_LONG)
-			xbmcplugin.endOfDirectory(self.phandle)
+			self.play_failed(season, episode)
 			return
 
 		playlist = None
@@ -441,6 +626,13 @@ class SouthParkAddon(object):
 
 			playitem.setArt({'icon': data["image"], 'thumb': data["image"]})
 			playitem.setInfo('video', {'Title': title, 'Plot': data["details"]})
+			if manifest_types[i] == "dash":
+				playitem.setMimeType("application/dash+xml")
+				playitem.setContentLookup(False)
+				playitem.setProperty("inputstream", "inputstream.adaptive")
+				playitem.setProperty("inputstream.adaptive.manifest_type", "mpd")
+			else:
+				playitem.setMimeType("application/vnd.apple.mpegurl")
 
 			if subtitles[i] != None and show_subs:
 				playitem.setSubtitles([subtitles[i]])
@@ -471,6 +663,12 @@ class SouthParkAddon(object):
 			self.create_episodes(kodi.PARAM_SEASON)
 			return
 		elif kodi.PARAM_MODE == PLUGIN_MODE_PLAY_EP:
+			if kodi.PARAM_TMDB_ID and kodi.PARAM_TMDB_ID != TMDB_SHOW_ID:
+				# TMDb Helper offers every player for every show.
+				log_error("Not South Park: tmdb id {0}".format(kodi.PARAM_TMDB_ID))
+				self.play_failed()
+				return
+			self.tmdb_id = kodi.PARAM_TMDB_ID
 			self.play_episode(kodi.PARAM_SEASON, kodi.PARAM_EPISODE)
 			return
 		elif kodi.PARAM_MODE == PLUGIN_MODE_RANDOM:

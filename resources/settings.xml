@@ -3,5 +3,6 @@
 	<setting default="0" id="audio_lang" label="30001" type="enum" values="North America[EN]|North America[ES]|Germany|Sweden|Europe|Brasil|Latin America[ES]"/>
 	<setting default="false" id="cc" label="30012" type="bool"/>
 	<setting default="false" id="playrandom" label="30015" type="bool"/>
+	<setting default="" id="tmdb_fallback_player" label="30018" type="text"/>
 	<setting action="RunPlugin(plugin://$ID?mode=sp:clearcache)" option="close" label="30016" type="action"/>
 </settings>

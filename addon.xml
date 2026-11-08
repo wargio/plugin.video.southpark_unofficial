@@ -2,6 +2,7 @@
 <addon id="plugin.video.southpark_unofficial" name="South Park" version="0.6.6+matrix.1" provider-name="Deroad">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
+        <import addon="inputstream.adaptive" version="2.4.0" />
     </requires>
     <extension point="xbmc.python.pluginsource" library="default.py">
         <provides>video</provides>
