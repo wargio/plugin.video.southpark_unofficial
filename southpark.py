@@ -20,10 +20,10 @@ IS_PY3 = sys.version_info[0] > 2
 if IS_PY3:
 	from urllib.request import Request
 	from urllib.request import urlopen
-	from urllib.parse import unquote_plus
+	from urllib.parse import unquote_plus, quote_plus
 else:
 	from urllib2 import Request, urlopen
-	from urllib import unquote_plus
+	from urllib import unquote_plus, quote_plus
 
 KODI_VERSION_MAJOR = int(xbmc.getInfoLabel('System.BuildVersion')[0:2])
 
@@ -44,6 +44,9 @@ PLUGIN_MODE_CLEARCACHE  = "sp:clearcache"
 
 # South Park on themoviedb.org, sent by the TMDb Helper player file.
 TMDB_SHOW_ID = "2190"
+TMDB_PLAYER_FILE = "southpark_unofficial.json"
+# ignore_default skips the per-season default, which would send the episode back here.
+TMDB_HELPER_PLAY = "plugin://plugin.video.themoviedb.helper/?info=play&tmdb_type=tv&tmdb_id={0}&season={1}&episode={2}&ignore_default=true"
 
 def log_debug(message):
 	xbmc.log("[sp.addon] {}".format(message), xbmc.LOGDEBUG)
@@ -98,6 +101,13 @@ def _http_get(url, json=False):
 	if json:
 		data = _json.loads(data, strict=False)
 	return data
+
+def _rpc(method, **params):
+	request  = {"jsonrpc": "2.0", "id": 1, "method": method, "params": params}
+	response = _json.loads(xbmc.executeJSONRPC(_json.dumps(request)))
+	if "error" in response:
+		raise ValueError("{0}: {1}".format(method, response["error"]))
+	return response.get("result") or {}
 
 def _decode_dictionary(string):
 	newd = {}
@@ -203,6 +213,8 @@ class SP_I18N(object):
 		self.OPTIONS_PLAY_DIRECTLY_RANDOM_EPISODE = _translation(addon, 30015)
 		self.WARNING_BAD_INTERNET_CONNECTION      = _translation(addon, 30010)
 		self.WARNING_UNAVAILABLE_EPISODE          = _translation(addon, 30011)
+		self.WARNING_TRYING_OTHER_PLAYER          = _translation(addon, 30017)
+		self.WARNING_PLAYING_FROM_LIBRARY         = _translation(addon, 30019)
 		self.WARNING_GEOBLOCKED                   = _translation(addon, 30002)
 		self.WARNING_LOADING                      = _translation(addon, 30009)
 		self.WARNING_LOADING_RANDOM_EPISODE       = _translation(addon, 30003)
@@ -277,6 +289,9 @@ class SP_Options(object):
 	def playrandom(self):
 		return self.addon.getSetting('playrandom') == "true"
 
+	def fallback_player(self):
+		return self.addon.getSetting('tmdb_fallback_player').strip()
+
 class SP_Data(object):
 	"""Contains the data that is needed by the addon"""
 	def __init__(self, seasons, created):
@@ -310,6 +325,7 @@ class SouthParkAddon(object):
 		self.options   = SP_Options  (self.addon_obj)
 		self.i18n      = SP_I18N   (self.addon_obj)
 		self.data      = _load_data(self.options.audio(True), self.paths.PLUGIN_DATA)
+		self.tmdb_id   = ''
 
 	def notify(self, text, utime=WARNING_TIMEOUT_SHORT):
 		utext      = _encode(text)
@@ -418,7 +434,51 @@ class SouthParkAddon(object):
 			log_error("Cannot load subtitles: {}".format(e))
 			return None
 
-	def play_failed(self):
+	def library_episode(self, season, episode):
+		"""This episode in the Kodi library (episodeid, file), or None."""
+		try:
+			shows = _rpc("VideoLibrary.GetTVShows", properties=["uniqueid"]).get("tvshows", [])
+			for show in shows:
+				if show.get("uniqueid", {}).get("tmdb") != TMDB_SHOW_ID:
+					continue
+				episodes = _rpc("VideoLibrary.GetEpisodes", tvshowid=show["tvshowid"], season=int(season),
+					properties=["episode", "file"]).get("episodes", [])
+				for item in episodes:
+					if item["episode"] == int(episode) and item.get("file") and xbmcvfs.exists(item["file"]):
+						return item["episodeid"], item["file"]
+		except (ValueError, KeyError) as e:
+			log_error("Cannot search the library: {0}".format(e))
+		return None
+
+	def play_library(self, episodeid, path):
+		playitem = xbmcgui.ListItem(path=path)
+		tag = playitem.getVideoInfoTag()
+		if hasattr(tag, "setDbId"):
+			# Lets Kodi mark the library episode as watched.
+			tag.setMediaType("episode")
+			tag.setDbId(episodeid)
+		self.notify(self.i18n.WARNING_PLAYING_FROM_LIBRARY, WARNING_TIMEOUT_SHORT)
+		xbmcplugin.setResolvedUrl(handle=self.phandle, succeeded=True, listitem=playitem)
+		xbmcplugin.endOfDirectory(self.phandle)
+
+	def play_failed(self, season=None, episode=None):
+		if self.tmdb_id == TMDB_SHOW_ID and season is not None and self.phandle != -1:
+			# Started from TMDb Helper: try the Kodi library, then hand the episode back
+			# to TMDb Helper for another player (or its player menu).
+			found = self.library_episode(season, episode)
+			if found:
+				log_error("Playing from the library: {0}".format(found[1]))
+				self.play_library(*found)
+				return
+			url = TMDB_HELPER_PLAY.format(TMDB_SHOW_ID, season, episode)
+			player = self.options.fallback_player()
+			if player and player != TMDB_PLAYER_FILE:
+				url += "&player={0}&mode=play".format(quote_plus(player))
+			log_error("Trying another player: {0}".format(url))
+			self.notify(self.i18n.WARNING_TRYING_OTHER_PLAYER, WARNING_TIMEOUT_SHORT)
+			xbmcplugin.setResolvedUrl(handle=self.phandle, succeeded=True, listitem=xbmcgui.ListItem(path=url))
+			xbmcplugin.endOfDirectory(self.phandle)
+			return
 		self.notify(self.i18n.WARNING_UNAVAILABLE_EPISODE, WARNING_TIMEOUT_LONG)
 		if self.phandle != -1:
 			# Callers like TMDb Helper wait for the resolved url, so tell them it failed.
@@ -427,14 +487,14 @@ class SouthParkAddon(object):
 
 	def play_episode(self, season, episode):
 		try:
-			season, episode = int(season) - 1, int(episode) - 1
+			index = (int(season) - 1, int(episode) - 1)
 		except ValueError:
-			season, episode = -1, -1
-		if not self.data.has_episode(season, episode):
-			log_error("No episode data for season {0} episode {1}".format(season + 1, episode + 1))
-			self.play_failed()
+			index = (-1, -1)
+		if not self.data.has_episode(*index):
+			log_error("No episode data for season {0} episode {1}".format(season, episode))
+			self.play_failed(season, episode)
 			return
-		data = self.data.episode(season, episode)
+		data = self.data.episode(*index)
 		self.notify("{0} {1}".format(self.i18n.WARNING_LOADING, _encode(data["title"])), WARNING_TIMEOUT_SHORT)
 		streams   = []
 		subtitles = []
@@ -478,7 +538,7 @@ class SouthParkAddon(object):
 				log_error(e)
 
 		if len(streams) < 1:
-			self.play_failed()
+			self.play_failed(season, episode)
 			return
 
 		playlist = None
@@ -539,6 +599,7 @@ class SouthParkAddon(object):
 				log_error("Not South Park: tmdb id {0}".format(kodi.PARAM_TMDB_ID))
 				self.play_failed()
 				return
+			self.tmdb_id = kodi.PARAM_TMDB_ID
 			self.play_episode(kodi.PARAM_SEASON, kodi.PARAM_EPISODE)
 			return
 		elif kodi.PARAM_MODE == PLUGIN_MODE_RANDOM:

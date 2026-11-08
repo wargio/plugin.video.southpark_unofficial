@@ -79,3 +79,15 @@ msgstr ""
 msgctxt "#30016"
 msgid "Clear cache"
 msgstr ""
+
+msgctxt "#30017"
+msgid "Not on South Park, trying another player"
+msgstr ""
+
+msgctxt "#30018"
+msgid "Fallback TMDb Helper player (file name, empty = ask)"
+msgstr ""
+
+msgctxt "#30019"
+msgid "Not on South Park, playing from your library"
+msgstr ""
